@@ -3,7 +3,7 @@
 #SBATCH --time=00:07:59
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/yiswang/large-sc/project/logs/%x-%j.out
-#SBATCH --nodes=2
+#SBATCH --nodes=4
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
 #SBATCH --mem=460000
@@ -51,11 +51,12 @@ numactl --membind=0-3 torchrun \
     --master_addr="${MASTER_ADDR}" \
     --master_port="${MASTER_PORT}" \
     "${ASSIGNMENT_DIR}"/train.py \
-    --batch-size 8 \
+    --batch-size 16 \
     --learning-rate 5e-5 \
     --lr-warmup-steps 5 \
-    --training-steps 100 \
-    --sequence-length 4096
+    --training-steps 300 \
+    --sequence-length 4096 \
+    --tp-size 16 \
 "
 
 # Submits the CMD to all the processes on all the nodes.

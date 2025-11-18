@@ -1,0 +1,194 @@
+START TIME: Tue Nov 18 23:01:46 CET 2025
+END TIME: Tue Nov 18 23:01:46 CET 2025
+[sbatch-master] running on nid007104
+[sbatch-master] SLURM_NODELIST: nid[007104,007258,007311,007350]
+[sbatch-master] SLURM_NNODES: 4
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007104 noderank=0 localrank=0
+W1118 23:02:03.222000 172488 torch/distributed/run.py:792] 
+W1118 23:02:03.222000 172488 torch/distributed/run.py:792] *****************************************
+W1118 23:02:03.222000 172488 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:02:03.222000 172488 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007258 noderank=1 localrank=0
+[srun] rank=2 host=nid007311 noderank=2 localrank=0
+[srun] rank=3 host=nid007350 noderank=3 localrank=0
+W1118 23:02:14.434000 272063 torch/distributed/run.py:792] 
+W1118 23:02:14.434000 272063 torch/distributed/run.py:792] *****************************************
+W1118 23:02:14.434000 272063 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:02:14.434000 272063 torch/distributed/run.py:792] *****************************************
+W1118 23:02:14.435000 8624 torch/distributed/run.py:792] 
+W1118 23:02:14.435000 8624 torch/distributed/run.py:792] *****************************************
+W1118 23:02:14.435000 8624 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:02:14.435000 8624 torch/distributed/run.py:792] *****************************************
+W1118 23:02:14.436000 134046 torch/distributed/run.py:792] 
+W1118 23:02:14.436000 134046 torch/distributed/run.py:792] *****************************************
+W1118 23:02:14.436000 134046 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:02:14.436000 134046 torch/distributed/run.py:792] *****************************************
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,206 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,284 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,284 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,284 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:24,284 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 23:02:29,715 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:30,036 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:30,036 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:30,040 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,036 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,188 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,416 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,437 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,437 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,613 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,635 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:31,641 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:32,356 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:32,851 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:32,870 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:32,870 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:02:55,638 - root - INFO - Setting up Model...
+2025-11-18 23:02:55,638 - root - INFO - Setting up Model...
+2025-11-18 23:02:55,638 - root - INFO - Setting up Model...
+2025-11-18 23:02:55,639 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,107 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,107 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,107 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,107 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,155 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,155 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,155 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,164 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,184 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,184 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,184 - root - INFO - Setting up Model...
+2025-11-18 23:02:56,184 - root - INFO - Setting up Model...
+2025-11-18 23:03:02,843 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,032 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,038 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,173 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,260 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,389 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,430 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,433 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,435 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,449 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,501 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,614 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,619 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,650 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,710 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:03,761 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-11-18 23:03:07,931 - root - INFO - Starting training!
+2025-11-18 23:03:07,932 - root - INFO - Starting training!
+2025-11-18 23:03:07,932 - root - INFO - Starting training!
+2025-11-18 23:03:07,932 - root - INFO - Starting training!
+2025-11-18 23:03:07,932 - root - INFO - Starting training!
+2025-11-18 23:03:07,933 - root - INFO - Starting training!
+2025-11-18 23:03:07,933 - root - INFO - Starting training!
+2025-11-18 23:03:07,933 - root - INFO - Starting training!
+2025-11-18 23:03:07,933 - root - INFO - Starting training!
+2025-11-18 23:03:07,934 - root - INFO - Starting training!
+2025-11-18 23:03:07,935 - root - INFO - Starting training!
+2025-11-18 23:03:07,934 - root - INFO - Starting training!
+2025-11-18 23:03:07,935 - root - INFO - Starting training!
+2025-11-18 23:03:07,935 - root - INFO - Starting training!
+2025-11-18 23:03:07,936 - root - INFO - Starting training!
+2025-11-18 23:03:07,937 - root - INFO - Starting training!
+2025-11-18 23:03:16,078 - root - INFO - Step: 1 | Loss (Avg): 11.96 | Tokens per second: 16091.42 | Training tokens per second (%): 7.80 | MFU (%): 11.71 | TFLOPs: 115.82
+2025-11-18 23:03:20,100 - root - INFO - Step: 5 | Loss (Avg): 11.31 | Tokens per second: 130362.32 | Training tokens per second (%): 11.90 | MFU (%): 94.87 | TFLOPs: 938.31
+2025-11-18 23:03:24,311 - root - INFO - Step: 10 | Loss (Avg): 9.84 | Tokens per second: 155625.62 | Training tokens per second (%): 10.40 | MFU (%): 113.26 | TFLOPs: 1120.15
+2025-11-18 23:03:28,584 - root - INFO - Step: 15 | Loss (Avg): 9.38 | Tokens per second: 153374.32 | Training tokens per second (%): 12.67 | MFU (%): 111.62 | TFLOPs: 1103.95
+2025-11-18 23:03:32,739 - root - INFO - Step: 20 | Loss (Avg): 8.94 | Tokens per second: 157748.81 | Training tokens per second (%): 9.80 | MFU (%): 114.81 | TFLOPs: 1135.43
+2025-11-18 23:03:37,170 - root - INFO - Step: 25 | Loss (Avg): 8.49 | Tokens per second: 147916.64 | Training tokens per second (%): 11.33 | MFU (%): 107.65 | TFLOPs: 1064.66
+2025-11-18 23:03:41,435 - root - INFO - Step: 30 | Loss (Avg): 8.27 | Tokens per second: 153664.21 | Training tokens per second (%): 10.18 | MFU (%): 111.83 | TFLOPs: 1106.03
+2025-11-18 23:03:45,614 - root - INFO - Step: 35 | Loss (Avg): 7.88 | Tokens per second: 156816.74 | Training tokens per second (%): 11.54 | MFU (%): 114.13 | TFLOPs: 1128.73
+2025-11-18 23:03:49,819 - root - INFO - Step: 40 | Loss (Avg): 7.69 | Tokens per second: 155867.36 | Training tokens per second (%): 10.87 | MFU (%): 113.44 | TFLOPs: 1121.89
+2025-11-18 23:03:53,987 - root - INFO - Step: 45 | Loss (Avg): 7.55 | Tokens per second: 157266.67 | Training tokens per second (%): 10.08 | MFU (%): 114.46 | TFLOPs: 1131.96
+2025-11-18 23:03:58,184 - root - INFO - Step: 50 | Loss (Avg): 7.42 | Tokens per second: 156126.67 | Training tokens per second (%): 11.25 | MFU (%): 113.63 | TFLOPs: 1123.76
+2025-11-18 23:04:02,350 - root - INFO - Step: 55 | Loss (Avg): 7.28 | Tokens per second: 157334.30 | Training tokens per second (%): 11.50 | MFU (%): 114.50 | TFLOPs: 1132.45
+2025-11-18 23:04:06,485 - root - INFO - Step: 60 | Loss (Avg): 7.13 | Tokens per second: 158505.34 | Training tokens per second (%): 9.55 | MFU (%): 115.36 | TFLOPs: 1140.88
+2025-11-18 23:04:10,646 - root - INFO - Step: 65 | Loss (Avg): 7.31 | Tokens per second: 157506.47 | Training tokens per second (%): 9.05 | MFU (%): 114.63 | TFLOPs: 1133.69
+2025-11-18 23:04:14,844 - root - INFO - Step: 70 | Loss (Avg): 7.28 | Tokens per second: 156119.43 | Training tokens per second (%): 11.66 | MFU (%): 113.62 | TFLOPs: 1123.71
+2025-11-18 23:04:18,998 - root - INFO - Step: 75 | Loss (Avg): 7.00 | Tokens per second: 157771.22 | Training tokens per second (%): 11.03 | MFU (%): 114.82 | TFLOPs: 1135.60
+2025-11-18 23:04:23,155 - root - INFO - Step: 80 | Loss (Avg): 6.99 | Tokens per second: 157669.74 | Training tokens per second (%): 9.27 | MFU (%): 114.75 | TFLOPs: 1134.86
+2025-11-18 23:04:27,408 - root - INFO - Step: 85 | Loss (Avg): 6.99 | Tokens per second: 154081.21 | Training tokens per second (%): 11.51 | MFU (%): 112.14 | TFLOPs: 1109.04
+2025-11-18 23:04:31,607 - root - INFO - Step: 90 | Loss (Avg): 7.02 | Tokens per second: 156084.92 | Training tokens per second (%): 12.02 | MFU (%): 113.60 | TFLOPs: 1123.46
+2025-11-18 23:04:35,800 - root - INFO - Step: 95 | Loss (Avg): 7.01 | Tokens per second: 156328.59 | Training tokens per second (%): 9.77 | MFU (%): 113.77 | TFLOPs: 1125.21
+2025-11-18 23:04:40,015 - root - INFO - Step: 100 | Loss (Avg): 6.88 | Tokens per second: 155481.42 | Training tokens per second (%): 9.67 | MFU (%): 113.16 | TFLOPs: 1119.11
+2025-11-18 23:04:44,181 - root - INFO - Step: 105 | Loss (Avg): 6.91 | Tokens per second: 157324.43 | Training tokens per second (%): 10.34 | MFU (%): 114.50 | TFLOPs: 1132.38
+2025-11-18 23:04:48,359 - root - INFO - Step: 110 | Loss (Avg): 6.99 | Tokens per second: 156881.24 | Training tokens per second (%): 8.88 | MFU (%): 114.17 | TFLOPs: 1129.19
+2025-11-18 23:04:52,517 - root - INFO - Step: 115 | Loss (Avg): 7.00 | Tokens per second: 157604.92 | Training tokens per second (%): 10.68 | MFU (%): 114.70 | TFLOPs: 1134.40
+2025-11-18 23:04:56,824 - root - INFO - Step: 120 | Loss (Avg): 6.88 | Tokens per second: 152176.97 | Training tokens per second (%): 10.96 | MFU (%): 110.75 | TFLOPs: 1095.33
+2025-11-18 23:05:00,952 - root - INFO - Step: 125 | Loss (Avg): 6.73 | Tokens per second: 158763.17 | Training tokens per second (%): 9.34 | MFU (%): 115.54 | TFLOPs: 1142.73
+2025-11-18 23:05:05,137 - root - INFO - Step: 130 | Loss (Avg): 6.82 | Tokens per second: 156621.12 | Training tokens per second (%): 9.98 | MFU (%): 113.99 | TFLOPs: 1127.32
+2025-11-18 23:05:09,275 - root - INFO - Step: 135 | Loss (Avg): 6.70 | Tokens per second: 158380.90 | Training tokens per second (%): 9.15 | MFU (%): 115.27 | TFLOPs: 1139.98
+2025-11-18 23:05:13,455 - root - INFO - Step: 140 | Loss (Avg): 6.69 | Tokens per second: 156794.46 | Training tokens per second (%): 11.18 | MFU (%): 114.11 | TFLOPs: 1128.56
+2025-11-18 23:05:17,660 - root - INFO - Step: 145 | Loss (Avg): 6.63 | Tokens per second: 155865.19 | Training tokens per second (%): 11.05 | MFU (%): 113.44 | TFLOPs: 1121.88
+2025-11-18 23:05:21,817 - root - INFO - Step: 150 | Loss (Avg): 6.61 | Tokens per second: 157646.06 | Training tokens per second (%): 8.58 | MFU (%): 114.73 | TFLOPs: 1134.69
+2025-11-18 23:05:25,982 - root - INFO - Step: 155 | Loss (Avg): 6.66 | Tokens per second: 157368.45 | Training tokens per second (%): 10.70 | MFU (%): 114.53 | TFLOPs: 1132.70
+2025-11-18 23:05:30,144 - root - INFO - Step: 160 | Loss (Avg): 6.68 | Tokens per second: 157464.26 | Training tokens per second (%): 9.75 | MFU (%): 114.60 | TFLOPs: 1133.39
+2025-11-18 23:05:34,519 - root - INFO - Step: 165 | Loss (Avg): 6.52 | Tokens per second: 149782.70 | Training tokens per second (%): 11.83 | MFU (%): 109.01 | TFLOPs: 1078.10
+2025-11-18 23:05:38,689 - root - INFO - Step: 170 | Loss (Avg): 6.56 | Tokens per second: 157204.48 | Training tokens per second (%): 11.69 | MFU (%): 114.41 | TFLOPs: 1131.52
+2025-11-18 23:05:42,827 - root - INFO - Step: 175 | Loss (Avg): 6.54 | Tokens per second: 158357.45 | Training tokens per second (%): 10.56 | MFU (%): 115.25 | TFLOPs: 1139.81
+2025-11-18 23:05:47,004 - root - INFO - Step: 180 | Loss (Avg): 6.69 | Tokens per second: 156931.40 | Training tokens per second (%): 11.51 | MFU (%): 114.21 | TFLOPs: 1129.55
+2025-11-18 23:05:51,218 - root - INFO - Step: 185 | Loss (Avg): 6.65 | Tokens per second: 155496.84 | Training tokens per second (%): 13.19 | MFU (%): 113.17 | TFLOPs: 1119.22
+2025-11-18 23:05:55,380 - root - INFO - Step: 190 | Loss (Avg): 6.53 | Tokens per second: 157473.81 | Training tokens per second (%): 10.37 | MFU (%): 114.61 | TFLOPs: 1133.45
+2025-11-18 23:05:59,571 - root - INFO - Step: 195 | Loss (Avg): 6.58 | Tokens per second: 156406.72 | Training tokens per second (%): 11.28 | MFU (%): 113.83 | TFLOPs: 1125.77
+2025-11-18 23:06:03,779 - root - INFO - Step: 200 | Loss (Avg): 6.62 | Tokens per second: 155729.76 | Training tokens per second (%): 12.11 | MFU (%): 113.34 | TFLOPs: 1120.90
+2025-11-18 23:06:07,996 - root - INFO - Step: 205 | Loss (Avg): 6.50 | Tokens per second: 155422.88 | Training tokens per second (%): 13.69 | MFU (%): 113.11 | TFLOPs: 1118.69
+2025-11-18 23:06:12,182 - root - INFO - Step: 210 | Loss (Avg): 6.38 | Tokens per second: 156555.14 | Training tokens per second (%): 12.03 | MFU (%): 113.94 | TFLOPs: 1126.84
+2025-11-18 23:06:16,346 - root - INFO - Step: 215 | Loss (Avg): 6.33 | Tokens per second: 157394.53 | Training tokens per second (%): 10.20 | MFU (%): 114.55 | TFLOPs: 1132.88
+2025-11-18 23:06:20,495 - root - INFO - Step: 220 | Loss (Avg): 6.36 | Tokens per second: 157988.16 | Training tokens per second (%): 11.23 | MFU (%): 114.98 | TFLOPs: 1137.16
+2025-11-18 23:06:24,682 - root - INFO - Step: 225 | Loss (Avg): 6.51 | Tokens per second: 156536.37 | Training tokens per second (%): 13.66 | MFU (%): 113.92 | TFLOPs: 1126.71
+2025-11-18 23:06:28,866 - root - INFO - Step: 230 | Loss (Avg): 6.60 | Tokens per second: 156616.79 | Training tokens per second (%): 9.13 | MFU (%): 113.98 | TFLOPs: 1127.29
+2025-11-18 23:06:33,069 - root - INFO - Step: 235 | Loss (Avg): 6.43 | Tokens per second: 155939.74 | Training tokens per second (%): 11.68 | MFU (%): 113.49 | TFLOPs: 1122.41
+2025-11-18 23:06:37,208 - root - INFO - Step: 240 | Loss (Avg): 6.35 | Tokens per second: 158356.19 | Training tokens per second (%): 9.81 | MFU (%): 115.25 | TFLOPs: 1139.81
+2025-11-18 23:06:41,385 - root - INFO - Step: 245 | Loss (Avg): 6.39 | Tokens per second: 156893.02 | Training tokens per second (%): 12.31 | MFU (%): 114.18 | TFLOPs: 1129.27
+2025-11-18 23:06:45,566 - root - INFO - Step: 250 | Loss (Avg): 6.28 | Tokens per second: 156771.64 | Training tokens per second (%): 11.27 | MFU (%): 114.10 | TFLOPs: 1128.40
+2025-11-18 23:06:49,742 - root - INFO - Step: 255 | Loss (Avg): 6.36 | Tokens per second: 156928.47 | Training tokens per second (%): 9.46 | MFU (%): 114.21 | TFLOPs: 1129.53
+2025-11-18 23:06:53,885 - root - INFO - Step: 260 | Loss (Avg): 6.40 | Tokens per second: 158197.01 | Training tokens per second (%): 10.03 | MFU (%): 115.13 | TFLOPs: 1138.66
+2025-11-18 23:06:58,051 - root - INFO - Step: 265 | Loss (Avg): 6.45 | Tokens per second: 157339.41 | Training tokens per second (%): 11.87 | MFU (%): 114.51 | TFLOPs: 1132.49
+2025-11-18 23:07:02,269 - root - INFO - Step: 270 | Loss (Avg): 6.33 | Tokens per second: 155359.18 | Training tokens per second (%): 13.51 | MFU (%): 113.07 | TFLOPs: 1118.23
+2025-11-18 23:07:06,438 - root - INFO - Step: 275 | Loss (Avg): 6.33 | Tokens per second: 157194.15 | Training tokens per second (%): 11.00 | MFU (%): 114.40 | TFLOPs: 1131.44
+2025-11-18 23:07:10,602 - root - INFO - Step: 280 | Loss (Avg): 6.32 | Tokens per second: 157398.56 | Training tokens per second (%): 9.95 | MFU (%): 114.55 | TFLOPs: 1132.91
+2025-11-18 23:07:14,849 - root - INFO - Step: 285 | Loss (Avg): 6.21 | Tokens per second: 154337.08 | Training tokens per second (%): 10.13 | MFU (%): 112.32 | TFLOPs: 1110.88
+2025-11-18 23:07:19,028 - root - INFO - Step: 290 | Loss (Avg): 6.29 | Tokens per second: 156820.17 | Training tokens per second (%): 11.84 | MFU (%): 114.13 | TFLOPs: 1128.75
+2025-11-18 23:07:23,216 - root - INFO - Step: 295 | Loss (Avg): 6.21 | Tokens per second: 156517.36 | Training tokens per second (%): 12.12 | MFU (%): 113.91 | TFLOPs: 1126.57
+2025-11-18 23:07:27,394 - root - INFO - Training completed
+2025-11-18 23:07:27,397 - root - INFO - Training completed
+2025-11-18 23:07:27,398 - root - INFO - Training completed
+2025-11-18 23:07:27,399 - root - INFO - Training completed
+2025-11-18 23:07:27,399 - root - INFO - Training completed
+2025-11-18 23:07:27,399 - root - INFO - Training completed
+2025-11-18 23:07:27,401 - root - INFO - Training completed
+2025-11-18 23:07:27,401 - root - INFO - Training completed
+2025-11-18 23:07:27,401 - root - INFO - Step: 300 | Loss (Avg): 6.35 | Tokens per second: 156585.65 | Training tokens per second (%): 13.43 | MFU (%): 113.96 | TFLOPs: 1127.06
+2025-11-18 23:07:27,401 - root - INFO - Training completed
+2025-11-18 23:07:27,402 - root - INFO - Training completed
+2025-11-18 23:07:27,402 - root - INFO - Training completed
+2025-11-18 23:07:27,402 - root - INFO - Training completed
+2025-11-18 23:07:27,402 - root - INFO - Training completed
+2025-11-18 23:07:27,402 - root - INFO - Training completed
+2025-11-18 23:07:27,404 - root - INFO - Training completed
+2025-11-18 23:07:27,405 - root - INFO - Training completed
+[sbatch-master] task finished

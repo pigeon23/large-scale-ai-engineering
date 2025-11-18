@@ -1,0 +1,351 @@
+START TIME: Tue Nov 18 23:14:12 CET 2025
+END TIME: Tue Nov 18 23:14:12 CET 2025
+[sbatch-master] running on nid006831
+[sbatch-master] SLURM_NODELIST: nid[006831,006843,006845,007440]
+[sbatch-master] SLURM_NNODES: 4
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006831 noderank=0 localrank=0
+W1118 23:14:30.697000 268342 torch/distributed/run.py:792] 
+W1118 23:14:30.697000 268342 torch/distributed/run.py:792] *****************************************
+W1118 23:14:30.697000 268342 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:14:30.697000 268342 torch/distributed/run.py:792] *****************************************
+[srun] rank=3 host=nid007440 noderank=3 localrank=0
+[srun] rank=1 host=nid006843 noderank=1 localrank=0
+[srun] rank=2 host=nid006845 noderank=2 localrank=0
+W1118 23:14:40.568000 294502 torch/distributed/run.py:792] 
+W1118 23:14:40.568000 294502 torch/distributed/run.py:792] *****************************************
+W1118 23:14:40.568000 294502 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:14:40.568000 294502 torch/distributed/run.py:792] *****************************************
+W1118 23:14:40.573000 90738 torch/distributed/run.py:792] 
+W1118 23:14:40.573000 90738 torch/distributed/run.py:792] *****************************************
+W1118 23:14:40.573000 90738 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:14:40.573000 90738 torch/distributed/run.py:792] *****************************************
+W1118 23:14:40.573000 46021 torch/distributed/run.py:792] 
+W1118 23:14:40.573000 46021 torch/distributed/run.py:792] *****************************************
+W1118 23:14:40.573000 46021 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 23:14:40.573000 46021 torch/distributed/run.py:792] *****************************************
+2025-11-18 23:14:50,217 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,217 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,217 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,219 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,219 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,219 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,219 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,222 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,222 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,222 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,222 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,239 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,239 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,239 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,240 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:50,315 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=16, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=300, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=16)
+2025-11-18 23:14:55,729 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:55,750 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:55,766 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,038 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,042 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,042 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,050 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,055 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,058 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,068 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,087 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:56,092 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:58,187 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:58,674 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:58,676 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:14:58,678 - root - INFO - Setting up DataLoaders...
+2025-11-18 23:15:07,530 - root - INFO - Setting up Model...
+2025-11-18 23:15:07,530 - root - INFO - Setting up Model...
+2025-11-18 23:15:07,543 - root - INFO - Setting up Model...
+2025-11-18 23:15:07,884 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,142 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,142 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,142 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,142 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,237 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,237 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,237 - root - INFO - Setting up Model...
+2025-11-18 23:15:08,729 - root - INFO - Setting up Model...
+2025-11-18 23:15:12,571 - root - INFO - Setting up Model...
+2025-11-18 23:15:12,571 - root - INFO - Setting up Model...
+2025-11-18 23:15:12,571 - root - INFO - Setting up Model...
+2025-11-18 23:15:12,571 - root - INFO - Setting up Model...
+2025-11-18 23:15:17,142 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:17,182 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:17,372 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:17,814 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,025 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,034 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,059 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,120 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,149 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,151 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,340 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:18,643 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:22,429 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:22,573 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:22,577 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:23,157 - root - INFO - Applying Tensor Parallelism with size 16...
+2025-11-18 23:15:27,197 - root - INFO - Starting training!
+2025-11-18 23:15:27,197 - root - INFO - Starting training!
+2025-11-18 23:15:27,197 - root - INFO - Starting training!
+2025-11-18 23:15:27,198 - root - INFO - Starting training!
+2025-11-18 23:15:27,198 - root - INFO - Starting training!
+2025-11-18 23:15:27,198 - root - INFO - Starting training!
+2025-11-18 23:15:27,198 - root - INFO - Starting training!
+2025-11-18 23:15:27,198 - root - INFO - Starting training!
+2025-11-18 23:15:27,199 - root - INFO - Starting training!
+2025-11-18 23:15:27,199 - root - INFO - Starting training!
+2025-11-18 23:15:27,199 - root - INFO - Starting training!
+2025-11-18 23:15:27,200 - root - INFO - Starting training!
+2025-11-18 23:15:27,201 - root - INFO - Starting training!
+2025-11-18 23:15:27,204 - root - INFO - Starting training!
+2025-11-18 23:15:27,204 - root - INFO - Starting training!
+2025-11-18 23:15:27,226 - root - INFO - Starting training!
+2025-11-18 23:15:36,721 - root - INFO - Step: 1 | Loss (Avg): 11.95 | Tokens per second: 6883.36 | Training tokens per second (%): 14.61 | MFU (%): 8.90 | TFLOPs: 88.00
+2025-11-18 23:15:42,972 - root - INFO - Step: 5 | Loss (Avg): 11.00 | Tokens per second: 41936.40 | Training tokens per second (%): 19.02 | MFU (%): 54.21 | TFLOPs: 536.15
+2025-11-18 23:15:50,624 - root - INFO - Step: 10 | Loss (Avg): 9.64 | Tokens per second: 42827.46 | Training tokens per second (%): 21.79 | MFU (%): 55.36 | TFLOPs: 547.54
+2025-11-18 23:15:59,666 - root - INFO - Step: 15 | Loss (Avg): 9.28 | Tokens per second: 36241.61 | Training tokens per second (%): 19.42 | MFU (%): 46.85 | TFLOPs: 463.34
+2025-11-18 23:16:07,305 - root - INFO - Step: 20 | Loss (Avg): 8.90 | Tokens per second: 42894.30 | Training tokens per second (%): 18.84 | MFU (%): 55.45 | TFLOPs: 548.40
+2025-11-18 23:16:14,977 - root - INFO - Step: 25 | Loss (Avg): 8.45 | Tokens per second: 42715.25 | Training tokens per second (%): 22.68 | MFU (%): 55.22 | TFLOPs: 546.11
+2025-11-18 23:16:22,642 - root - INFO - Step: 30 | Loss (Avg): 8.08 | Tokens per second: 42750.96 | Training tokens per second (%): 22.96 | MFU (%): 55.26 | TFLOPs: 546.56
+2025-11-18 23:16:30,321 - root - INFO - Step: 35 | Loss (Avg): 7.90 | Tokens per second: 42673.06 | Training tokens per second (%): 22.70 | MFU (%): 55.16 | TFLOPs: 545.57
+2025-11-18 23:16:37,956 - root - INFO - Step: 40 | Loss (Avg): 7.79 | Tokens per second: 42916.71 | Training tokens per second (%): 21.84 | MFU (%): 55.48 | TFLOPs: 548.68
+2025-11-18 23:16:45,578 - root - INFO - Step: 45 | Loss (Avg): 7.46 | Tokens per second: 42995.87 | Training tokens per second (%): 19.89 | MFU (%): 55.58 | TFLOPs: 549.70
+2025-11-18 23:16:53,286 - root - INFO - Step: 50 | Loss (Avg): 7.32 | Tokens per second: 42513.70 | Training tokens per second (%): 21.66 | MFU (%): 54.96 | TFLOPs: 543.53
+2025-11-18 23:17:01,071 - root - INFO - Step: 55 | Loss (Avg): 7.55 | Tokens per second: 42093.90 | Training tokens per second (%): 25.64 | MFU (%): 54.41 | TFLOPs: 538.16
+2025-11-18 23:17:08,691 - root - INFO - Step: 60 | Loss (Avg): 7.42 | Tokens per second: 43001.49 | Training tokens per second (%): 18.18 | MFU (%): 55.59 | TFLOPs: 549.77
+2025-11-18 23:17:16,328 - root - INFO - Step: 65 | Loss (Avg): 7.32 | Tokens per second: 42909.06 | Training tokens per second (%): 23.11 | MFU (%): 55.47 | TFLOPs: 548.59
+2025-11-18 23:17:23,932 - root - INFO - Step: 70 | Loss (Avg): 7.25 | Tokens per second: 43091.46 | Training tokens per second (%): 20.04 | MFU (%): 55.70 | TFLOPs: 550.92
+2025-11-18 23:17:31,538 - root - INFO - Step: 75 | Loss (Avg): 7.06 | Tokens per second: 43088.74 | Training tokens per second (%): 20.96 | MFU (%): 55.70 | TFLOPs: 550.88
+2025-11-18 23:17:39,182 - root - INFO - Step: 80 | Loss (Avg): 7.14 | Tokens per second: 42866.71 | Training tokens per second (%): 21.25 | MFU (%): 55.41 | TFLOPs: 548.04
+2025-11-18 23:17:46,848 - root - INFO - Step: 85 | Loss (Avg): 7.00 | Tokens per second: 42747.53 | Training tokens per second (%): 22.46 | MFU (%): 55.26 | TFLOPs: 546.52
+2025-11-18 23:17:54,518 - root - INFO - Step: 90 | Loss (Avg): 7.09 | Tokens per second: 42719.62 | Training tokens per second (%): 21.29 | MFU (%): 55.22 | TFLOPs: 546.16
+2025-11-18 23:18:02,168 - root - INFO - Step: 95 | Loss (Avg): 6.98 | Tokens per second: 42838.64 | Training tokens per second (%): 24.21 | MFU (%): 55.38 | TFLOPs: 547.69
+2025-11-18 23:18:09,795 - root - INFO - Step: 100 | Loss (Avg): 6.89 | Tokens per second: 42965.53 | Training tokens per second (%): 20.83 | MFU (%): 55.54 | TFLOPs: 549.31
+2025-11-18 23:18:17,449 - root - INFO - Step: 105 | Loss (Avg): 6.73 | Tokens per second: 42808.83 | Training tokens per second (%): 21.91 | MFU (%): 55.34 | TFLOPs: 547.30
+2025-11-18 23:18:25,455 - root - INFO - Step: 110 | Loss (Avg): 6.90 | Tokens per second: 40934.06 | Training tokens per second (%): 22.41 | MFU (%): 52.92 | TFLOPs: 523.34
+2025-11-18 23:18:33,059 - root - INFO - Step: 115 | Loss (Avg): 6.82 | Tokens per second: 43091.75 | Training tokens per second (%): 18.75 | MFU (%): 55.70 | TFLOPs: 550.92
+2025-11-18 23:18:40,590 - root - INFO - Step: 120 | Loss (Avg): 6.86 | Tokens per second: 43515.95 | Training tokens per second (%): 25.25 | MFU (%): 56.25 | TFLOPs: 556.34
+2025-11-18 23:18:48,010 - root - INFO - Step: 125 | Loss (Avg): 6.74 | Tokens per second: 44161.17 | Training tokens per second (%): 27.89 | MFU (%): 57.09 | TFLOPs: 564.59
+2025-11-18 23:18:55,353 - root - INFO - Step: 130 | Loss (Avg): 6.59 | Tokens per second: 44629.12 | Training tokens per second (%): 22.13 | MFU (%): 57.69 | TFLOPs: 570.58
+2025-11-18 23:19:02,733 - root - INFO - Step: 135 | Loss (Avg): 6.68 | Tokens per second: 44403.73 | Training tokens per second (%): 24.10 | MFU (%): 57.40 | TFLOPs: 567.69
+2025-11-18 23:19:10,096 - root - INFO - Step: 140 | Loss (Avg): 6.96 | Tokens per second: 44500.65 | Training tokens per second (%): 22.61 | MFU (%): 57.53 | TFLOPs: 568.93
+2025-11-18 23:19:19,128 - root - INFO - Step: 145 | Loss (Avg): 6.65 | Tokens per second: 36282.70 | Training tokens per second (%): 19.28 | MFU (%): 46.90 | TFLOPs: 463.87
+2025-11-18 23:19:26,457 - root - INFO - Step: 150 | Loss (Avg): 6.77 | Tokens per second: 44710.54 | Training tokens per second (%): 19.21 | MFU (%): 57.80 | TFLOPs: 571.62
+2025-11-18 23:19:33,810 - root - INFO - Step: 155 | Loss (Avg): 6.83 | Tokens per second: 44566.54 | Training tokens per second (%): 22.31 | MFU (%): 57.61 | TFLOPs: 569.78
+2025-11-18 23:19:41,150 - root - INFO - Step: 160 | Loss (Avg): 6.77 | Tokens per second: 44642.69 | Training tokens per second (%): 20.59 | MFU (%): 57.71 | TFLOPs: 570.75
+2025-11-18 23:19:48,913 - root - INFO - Step: 165 | Loss (Avg): 6.59 | Tokens per second: 42211.73 | Training tokens per second (%): 27.43 | MFU (%): 54.57 | TFLOPs: 539.67
+2025-11-18 23:19:56,235 - root - INFO - Step: 170 | Loss (Avg): 6.55 | Tokens per second: 44757.07 | Training tokens per second (%): 18.09 | MFU (%): 57.86 | TFLOPs: 572.21
+2025-11-18 23:20:03,641 - root - INFO - Step: 175 | Loss (Avg): 6.70 | Tokens per second: 44243.45 | Training tokens per second (%): 24.01 | MFU (%): 57.19 | TFLOPs: 565.65
+2025-11-18 23:20:10,971 - root - INFO - Step: 180 | Loss (Avg): 6.56 | Tokens per second: 44705.52 | Training tokens per second (%): 21.05 | MFU (%): 57.79 | TFLOPs: 571.55
+2025-11-18 23:20:18,312 - root - INFO - Step: 185 | Loss (Avg): 6.53 | Tokens per second: 44639.68 | Training tokens per second (%): 22.34 | MFU (%): 57.71 | TFLOPs: 570.71
+2025-11-18 23:20:25,638 - root - INFO - Step: 190 | Loss (Avg): 6.56 | Tokens per second: 44731.52 | Training tokens per second (%): 19.28 | MFU (%): 57.82 | TFLOPs: 571.89
+2025-11-18 23:20:32,989 - root - INFO - Step: 195 | Loss (Avg): 6.69 | Tokens per second: 44576.45 | Training tokens per second (%): 22.09 | MFU (%): 57.62 | TFLOPs: 569.90
+2025-11-18 23:20:40,349 - root - INFO - Step: 200 | Loss (Avg): 6.45 | Tokens per second: 44523.11 | Training tokens per second (%): 22.28 | MFU (%): 57.56 | TFLOPs: 569.22
+2025-11-18 23:20:47,684 - root - INFO - Step: 205 | Loss (Avg): 6.43 | Tokens per second: 44674.68 | Training tokens per second (%): 21.02 | MFU (%): 57.75 | TFLOPs: 571.16
+2025-11-18 23:20:55,042 - root - INFO - Step: 210 | Loss (Avg): 6.48 | Tokens per second: 44539.94 | Training tokens per second (%): 24.26 | MFU (%): 57.58 | TFLOPs: 569.44
+2025-11-18 23:21:02,522 - root - INFO - Step: 215 | Loss (Avg): 6.42 | Tokens per second: 43809.23 | Training tokens per second (%): 22.78 | MFU (%): 56.63 | TFLOPs: 560.09
+2025-11-18 23:21:10,148 - root - INFO - Step: 220 | Loss (Avg): 6.68 | Tokens per second: 42970.04 | Training tokens per second (%): 18.47 | MFU (%): 55.55 | TFLOPs: 549.37
+2025-11-18 23:21:17,590 - root - INFO - Step: 225 | Loss (Avg): 6.72 | Tokens per second: 44029.62 | Training tokens per second (%): 23.90 | MFU (%): 56.92 | TFLOPs: 562.91
+2025-11-18 23:21:24,958 - root - INFO - Step: 230 | Loss (Avg): 6.43 | Tokens per second: 44474.21 | Training tokens per second (%): 22.82 | MFU (%): 57.49 | TFLOPs: 568.60
+2025-11-18 23:21:32,361 - root - INFO - Step: 235 | Loss (Avg): 6.59 | Tokens per second: 44266.98 | Training tokens per second (%): 25.86 | MFU (%): 57.22 | TFLOPs: 565.95
+2025-11-18 23:21:39,731 - root - INFO - Step: 240 | Loss (Avg): 6.37 | Tokens per second: 44463.07 | Training tokens per second (%): 23.27 | MFU (%): 57.48 | TFLOPs: 568.45
+2025-11-18 23:21:47,072 - root - INFO - Step: 245 | Loss (Avg): 6.56 | Tokens per second: 44636.39 | Training tokens per second (%): 19.83 | MFU (%): 57.70 | TFLOPs: 570.67
+2025-11-18 23:21:54,451 - root - INFO - Step: 250 | Loss (Avg): 6.49 | Tokens per second: 44413.27 | Training tokens per second (%): 24.14 | MFU (%): 57.41 | TFLOPs: 567.82
+slurmstepd: error: *** STEP 1107912.0 ON nid006831 CANCELLED AT 2025-11-18T23:21:58 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 1107912 ON nid006831 CANCELLED AT 2025-11-18T23:21:58 DUE TO TIME LIMIT ***
+W1118 23:21:58.328000 294502 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+W1118 23:21:58.328000 46021 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1118 23:21:58.329000 294502 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 678 closing signal SIGTERM
+W1118 23:21:58.328000 90738 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+--- Logging error ---
+W1118 23:21:58.329000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91236 closing signal SIGTERM
+--- Logging error ---
+W1118 23:21:58.329000 268342 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1118 23:21:58.330000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91237 closing signal SIGTERM
+W1118 23:21:58.330000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268861 closing signal SIGTERM
+W1118 23:21:58.331000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268862 closing signal SIGTERM
+W1118 23:21:58.332000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268863 closing signal SIGTERM
+W1118 23:21:58.334000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268864 closing signal SIGTERM
+W1118 23:21:58.334000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91236 closing signal SIGTERM
+W1118 23:21:58.334000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91237 closing signal SIGTERM
+srun: forcing job termination
+srun: got SIGCONT
+W1118 23:21:58.339000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268861 closing signal SIGTERM
+W1118 23:21:58.335000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91238 closing signal SIGTERM
+W1118 23:21:58.337000 90738 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 91239 closing signal SIGTERM
+W1118 23:21:58.341000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268862 closing signal SIGTERM
+W1118 23:21:58.343000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268863 closing signal SIGTERM
+W1118 23:21:58.345000 268342 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 268864 closing signal SIGTERM
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 46021 got signal: 15
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 294502 got signal: 15
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/pathlib.py", line 488, in _str_normcase
+    return self._str_normcase_cached
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PosixPath' object has no attribute '_str_normcase_cached'. Did you mean: '_parts_normcase_cached'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 441, in __str__
+    return self._str
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_logging/_internal.py", line 833, in format
+    filepath = make_module_path_relative(record.pathname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PosixPath' object has no attribute '_str'
+  File "/usr/local/lib/python3.12/dist-packages/torch/_logging/_internal.py", line 764, in make_module_path_relative
+    rel_path = abs_path.relative_to(path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 679, in relative_to
+    if self.is_relative_to(path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 700, in is_relative_to
+    return other == self or other in self.parents
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen _collections_abc>", line 1034, in __contains__
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/pathlib.py", line 522, in __eq__
+    return self._str_normcase == other._str_normcase and self._flavour is other._flavour
+                                 ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 484, in _str_normcase
+    @property
+    
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 46021 got signal: 15
+Call stack:
+  File "/usr/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_logging/_internal.py", line 833, in format
+    filepath = make_module_path_relative(record.pathname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_logging/_internal.py", line 764, in make_module_path_relative
+    rel_path = abs_path.relative_to(path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 679, in relative_to
+    if self.is_relative_to(path):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 700, in is_relative_to
+    return other == self or other in self.parents
+           ^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 522, in __eq__
+    return self._str_normcase == other._str_normcase and self._flavour is other._flavour
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 491, in _str_normcase
+    self._str_normcase_cached = str(self)
+                                ^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 443, in __str__
+    self._str = self._format_parsed_parts(self.drive, self.root,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 432, in _format_parsed_parts
+    return drv + root + cls._flavour.sep.join(tail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 294502 got signal: 15
+Call stack:
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 720, in run
+    self._shutdown(e.sigval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/local_elastic_agent.py", line 372, in _shutdown
+    self._pcontext.close(death_sig)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 572, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 897, in _close
+    logger.warning(
+Message: 'Sending process %s closing signal %s'
+Arguments: (46499, 'SIGTERM')
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 720, in run
+    self._shutdown(e.sigval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/local_elastic_agent.py", line 372, in _shutdown
+    self._pcontext.close(death_sig)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 572, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 897, in _close
+    logger.warning(
+Message: 'Sending process %s closing signal %s'
+Arguments: (683, 'SIGTERM')
+W1118 23:21:58.404000 46021 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 46500 closing signal SIGTERM
+W1118 23:21:58.405000 46021 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 46501 closing signal SIGTERM
+W1118 23:21:58.406000 294502 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 688 closing signal SIGTERM
+W1118 23:21:58.407000 294502 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 693 closing signal SIGTERM
+W1118 23:21:58.409000 46021 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 46502 closing signal SIGTERM

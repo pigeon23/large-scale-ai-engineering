@@ -208,5 +208,11 @@ def get_args():
         action='store_true',
         help="Set to compile the model with `torch.compile`"
     )
+    parser.add_argument(
+        "--tp-size",
+        type=int,
+        default=1,
+        help="Tensor Parallelism size. Default: 1 (no TP)"
+    )
     args = parser.parse_args()
     return args

@@ -32,7 +32,7 @@ def train(args):
   
   # 2. Initialize DeviceMesh with Tensor Parallel dimension
   # We check for args.tp_size, defaulting to 1 if not specified
-  tp_size = getattr(args, "tp_size", 2)
+  tp_size = getattr(args, "tp_size", 1)
   dp_size = world_size // tp_size
   
   if world_size % tp_size != 0:
@@ -70,7 +70,7 @@ def train(args):
   logger.info("Setting up Model...")
   model_config = TransformerModelArgs(
         dim=2048,
-        n_layers=8,
+        n_layers=24,
         n_heads=4,
         n_kv_heads=4,
         ffn_dim_multiplier=1.3,
@@ -115,7 +115,7 @@ def train(args):
   train_step = 0
   for input_ids, labels in train_dl:
     train_step += 1
-    ntokens_since_last_log += args.batch_size * args.sequence_length
+    ntokens_since_last_log += args.batch_size * args.sequence_length * dp_size
     num_items_in_batch = labels.ne(-100).sum()
     ntraining_tokens_since_last_log += num_items_in_batch
     input_ids = input_ids.to(device)
