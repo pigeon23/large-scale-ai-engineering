@@ -1,0 +1,253 @@
+START TIME: Tue Nov 18 22:18:38 CET 2025
+END TIME: Tue Nov 18 22:18:38 CET 2025
+[sbatch-master] running on nid006698
+[sbatch-master] SLURM_NODELIST: nid[006698,007202]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006698 noderank=0 localrank=0
+W1118 22:18:55.725000 102655 torch/distributed/run.py:792] 
+W1118 22:18:55.725000 102655 torch/distributed/run.py:792] *****************************************
+W1118 22:18:55.725000 102655 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:18:55.725000 102655 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007202 noderank=1 localrank=0
+W1118 22:19:08.550000 33400 torch/distributed/run.py:792] 
+W1118 22:19:08.550000 33400 torch/distributed/run.py:792] *****************************************
+W1118 22:19:08.550000 33400 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:19:08.550000 33400 torch/distributed/run.py:792] *****************************************
+2025-11-18 22:19:16,823 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,823 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,823 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,823 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,827 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,827 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,827 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:16,827 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:19:22,250 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,253 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,564 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,581 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,584 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,643 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,644 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:22,648 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:19:29,256 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,256 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,256 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,265 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,735 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,735 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,735 - root - INFO - Setting up Model...
+2025-11-18 22:19:29,745 - root - INFO - Setting up Model...
+2025-11-18 22:19:35,534 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:35,542 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:35,718 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:36,088 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:36,194 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:36,393 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:37,868 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:37,891 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:19:38,031 - root - INFO - Starting training!
+2025-11-18 22:19:38,036 - root - INFO - Starting training!
+2025-11-18 22:19:39,629 - root - INFO - Starting training!
+2025-11-18 22:19:39,629 - root - INFO - Starting training!
+2025-11-18 22:19:40,106 - root - INFO - Starting training!
+2025-11-18 22:19:40,106 - root - INFO - Starting training!
+2025-11-18 22:19:40,532 - root - INFO - Starting training!
+2025-11-18 22:19:40,534 - root - INFO - Starting training!
+[Rank 1] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+[Rank 7] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+[Rank 0] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank7]:     loss.backward()
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank7]:     torch.autograd.backward(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank7]:     _engine_run_backward(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank7]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank6]:     loss.backward()
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank6]:     torch.autograd.backward(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank6]:     _engine_run_backward(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank6]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank4]:     loss.backward()
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank4]:     torch.autograd.backward(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank4]:     _engine_run_backward(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank4]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank0]:     loss.backward()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank5]:     loss.backward()
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank5]:     torch.autograd.backward(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank5]:     _engine_run_backward(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank5]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank1]:     loss.backward()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank5]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank2]:     loss.backward()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank2]:     torch.autograd.backward(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank2]:     _engine_run_backward(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank2]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 173, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 148, in train
+[rank3]:     loss.backward()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank3]:     torch.autograd.backward(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank3]:     _engine_run_backward(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank3]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: RuntimeError: Trying to backward through the graph a second time (or directly access saved tensors after they have already been freed). Saved intermediate values of the graph are freed when you call .backward() or autograd.grad(). Specify retain_graph=True if you need to backward through the graph a second time or if you need to access saved tensors after calling backward.
+[rank6]:[W1118 22:19:44.663965743 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]:[W1118 22:19:44.913116722 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]:[W1118 22:19:44.913639970 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank4]:[W1118 22:19:44.666821079 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 22:19:45.313000 33400 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 33958 closing signal SIGTERM
+W1118 22:19:45.314000 33400 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 33959 closing signal SIGTERM
+W1118 22:19:45.315000 33400 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 33960 closing signal SIGTERM
+W1118 22:19:45.609000 102655 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103182 closing signal SIGTERM
+W1118 22:19:45.610000 102655 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103183 closing signal SIGTERM
+W1118 22:19:45.610000 102655 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103184 closing signal SIGTERM
+E1118 22:19:45.881000 33400 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 33957) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_22:19:45
+  host      : nid007202
+  rank      : 4 (local_rank: 0)
+  exitcode  : 1 (pid: 33957)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E1118 22:19:45.988000 102655 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 103181) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_22:19:45
+  host      : nid006698
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 103181)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007202: task 1: Exited with exit code 1
+srun: Terminating StepId=1107782.0
+srun: error: nid006698: task 0: Exited with exit code 1

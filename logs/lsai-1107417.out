@@ -1,0 +1,100 @@
+START TIME: Tue Nov 18 20:17:21 CET 2025
+END TIME: Tue Nov 18 20:17:21 CET 2025
+[sbatch-master] running on nid007208
+[sbatch-master] SLURM_NODELIST: nid[007208,007220]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007208 noderank=0 localrank=0
+W1118 20:17:40.434000 229046 torch/distributed/run.py:792] 
+W1118 20:17:40.434000 229046 torch/distributed/run.py:792] *****************************************
+W1118 20:17:40.434000 229046 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:17:40.434000 229046 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007220 noderank=1 localrank=0
+W1118 20:17:47.682000 180558 torch/distributed/run.py:792] 
+W1118 20:17:47.682000 180558 torch/distributed/run.py:792] *****************************************
+W1118 20:17:47.682000 180558 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:17:47.682000 180558 torch/distributed/run.py:792] *****************************************
+2025-11-18 20:17:56,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,491 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,491 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,491 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:17:56,491 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:18:01,952 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:02,284 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:02,285 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:02,288 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:03,153 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:03,628 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:03,629 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:03,629 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:18:08,020 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,725 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,816 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,861 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,873 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,873 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,883 - root - INFO - Setting up Model...
+2025-11-18 20:18:09,990 - root - INFO - Setting up Model...
+2025-11-18 20:18:21,166 - root - INFO - Starting training!
+2025-11-18 20:18:21,166 - root - INFO - Starting training!
+2025-11-18 20:18:21,166 - root - INFO - Starting training!
+2025-11-18 20:18:21,166 - root - INFO - Starting training!
+2025-11-18 20:18:21,175 - root - INFO - Starting training!
+2025-11-18 20:18:21,175 - root - INFO - Starting training!
+2025-11-18 20:18:21,175 - root - INFO - Starting training!
+2025-11-18 20:18:21,175 - root - INFO - Starting training!
+2025-11-18 20:18:25,200 - root - INFO - Step: 1 | Loss (Avg): 11.94 | Tokens per second: 8123.68 | Training tokens per second (%): 21.55 | MFU (%): 5.71 | TFLOPs: 56.43
+2025-11-18 20:18:28,006 - root - INFO - Step: 5 | Loss (Avg): 11.48 | Tokens per second: 46709.18 | Training tokens per second (%): 21.42 | MFU (%): 32.80 | TFLOPs: 324.44
+2025-11-18 20:18:31,787 - root - INFO - Step: 10 | Loss (Avg): 9.90 | Tokens per second: 43346.62 | Training tokens per second (%): 23.35 | MFU (%): 30.44 | TFLOPs: 301.08
+2025-11-18 20:18:35,560 - root - INFO - Step: 15 | Loss (Avg): 9.33 | Tokens per second: 43428.54 | Training tokens per second (%): 25.84 | MFU (%): 30.50 | TFLOPs: 301.65
+2025-11-18 20:18:39,466 - root - INFO - Step: 20 | Loss (Avg): 8.86 | Tokens per second: 41948.13 | Training tokens per second (%): 20.90 | MFU (%): 29.46 | TFLOPs: 291.37
+2025-11-18 20:18:43,229 - root - INFO - Step: 25 | Loss (Avg): 8.51 | Tokens per second: 43550.15 | Training tokens per second (%): 24.56 | MFU (%): 30.59 | TFLOPs: 302.50
+2025-11-18 20:18:47,002 - root - INFO - Step: 30 | Loss (Avg): 8.27 | Tokens per second: 43433.93 | Training tokens per second (%): 19.85 | MFU (%): 30.50 | TFLOPs: 301.69
+2025-11-18 20:18:50,786 - root - INFO - Step: 35 | Loss (Avg): 7.86 | Tokens per second: 43309.84 | Training tokens per second (%): 20.60 | MFU (%): 30.42 | TFLOPs: 300.83
+2025-11-18 20:18:54,563 - root - INFO - Step: 40 | Loss (Avg): 7.71 | Tokens per second: 43378.19 | Training tokens per second (%): 23.66 | MFU (%): 30.47 | TFLOPs: 301.30
+2025-11-18 20:18:58,358 - root - INFO - Step: 45 | Loss (Avg): 7.62 | Tokens per second: 43185.06 | Training tokens per second (%): 18.81 | MFU (%): 30.33 | TFLOPs: 299.96
+2025-11-18 20:19:02,139 - root - INFO - Step: 50 | Loss (Avg): 7.52 | Tokens per second: 43334.39 | Training tokens per second (%): 22.49 | MFU (%): 30.43 | TFLOPs: 301.00
+2025-11-18 20:19:05,934 - root - INFO - Step: 55 | Loss (Avg): 7.32 | Tokens per second: 43175.61 | Training tokens per second (%): 21.22 | MFU (%): 30.32 | TFLOPs: 299.90
+2025-11-18 20:19:09,756 - root - INFO - Step: 60 | Loss (Avg): 7.34 | Tokens per second: 42874.86 | Training tokens per second (%): 22.22 | MFU (%): 30.11 | TFLOPs: 297.81
+2025-11-18 20:19:13,538 - root - INFO - Step: 65 | Loss (Avg): 7.28 | Tokens per second: 43322.47 | Training tokens per second (%): 23.94 | MFU (%): 30.43 | TFLOPs: 300.92
+2025-11-18 20:19:17,320 - root - INFO - Step: 70 | Loss (Avg): 7.21 | Tokens per second: 43334.27 | Training tokens per second (%): 21.40 | MFU (%): 30.43 | TFLOPs: 301.00
+2025-11-18 20:19:21,092 - root - INFO - Step: 75 | Loss (Avg): 7.25 | Tokens per second: 43432.80 | Training tokens per second (%): 19.20 | MFU (%): 30.50 | TFLOPs: 301.68
+2025-11-18 20:19:24,867 - root - INFO - Step: 80 | Loss (Avg): 7.19 | Tokens per second: 43414.68 | Training tokens per second (%): 18.95 | MFU (%): 30.49 | TFLOPs: 301.56
+2025-11-18 20:19:28,622 - root - INFO - Step: 85 | Loss (Avg): 7.15 | Tokens per second: 43633.00 | Training tokens per second (%): 25.50 | MFU (%): 30.64 | TFLOPs: 303.07
+2025-11-18 20:19:32,416 - root - INFO - Step: 90 | Loss (Avg): 7.03 | Tokens per second: 43192.53 | Training tokens per second (%): 25.68 | MFU (%): 30.34 | TFLOPs: 300.01
+2025-11-18 20:19:36,186 - root - INFO - Step: 95 | Loss (Avg): 7.06 | Tokens per second: 43459.34 | Training tokens per second (%): 22.59 | MFU (%): 30.52 | TFLOPs: 301.87
+2025-11-18 20:19:39,961 - root - INFO - Training completed
+2025-11-18 20:19:39,961 - root - INFO - Step: 100 | Loss (Avg): 7.08 | Tokens per second: 43405.53 | Training tokens per second (%): 16.73 | MFU (%): 30.48 | TFLOPs: 301.49
+2025-11-18 20:19:39,962 - root - INFO - Training completed
+2025-11-18 20:19:39,962 - root - INFO - Training completed
+2025-11-18 20:19:39,964 - root - INFO - Training completed
+2025-11-18 20:19:39,965 - root - INFO - Training completed
+2025-11-18 20:19:39,966 - root - INFO - Training completed
+2025-11-18 20:19:39,966 - root - INFO - Training completed
+2025-11-18 20:19:39,966 - root - INFO - Training completed
+[E1118 20:19:40.342376613 ProcessGroupNCCL.cpp:550] [Rank 0] Collective WorkNCCL(SeqNum=3564, OpType=ALLREDUCE, NumelIn=16779264, NumelOut=16779264, Timeout(ms)=600000) raised the following async exception: NCCL error: unhandled system error (run with NCCL_DEBUG=INFO for details), NCCL version 2.25.1
+ncclSystemError: System call (e.g. socket, malloc) or external library call failed or device error. 
+Last error:
+NET/OFI OFI fi_getinfo() call failed: No data available
+Exception raised from checkForNCCLErrorsInternal at /opt/pytorch/pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2255 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0xd4 (0x40006514bdd4 in /usr/local/lib/python3.12/dist-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0xff0630 (0x40001e920630 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::checkForNCCLErrorsInternal(std::shared_ptr<c10d::NCCLComm>&) + 0x288 (0x40001e9503e8 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::WorkNCCL::checkAndSetException() + 0x74 (0x40001e960cb4 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #4: c10d::ProcessGroupNCCL::WorkNCCL::isCompleted() + 0x94 (0x40001e960fb4 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #5: c10d::ProcessGroupNCCL::watchdogHandler() + 0x4cc (0x40001e9630ec in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #6: c10d::ProcessGroupNCCL::ncclCommWatchdog() + 0x114 (0x40001e963ec4 in /usr/local/lib/python3.12/dist-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0xe1ae0 (0x4000652e1ae0 in /usr/lib/aarch64-linux-gnu/libstdc++.so.6)
+frame #8: <unknown function> + 0x8597c (0x40001453597c in /usr/lib/aarch64-linux-gnu/libc.so.6)
+frame #9: <unknown function> + 0xeba4c (0x40001459ba4c in /usr/lib/aarch64-linux-gnu/libc.so.6)
+
+[sbatch-master] task finished

@@ -1,0 +1,467 @@
+START TIME: Tue Nov 18 21:02:05 CET 2025
+END TIME: Tue Nov 18 21:02:05 CET 2025
+[sbatch-master] running on nid007256
+[sbatch-master] SLURM_NODELIST: nid[007256-007257]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007256 noderank=0 localrank=0
+W1118 21:02:23.975000 98737 torch/distributed/run.py:792] 
+W1118 21:02:23.975000 98737 torch/distributed/run.py:792] *****************************************
+W1118 21:02:23.975000 98737 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:02:23.975000 98737 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007257 noderank=1 localrank=0
+W1118 21:02:30.890000 231204 torch/distributed/run.py:792] 
+W1118 21:02:30.890000 231204 torch/distributed/run.py:792] *****************************************
+W1118 21:02:30.890000 231204 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:02:30.890000 231204 torch/distributed/run.py:792] *****************************************
+2025-11-18 21:02:40,753 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,753 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,754 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,760 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,961 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,961 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,961 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:40,961 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:02:46,189 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:46,597 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:46,599 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:46,604 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:47,862 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:48,313 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:48,314 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:48,315 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:02:59,458 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,458 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,458 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,830 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,830 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,830 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,830 - root - INFO - Setting up Model...
+2025-11-18 21:02:59,931 - root - INFO - Setting up Model...
+2025-11-18 21:03:05,808 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:05,859 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:05,907 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:06,206 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:06,328 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:06,525 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:07,222 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:03:07,664 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank7]:     model = FSDP(model, mesh.get_group('data'))
+[rank7]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank7]:     _init_param_handle_from_module(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank7]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank7]:     handle = FlatParamHandle(
+[rank7]:              ^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank7]:     self._init_flat_param_and_metadata(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank7]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank7]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank7]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank7]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank7]:     return torch.cat(flat_tensors, dim=0)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank7]:     return disable_fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank7]:     return fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank7]:     return DTensor._op_dispatcher.dispatch(
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank7]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank7]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank7]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank7]:     raise RuntimeError(
+[rank7]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank6]:     model = FSDP(model, mesh.get_group('data'))
+[rank6]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank6]:     _init_param_handle_from_module(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank6]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank6]:     handle = FlatParamHandle(
+[rank6]:              ^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank6]:     self._init_flat_param_and_metadata(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank6]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank6]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank6]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank6]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank6]:     return torch.cat(flat_tensors, dim=0)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank6]:     return disable_fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank6]:     return fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank6]:     return DTensor._op_dispatcher.dispatch(
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank6]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank6]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank6]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank6]:     raise RuntimeError(
+[rank6]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank6]:[W1118 21:03:10.476909888 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank4]:     model = FSDP(model, mesh.get_group('data'))
+[rank4]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank4]:     _init_param_handle_from_module(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank4]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank4]:     handle = FlatParamHandle(
+[rank4]:              ^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank4]:     self._init_flat_param_and_metadata(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank4]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank4]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank4]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank4]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank4]:     return torch.cat(flat_tensors, dim=0)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank4]:     return disable_fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank4]:     return fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank4]:     return DTensor._op_dispatcher.dispatch(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank4]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank4]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank4]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank4]:     raise RuntimeError(
+[rank4]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank5]:     model = FSDP(model, mesh.get_group('data'))
+[rank5]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank5]:     _init_param_handle_from_module(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank5]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank5]:     handle = FlatParamHandle(
+[rank5]:              ^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank5]:     self._init_flat_param_and_metadata(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank5]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank5]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank5]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank5]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank5]:     return torch.cat(flat_tensors, dim=0)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank5]:     return disable_fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank5]:     return fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank5]:     return DTensor._op_dispatcher.dispatch(
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank5]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank5]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank5]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank5]:     raise RuntimeError(
+[rank5]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank4]:[W1118 21:03:11.437976254 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 21:03:11.860000 231204 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 231673 closing signal SIGTERM
+W1118 21:03:11.861000 231204 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 231674 closing signal SIGTERM
+W1118 21:03:11.862000 231204 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 231675 closing signal SIGTERM
+E1118 21:03:12.189000 231204 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 231676) of binary: /usr/bin/python
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank0]:     model = FSDP(model, mesh.get_group('data'))
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank0]:     _init_param_handle_from_module(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank0]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank0]:     handle = FlatParamHandle(
+[rank0]:              ^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank0]:     self._init_flat_param_and_metadata(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank0]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank0]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank0]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank0]:     return torch.cat(flat_tensors, dim=0)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank0]:     return DTensor._op_dispatcher.dispatch(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank0]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank0]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank2]:     model = FSDP(model, mesh.get_group('data'))
+[rank2]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank2]:     _init_param_handle_from_module(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank2]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank2]:     handle = FlatParamHandle(
+[rank2]:              ^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank2]:     self._init_flat_param_and_metadata(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank2]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank2]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank2]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank2]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank2]:     return torch.cat(flat_tensors, dim=0)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank2]:     return disable_fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank2]:     return DTensor._op_dispatcher.dispatch(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank2]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank2]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank2]:     raise RuntimeError(
+[rank2]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank1]:     model = FSDP(model, mesh.get_group('data'))
+[rank1]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank1]:     _init_param_handle_from_module(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank1]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank1]:     handle = FlatParamHandle(
+[rank1]:              ^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank1]:     self._init_flat_param_and_metadata(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank1]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank1]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank1]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank1]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank1]:     return torch.cat(flat_tensors, dim=0)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank1]:     return DTensor._op_dispatcher.dispatch(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank1]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank1]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank1]:     raise RuntimeError(
+[rank1]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 90, in train
+[rank3]:     model = FSDP(model, mesh.get_group('data'))
+[rank3]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/fully_sharded_data_parallel.py", line 509, in __init__
+[rank3]:     _init_param_handle_from_module(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 636, in _init_param_handle_from_module
+[rank3]:     _init_param_handle_from_params(state, managed_params, fully_sharded_module)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_init_utils.py", line 648, in _init_param_handle_from_params
+[rank3]:     handle = FlatParamHandle(
+[rank3]:              ^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 602, in __init__
+[rank3]:     self._init_flat_param_and_metadata(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 761, in _init_flat_param_and_metadata
+[rank3]:     self.flat_param: FlatParameter = self.flatten_tensors_into_flat_param(
+[rank3]:                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 883, in flatten_tensors_into_flat_param
+[rank3]:     flat_param_data = self.flatten_tensors(tensors, aligned_numel)
+[rank3]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 875, in flatten_tensors
+[rank3]:     return torch.cat(flat_tensors, dim=0)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank3]:     return disable_fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank3]:     return DTensor._op_dispatcher.dispatch(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank3]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank3]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank3]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank3]:     raise RuntimeError(
+[rank3]: RuntimeError: aten.cat.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank0]:[W1118 21:03:12.029966125 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]:[W1118 21:03:12.033730817 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank1]:[W1118 21:03:13.374270865 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 21:03:13.859000 98737 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 99210 closing signal SIGTERM
+W1118 21:03:13.860000 98737 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 99212 closing signal SIGTERM
+E1118 21:03:14.189000 98737 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 99209) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-18_21:03:13
+  host      : nid007256
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 99211)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:03:13
+  host      : nid007256
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 99209)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:03:11
+  host      : nid007257
+  rank      : 7 (local_rank: 3)
+  exitcode  : 1 (pid: 231676)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007257: task 1: Exited with exit code 1
+srun: Terminating StepId=1107558.0
+srun: error: nid007256: task 0: Exited with exit code 1

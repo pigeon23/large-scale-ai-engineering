@@ -1,0 +1,363 @@
+START TIME: Tue Nov 18 20:39:57 CET 2025
+END TIME: Tue Nov 18 20:39:57 CET 2025
+[sbatch-master] running on nid007354
+[sbatch-master] SLURM_NODELIST: nid[007354,007356]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007354 noderank=0 localrank=0
+[srun] rank=1 host=nid007356 noderank=1 localrank=0
+W1118 20:40:19.323000 245115 torch/distributed/run.py:792] 
+W1118 20:40:19.323000 245115 torch/distributed/run.py:792] *****************************************
+W1118 20:40:19.323000 245115 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:40:19.323000 245115 torch/distributed/run.py:792] *****************************************
+W1118 20:40:21.211000 140808 torch/distributed/run.py:792] 
+W1118 20:40:21.211000 140808 torch/distributed/run.py:792] *****************************************
+W1118 20:40:21.211000 140808 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:40:21.211000 140808 torch/distributed/run.py:792] *****************************************
+2025-11-18 20:40:30,425 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,426 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,426 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,544 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,544 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,544 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,557 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:30,628 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:40:35,685 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,052 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,279 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,289 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,304 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,399 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,419 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:36,435 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:40:42,572 - root - INFO - Setting up Model...
+2025-11-18 20:40:42,572 - root - INFO - Setting up Model...
+2025-11-18 20:40:42,572 - root - INFO - Setting up Model...
+2025-11-18 20:40:42,574 - root - INFO - Setting up Model...
+2025-11-18 20:40:47,331 - root - INFO - Setting up Model...
+2025-11-18 20:40:47,331 - root - INFO - Setting up Model...
+2025-11-18 20:40:47,331 - root - INFO - Setting up Model...
+2025-11-18 20:40:47,331 - root - INFO - Setting up Model...
+2025-11-18 20:40:48,854 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:48,894 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:49,052 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:49,351 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:53,804 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:53,817 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:53,847 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 20:40:54,650 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank7]:     model = DDP(
+[rank7]:             ^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank7]:     _sync_module_states(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank7]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank7]:     dist._broadcast_coalesced(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank7]:     return disable_fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank7]:     return fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank7]:     return DTensor._op_dispatcher.dispatch(
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank7]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank7]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank7]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank7]:            ^^^^^^^^^^^^^^^^
+[rank7]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank5]:     model = DDP(
+[rank5]:             ^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank5]:     _sync_module_states(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank5]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank5]:     dist._broadcast_coalesced(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank5]:     return disable_fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank5]:     return fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank5]:     return DTensor._op_dispatcher.dispatch(
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank5]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank5]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank5]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank5]:            ^^^^^^^^^^^^^^^^
+[rank5]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank3]:     model = DDP(
+[rank3]:             ^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank3]:     _sync_module_states(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank3]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank3]:     dist._broadcast_coalesced(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank3]:     return disable_fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank3]:     return DTensor._op_dispatcher.dispatch(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank3]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank3]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank3]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank3]:            ^^^^^^^^^^^^^^^^
+[rank3]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank1]:     model = DDP(
+[rank1]:             ^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank1]:     _sync_module_states(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank1]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank1]:     dist._broadcast_coalesced(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank1]:     return DTensor._op_dispatcher.dispatch(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank1]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank1]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank1]:            ^^^^^^^^^^^^^^^^
+[rank1]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank4]:     model = DDP(
+[rank4]:             ^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank4]:     _sync_module_states(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank4]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank4]:     dist._broadcast_coalesced(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank4]:     return disable_fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank4]:     return fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank4]:     return DTensor._op_dispatcher.dispatch(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank4]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank4]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank4]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank4]:            ^^^^^^^^^^^^^^^^
+[rank4]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank2]:     model = DDP(
+[rank2]:             ^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank2]:     _sync_module_states(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank2]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank2]:     dist._broadcast_coalesced(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank2]:     return disable_fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank2]:     return DTensor._op_dispatcher.dispatch(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank2]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank2]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank2]:            ^^^^^^^^^^^^^^^^
+[rank2]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank0]:     model = DDP(
+[rank0]:             ^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank0]:     _sync_module_states(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank0]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank0]:     dist._broadcast_coalesced(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank0]:     return DTensor._op_dispatcher.dispatch(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank0]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank0]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank0]:            ^^^^^^^^^^^^^^^^
+[rank0]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 168, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 89, in train
+[rank6]:     model = DDP(
+[rank6]:             ^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/parallel/distributed.py", line 827, in __init__
+[rank6]:     _sync_module_states(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 323, in _sync_module_states
+[rank6]:     _sync_params_and_buffers(process_group, module_states, broadcast_bucket_size, src)
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/utils.py", line 334, in _sync_params_and_buffers
+[rank6]:     dist._broadcast_coalesced(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank6]:     return disable_fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank6]:     return fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank6]:     return DTensor._op_dispatcher.dispatch(
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank6]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank6]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 399, in unwrap_to_op_info
+[rank6]:     assert mesh is not None, f"found no DeviceMesh from dtensor args for {op_call}!"
+[rank6]:            ^^^^^^^^^^^^^^^^
+[rank6]: AssertionError: found no DeviceMesh from dtensor args for c10d.broadcast_.default!
+[rank1]:[W1118 20:40:59.371086503 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank6]:[W1118 20:40:59.224387244 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]:[W1118 20:40:59.595876397 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]:[W1118 20:40:59.603267246 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank4]:[W1118 20:40:59.564734692 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 20:41:00.266000 245115 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 245575 closing signal SIGTERM
+W1118 20:41:00.267000 245115 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 245576 closing signal SIGTERM
+W1118 20:41:00.267000 245115 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 245577 closing signal SIGTERM
+W1118 20:41:00.470000 140808 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 141253 closing signal SIGTERM
+W1118 20:41:00.470000 140808 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 141256 closing signal SIGTERM
+E1118 20:41:00.646000 245115 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 3 (pid: 245578) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_20:41:00
+  host      : nid007354
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 245578)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E1118 20:41:00.748000 140808 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 141254) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-18_20:41:00
+  host      : nid007356
+  rank      : 6 (local_rank: 2)
+  exitcode  : 1 (pid: 141255)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_20:41:00
+  host      : nid007356
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 141254)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007354: task 0: Exited with exit code 1
+srun: Terminating StepId=1107463.0
+srun: error: nid007356: task 1: Exited with exit code 1

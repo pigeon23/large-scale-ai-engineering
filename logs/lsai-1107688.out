@@ -1,0 +1,205 @@
+START TIME: Tue Nov 18 21:38:25 CET 2025
+END TIME: Tue Nov 18 21:38:25 CET 2025
+[sbatch-master] running on nid007171
+[sbatch-master] SLURM_NODELIST: nid[007171,007226]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007171 noderank=0 localrank=0
+W1118 21:38:41.746000 102809 torch/distributed/run.py:792] 
+W1118 21:38:41.746000 102809 torch/distributed/run.py:792] *****************************************
+W1118 21:38:41.746000 102809 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:38:41.746000 102809 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007226 noderank=1 localrank=0
+W1118 21:38:49.794000 144961 torch/distributed/run.py:792] 
+W1118 21:38:49.794000 144961 torch/distributed/run.py:792] *****************************************
+W1118 21:38:49.794000 144961 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:38:49.794000 144961 torch/distributed/run.py:792] *****************************************
+2025-11-18 21:38:58,025 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,025 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,025 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,025 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,088 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,088 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,088 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:38:58,088 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:39:03,599 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,621 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,919 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,922 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,922 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,924 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,935 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:03,939 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:39:15,813 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,813 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,813 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,813 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,830 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,830 - root - INFO - Setting up Model...
+2025-11-18 21:39:15,830 - root - INFO - Setting up Model...
+2025-11-18 21:39:16,491 - root - INFO - Setting up Model...
+2025-11-18 21:39:22,134 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,141 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,214 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,229 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,356 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,572 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:22,574 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:23,171 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:39:25,757 - root - INFO - Starting training!
+2025-11-18 21:39:25,760 - root - INFO - Starting training!
+2025-11-18 21:39:25,792 - root - INFO - Starting training!
+2025-11-18 21:39:25,793 - root - INFO - Starting training!
+2025-11-18 21:39:25,828 - root - INFO - Starting training!
+2025-11-18 21:39:25,832 - root - INFO - Starting training!
+2025-11-18 21:39:25,854 - root - INFO - Starting training!
+2025-11-18 21:39:25,857 - root - INFO - Starting training!
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 133, in train
+[rank1]:     dist.reduce(reduced_loss, dst=0, op=dist.ReduceOp.SUM, group=mesh.get_group(mesh_dim="data"))
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2835, in reduce
+[rank1]:     group_dst = _canonicalize_group_rank(group, dst, group_dst, return_global=False)
+[rank1]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1142, in _canonicalize_group_rank
+[rank1]:     group_rank = get_group_rank(group, global_rank)
+[rank1]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1016, in get_group_rank
+[rank1]:     raise ValueError(f"Global rank {global_rank} is not part of group {group}")
+[rank1]: ValueError: Global rank 0 is not part of group <torch.distributed.distributed_c10d.ProcessGroup object at 0x400117ef37f0>
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 133, in train
+[rank3]:     dist.reduce(reduced_loss, dst=0, op=dist.ReduceOp.SUM, group=mesh.get_group(mesh_dim="data"))
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2835, in reduce
+[rank3]:     group_dst = _canonicalize_group_rank(group, dst, group_dst, return_global=False)
+[rank3]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1142, in _canonicalize_group_rank
+[rank3]:     group_rank = get_group_rank(group, global_rank)
+[rank3]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1016, in get_group_rank
+[rank3]:     raise ValueError(f"Global rank {global_rank} is not part of group {group}")
+[rank3]: ValueError: Global rank 0 is not part of group <torch.distributed.distributed_c10d.ProcessGroup object at 0x4001363a34b0>
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 133, in train
+[rank7]:     dist.reduce(reduced_loss, dst=0, op=dist.ReduceOp.SUM, group=mesh.get_group(mesh_dim="data"))
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank7]:     return func(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2835, in reduce
+[rank7]:     group_dst = _canonicalize_group_rank(group, dst, group_dst, return_global=False)
+[rank7]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1142, in _canonicalize_group_rank
+[rank7]:     group_rank = get_group_rank(group, global_rank)
+[rank7]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1016, in get_group_rank
+[rank7]:     raise ValueError(f"Global rank {global_rank} is not part of group {group}")
+[rank7]: ValueError: Global rank 0 is not part of group <torch.distributed.distributed_c10d.ProcessGroup object at 0x40011a2b3b70>
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 164, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 133, in train
+[rank5]:     dist.reduce(reduced_loss, dst=0, op=dist.ReduceOp.SUM, group=mesh.get_group(mesh_dim="data"))
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank5]:     return func(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2835, in reduce
+[rank5]:     group_dst = _canonicalize_group_rank(group, dst, group_dst, return_global=False)
+[rank5]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1142, in _canonicalize_group_rank
+[rank5]:     group_rank = get_group_rank(group, global_rank)
+[rank5]:                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1016, in get_group_rank
+[rank5]:     raise ValueError(f"Global rank {global_rank} is not part of group {group}")
+[rank5]: ValueError: Global rank 0 is not part of group <torch.distributed.distributed_c10d.ProcessGroup object at 0x40012eff35b0>
+W1118 21:39:30.252000 102809 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103291 closing signal SIGTERM
+W1118 21:39:30.253000 102809 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103293 closing signal SIGTERM
+W1118 21:39:30.255000 102809 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 103294 closing signal SIGTERM
+E1118 21:39:30.885000 102809 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 103292) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:39:30
+  host      : x1401c3s0b1n0h0.hsn
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 103292)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+W1118 21:39:31.350000 144961 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 145422 closing signal SIGTERM
+W1118 21:39:31.351000 144961 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 145424 closing signal SIGTERM
+W1118 21:39:31.353000 144961 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 145425 closing signal SIGTERM
+E1118 21:39:31.882000 144961 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 145423) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:39:31
+  host      : x1401c7s0b0n0h0.hsn
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 145423)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007171: task 0: Exited with exit code 1
+srun: Terminating StepId=1107688.0
+srun: error: nid007226: task 1: Exited with exit code 1

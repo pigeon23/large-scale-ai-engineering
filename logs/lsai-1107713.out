@@ -1,0 +1,349 @@
+START TIME: Tue Nov 18 21:47:46 CET 2025
+END TIME: Tue Nov 18 21:47:46 CET 2025
+[sbatch-master] running on nid006690
+[sbatch-master] SLURM_NODELIST: nid[006690,007586]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006690 noderank=0 localrank=0
+W1118 21:48:03.629000 118811 torch/distributed/run.py:792] 
+W1118 21:48:03.629000 118811 torch/distributed/run.py:792] *****************************************
+W1118 21:48:03.629000 118811 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:48:03.629000 118811 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007586 noderank=1 localrank=0
+W1118 21:48:13.129000 107827 torch/distributed/run.py:792] 
+W1118 21:48:13.129000 107827 torch/distributed/run.py:792] *****************************************
+W1118 21:48:13.129000 107827 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 21:48:13.129000 107827 torch/distributed/run.py:792] *****************************************
+2025-11-18 21:48:21,848 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,848 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,848 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,848 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,952 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,952 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,952 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:21,952 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 21:48:27,400 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:27,740 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:27,758 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:27,758 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:28,742 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:29,195 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:29,208 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:29,213 - root - INFO - Setting up DataLoaders...
+2025-11-18 21:48:33,047 - root - INFO - Setting up Model...
+2025-11-18 21:48:33,173 - root - INFO - Setting up Model...
+2025-11-18 21:48:33,325 - root - INFO - Setting up Model...
+2025-11-18 21:48:33,429 - root - INFO - Setting up Model...
+2025-11-18 21:48:34,439 - root - INFO - Setting up Model...
+2025-11-18 21:48:34,717 - root - INFO - Setting up Model...
+2025-11-18 21:48:34,729 - root - INFO - Setting up Model...
+2025-11-18 21:48:34,746 - root - INFO - Setting up Model...
+2025-11-18 21:48:39,454 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:39,771 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:39,865 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:40,478 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:41,195 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:41,263 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:41,265 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:43,048 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 21:48:43,097 - root - INFO - Starting training!
+2025-11-18 21:48:43,100 - root - INFO - Starting training!
+2025-11-18 21:48:43,179 - root - INFO - Starting training!
+2025-11-18 21:48:43,182 - root - INFO - Starting training!
+2025-11-18 21:48:45,087 - root - INFO - Starting training!
+2025-11-18 21:48:45,089 - root - INFO - Starting training!
+2025-11-18 21:48:45,642 - root - INFO - Starting training!
+2025-11-18 21:48:45,647 - root - INFO - Starting training!
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank1]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank1]:     return torch._C._nn.cross_entropy_loss(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank1]:     return disable_fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank1]:     return DTensor._op_dispatcher.dispatch(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank1]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank1]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank1]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank1]:     raise RuntimeError(
+[rank1]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank0]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank0]:     return torch._C._nn.cross_entropy_loss(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank0]:     return disable_fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank0]:     return DTensor._op_dispatcher.dispatch(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank0]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank0]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank0]:     raise RuntimeError(
+[rank0]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank2]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank2]:     return torch._C._nn.cross_entropy_loss(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank2]:     return disable_fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank2]:     return DTensor._op_dispatcher.dispatch(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank2]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank2]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank2]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank2]:     raise RuntimeError(
+[rank2]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank3]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank3]:     return torch._C._nn.cross_entropy_loss(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank3]:     return disable_fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank3]:     return DTensor._op_dispatcher.dispatch(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank3]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank3]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank3]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank3]:     raise RuntimeError(
+[rank3]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank0]:[W1118 21:48:49.035313069 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank6]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank6]:     return torch._C._nn.cross_entropy_loss(
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank6]:     return disable_fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank6]:     return fn(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank6]:     return DTensor._op_dispatcher.dispatch(
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank6]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank6]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank6]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank6]:     raise RuntimeError(
+[rank6]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank4]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank4]:     return torch._C._nn.cross_entropy_loss(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank4]:     return disable_fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank4]:     return fn(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank4]:     return DTensor._op_dispatcher.dispatch(
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank4]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank4]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank4]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank4]:     raise RuntimeError(
+[rank4]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank7]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank7]:     return torch._C._nn.cross_entropy_loss(
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank7]:     return disable_fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank7]:     return fn(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank7]:     return DTensor._op_dispatcher.dispatch(
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank7]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank7]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank7]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank7]:     raise RuntimeError(
+[rank7]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 161, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 124, in train
+[rank5]:     loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 3489, in cross_entropy
+[rank5]:     return torch._C._nn.cross_entropy_loss(
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_compile.py", line 32, in inner
+[rank5]:     return disable_fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/eval_frame.py", line 738, in _fn
+[rank5]:     return fn(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_api.py", line 343, in __torch_dispatch__
+[rank5]:     return DTensor._op_dispatcher.dispatch(
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 166, in dispatch
+[rank5]:     op_info = self.unwrap_to_op_info(op_call, args, kwargs)
+[rank5]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 371, in unwrap_to_op_info
+[rank5]:     self._try_replicate_spec_for_scalar_tensor(op_call, arg, mesh)
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_dispatch.py", line 470, in _try_replicate_spec_for_scalar_tensor
+[rank5]:     raise RuntimeError(
+[rank5]: RuntimeError: aten.nll_loss_forward.default: got mixed torch.Tensor and DTensor, need to convert all torch.Tensor to DTensor before calling distributed operators!
+[rank2]:[W1118 21:48:50.139906981 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank6]:[W1118 21:48:50.537464379 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank4]:[W1118 21:48:50.539417504 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 21:48:50.884000 118811 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 119297 closing signal SIGTERM
+W1118 21:48:50.885000 118811 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 119298 closing signal SIGTERM
+W1118 21:48:50.886000 118811 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 119299 closing signal SIGTERM
+W1118 21:48:51.088000 107827 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 108306 closing signal SIGTERM
+W1118 21:48:51.088000 107827 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 108307 closing signal SIGTERM
+W1118 21:48:51.089000 107827 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 108309 closing signal SIGTERM
+E1118 21:48:51.401000 118811 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 119296) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:48:50
+  host      : x1303c0s5b0n0h0.hsn
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 119296)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E1118 21:48:51.669000 107827 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 108308) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_21:48:51
+  host      : x1405c0s5b0n0h0.hsn
+  rank      : 6 (local_rank: 2)
+  exitcode  : 1 (pid: 108308)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid006690: task 0: Exited with exit code 1
+srun: Terminating StepId=1107713.0
+srun: error: nid007586: task 1: Exited with exit code 1

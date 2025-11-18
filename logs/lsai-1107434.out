@@ -1,0 +1,162 @@
+START TIME: Tue Nov 18 20:23:38 CET 2025
+END TIME: Tue Nov 18 20:23:38 CET 2025
+[sbatch-master] running on nid006598
+[sbatch-master] SLURM_NODELIST: nid[006598,006615]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006598 noderank=0 localrank=0
+W1118 20:23:59.360000 237510 torch/distributed/run.py:792] 
+W1118 20:23:59.360000 237510 torch/distributed/run.py:792] *****************************************
+W1118 20:23:59.360000 237510 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:23:59.360000 237510 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid006615 noderank=1 localrank=0
+W1118 20:24:08.405000 251422 torch/distributed/run.py:792] 
+W1118 20:24:08.405000 251422 torch/distributed/run.py:792] *****************************************
+W1118 20:24:08.405000 251422 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:24:08.405000 251422 torch/distributed/run.py:792] *****************************************
+2025-11-18 20:24:18,118 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,118 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,118 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,118 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,119 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,119 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,119 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:18,119 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 20:24:23,643 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:23,915 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:23,940 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:23,944 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:24,903 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:25,280 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:25,287 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:25,299 - root - INFO - Setting up DataLoaders...
+2025-11-18 20:24:35,368 - root - INFO - Setting up Model...
+2025-11-18 20:24:35,368 - root - INFO - Setting up Model...
+2025-11-18 20:24:35,368 - root - INFO - Setting up Model...
+2025-11-18 20:24:36,007 - root - INFO - Setting up Model...
+2025-11-18 20:24:41,295 - root - INFO - Setting up Model...
+2025-11-18 20:24:41,295 - root - INFO - Setting up Model...
+2025-11-18 20:24:41,295 - root - INFO - Setting up Model...
+2025-11-18 20:24:41,295 - root - INFO - Setting up Model...
+2025-11-18 20:24:41,737 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 163, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 85, in train
+[rank1]:     apply_tensor_parallel(model, mesh['tensor'])
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/model.py", line 244, in apply_tensor_parallel
+[rank1]:     parallelize_module(model, device_mesh, tp_plan)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/parallel/api.py", line 98, in parallelize_module
+[rank1]:     path_splits = module_path.split(".")
+[rank1]:                   ^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1935, in __getattr__
+[rank1]:     raise AttributeError(
+[rank1]: AttributeError: 'Embedding' object has no attribute 'split'
+2025-11-18 20:24:41,786 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 163, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 85, in train
+[rank2]:     apply_tensor_parallel(model, mesh['tensor'])
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/model.py", line 244, in apply_tensor_parallel
+[rank2]:     parallelize_module(model, device_mesh, tp_plan)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/parallel/api.py", line 98, in parallelize_module
+[rank2]:     path_splits = module_path.split(".")
+[rank2]:                   ^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1935, in __getattr__
+[rank2]:     raise AttributeError(
+[rank2]: AttributeError: 'Embedding' object has no attribute 'split'
+2025-11-18 20:24:41,804 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 163, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 85, in train
+[rank3]:     apply_tensor_parallel(model, mesh['tensor'])
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/model.py", line 244, in apply_tensor_parallel
+[rank3]:     parallelize_module(model, device_mesh, tp_plan)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/parallel/api.py", line 98, in parallelize_module
+[rank3]:     path_splits = module_path.split(".")
+[rank3]:                   ^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1935, in __getattr__
+[rank3]:     raise AttributeError(
+[rank3]: AttributeError: 'Embedding' object has no attribute 'split'
+[rank1]:[W1118 20:24:42.683803356 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]:[W1118 20:24:42.689391735 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 20:24:42.656000 237510 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 238003 closing signal SIGTERM
+W1118 20:24:42.657000 237510 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 238004 closing signal SIGTERM
+W1118 20:24:42.657000 237510 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 238006 closing signal SIGTERM
+E1118 20:24:42.871000 237510 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 2 (pid: 238005) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_20:24:42
+  host      : nid006598
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 238005)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid006598: task 0: Exited with exit code 1
+srun: Terminating StepId=1107434.0
+W1118 20:24:44.120000 251422 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1118 20:24:44.121000 251422 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 251915 closing signal SIGTERM
+W1118 20:24:44.121000 251422 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 251916 closing signal SIGTERM
+W1118 20:24:44.122000 251422 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 251917 closing signal SIGTERM
+W1118 20:24:44.123000 251422 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 251918 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 251422 got signal: 15
+srun: error: nid006615: task 1: Exited with exit code 1

@@ -1,0 +1,250 @@
+START TIME: Tue Nov 18 19:55:09 CET 2025
+END TIME: Tue Nov 18 19:55:09 CET 2025
+[sbatch-master] running on nid007359
+[sbatch-master] SLURM_NODELIST: nid[007359,007441]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007359 noderank=0 localrank=0
+W1118 19:55:26.128000 246446 torch/distributed/run.py:792] 
+W1118 19:55:26.128000 246446 torch/distributed/run.py:792] *****************************************
+W1118 19:55:26.128000 246446 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 19:55:26.128000 246446 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007441 noderank=1 localrank=0
+W1118 19:55:37.302000 58074 torch/distributed/run.py:792] 
+W1118 19:55:37.302000 58074 torch/distributed/run.py:792] *****************************************
+W1118 19:55:37.302000 58074 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 19:55:37.302000 58074 torch/distributed/run.py:792] *****************************************
+2025-11-18 19:55:46,277 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,277 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,277 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,278 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,694 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,694 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,694 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:55:46,694 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+[Distributed Init] Rank 0 initialized on 0 on GPU 0.
+[Distributed Init] Rank 4 initialized on 1 on GPU 0.
+[rank0]:[W1118 19:55:52.507604482 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 2 initialized on 0 on GPU 2.[Distributed Init] Rank 1 initialized on 0 on GPU 1.
+
+[rank2]:[W1118 19:55:52.582706680 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1118 19:55:52.582707320 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 3 initialized on 0 on GPU 3.
+[rank3]:[W1118 19:55:52.652679952 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W1118 19:55:52.208453590 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 4]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 6 initialized on 1 on GPU 2.
+[rank6]:[W1118 19:55:52.262319179 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 6]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 7 initialized on 1 on GPU 3.[Distributed Init] Rank 5 initialized on 1 on GPU 1.
+
+[rank7]:[W1118 19:55:52.363293838 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 7]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W1118 19:55:52.363293934 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 5]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Rank 0] All ranks ready!
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:55:57,831 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:56:07,713 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,713 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,713 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,713 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,739 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,739 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,739 - root - INFO - Setting up Model...
+2025-11-18 19:56:07,739 - root - INFO - Setting up Model...
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,686 - root - INFO - Starting training!
+2025-11-18 19:56:15,687 - root - INFO - Starting training!
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank6]:     loss.backward()
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank6]:     torch.autograd.backward(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank6]:     _engine_run_backward(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank6]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 2 has a total capacity of 94.50 GiB of which 15.13 GiB is free. Including non-PyTorch memory, this process has 77.90 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 328.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank4]:     loss.backward()
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank4]:     torch.autograd.backward(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank4]:     _engine_run_backward(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank4]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 94.50 GiB of which 15.16 GiB is free. Including non-PyTorch memory, this process has 77.86 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 328.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank7]:     loss.backward()
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank7]:     torch.autograd.backward(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank7]:     _engine_run_backward(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank7]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 3 has a total capacity of 94.50 GiB of which 15.15 GiB is free. Including non-PyTorch memory, this process has 77.88 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 328.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank5]:     loss.backward()
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank5]:     torch.autograd.backward(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank5]:     _engine_run_backward(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank5]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 1 has a total capacity of 94.50 GiB of which 15.15 GiB is free. Including non-PyTorch memory, this process has 77.88 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 328.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank4]:[W1118 19:56:17.517461376 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank2]:     loss.backward()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank2]:     torch.autograd.backward(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank2]:     _engine_run_backward(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank2]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 2 has a total capacity of 94.50 GiB of which 16.53 GiB is free. Including non-PyTorch memory, this process has 77.84 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 266.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank0]:     loss.backward()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 94.50 GiB of which 16.52 GiB is free. Including non-PyTorch memory, this process has 77.84 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 266.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank3]:     loss.backward()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank3]:     torch.autograd.backward(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank3]:     _engine_run_backward(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank3]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 3 has a total capacity of 94.50 GiB of which 16.60 GiB is free. Including non-PyTorch memory, this process has 77.78 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 266.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 129, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 103, in train
+[rank1]:     loss.backward()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/_tensor.py", line 626, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/__init__.py", line 347, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.00 GiB. GPU 1 has a total capacity of 94.50 GiB of which 16.55 GiB is free. Including non-PyTorch memory, this process has 77.84 GiB memory in use. Of the allocated memory 76.27 GiB is allocated by PyTorch, and 266.18 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W1118 19:56:18.463000 58074 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 58549 closing signal SIGTERM
+W1118 19:56:18.464000 58074 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 58550 closing signal SIGTERM
+W1118 19:56:18.465000 58074 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 58551 closing signal SIGTERM
+[rank0]:[W1118 19:56:18.989777646 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+E1118 19:56:19.047000 58074 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 58548) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_19:56:18
+  host      : nid007441
+  rank      : 4 (local_rank: 0)
+  exitcode  : 1 (pid: 58548)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007441: task 1: Exited with exit code 1
+srun: Terminating StepId=1107317.0
+slurmstepd: error: *** STEP 1107317.0 ON nid007359 CANCELLED AT 2025-11-18T19:56:20 ***
+W1118 19:56:20.342000 246446 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1118 19:56:20.383000 246446 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 246929 closing signal SIGTERM
+W1118 19:56:20.384000 246446 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 246930 closing signal SIGTERM
+W1118 19:56:20.386000 246446 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 246931 closing signal SIGTERM
+W1118 19:56:20.388000 246446 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 246932 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 711, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/agent/server/api.py", line 870, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 246446 got signal: 15
+srun: error: nid007359: task 0: Exited with exit code 1

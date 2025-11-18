@@ -1,0 +1,12 @@
+START TIME: Tue Nov 18 22:33:27 CET 2025
+END TIME: Tue Nov 18 22:33:27 CET 2025
+[sbatch-master] running on nid006641
+[sbatch-master] SLURM_NODELIST: nid[006641,007647]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead

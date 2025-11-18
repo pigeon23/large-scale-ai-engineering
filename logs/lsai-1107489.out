@@ -1,0 +1,183 @@
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/lightning_thunder-0.2.0.dev0-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/nvfuser-0.2.23a0+6627725-py3.12-linux-aarch64.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/dill-0.3.9-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/looseversion-1.3.0-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/opt_einsum-3.4.0-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+DEPRECATION: Loading egg at /usr/local/lib/python3.12/dist-packages/lightning_utilities-0.12.0.dev0-py3.12.egg is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to use pip for package installation. Discussion can be found at https://github.com/pypa/pip/issues/12330
+Looking in indexes: https://download.pytorch.org/whl/cu126, https://pypi.ngc.nvidia.com
+Requirement already satisfied: torch in /usr/local/lib/python3.12/dist-packages (2.6.0a0+ecf3bae40a.nv25.1)
+Requirement already satisfied: torchvision in /usr/local/lib/python3.12/dist-packages (0.20.0a0)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from torch) (3.16.1)
+Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/dist-packages (from torch) (4.12.2)
+Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from torch) (3.4.2)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch) (3.1.4)
+Requirement already satisfied: fsspec in /usr/local/lib/python3.12/dist-packages (from torch) (2024.10.0)
+Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch) (70.3.0)
+Requirement already satisfied: sympy==1.13.1 in /usr/local/lib/python3.12/dist-packages (from torch) (1.13.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy==1.13.1->torch) (1.3.0)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from torchvision) (1.26.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /usr/local/lib/python3.12/dist-packages (from torchvision) (11.1.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch) (3.0.2)
+START TIME: Tue Nov 18 20:56:08 CET 2025
+END TIME: Tue Nov 18 20:56:08 CET 2025
+[sbatch-master] running on nid006881
+[sbatch-master] SLURM_NODELIST: nid[006881,006900]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006881 noderank=0 localrank=0
+W1118 20:56:26.756000 96304 torch/distributed/run.py:792] 
+W1118 20:56:26.756000 96304 torch/distributed/run.py:792] *****************************************
+W1118 20:56:26.756000 96304 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:56:26.756000 96304 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid006900 noderank=1 localrank=0
+W1118 20:56:34.726000 155217 torch/distributed/run.py:792] 
+W1118 20:56:34.726000 155217 torch/distributed/run.py:792] *****************************************
+W1118 20:56:34.726000 155217 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 20:56:34.726000 155217 torch/distributed/run.py:792] *****************************************
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+Traceback (most recent call last):
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+            from torch.distributed.fsdp import fully_shardfrom torch.distributed.fsdp import fully_shardfrom torch.distributed.fsdp import fully_shard    
+
+
+from torch.distributed.fsdp import fully_shard
+ImportErrorImportErrorImportErrorImportError: : : cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py): cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)
+
+
+
+Traceback (most recent call last):
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+Traceback (most recent call last):
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+  File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 10, in <module>
+    from torch.distributed.fsdp import fully_shard
+    from torch.distributed.fsdp import fully_shard
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)ImportError
+    : from torch.distributed.fsdp import fully_shardcannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)
+    from torch.distributed.fsdp import fully_shard
+
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)ImportError
+: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py)
+E1118 20:56:39.162000 96304 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 96796) of binary: /usr/bin/python
+E1118 20:56:39.163000 155217 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 155703) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c6s2b1n0h0.hsn
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 96797)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c6s2b1n0h0.hsn
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 96798)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c6s2b1n0h0.hsn
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 96799)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c6s2b1n0h0.hsn
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 96796)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c7s5b0n0h0.hsn
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 155704)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c7s5b0n0h0.hsn
+  rank      : 6 (local_rank: 2)
+  exitcode  : 1 (pid: 155705)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c7s5b0n0h0.hsn
+  rank      : 7 (local_rank: 3)
+  exitcode  : 1 (pid: 155706)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_20:56:39
+  host      : x1304c7s5b0n0h0.hsn
+  rank      : 4 (local_rank: 0)
+  exitcode  : 1 (pid: 155703)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid006900: task 1: Exited with exit code 1
+srun: Terminating StepId=1107489.0
+srun: error: nid006881: task 0: Exited with exit code 1

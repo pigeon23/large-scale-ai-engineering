@@ -1,0 +1,512 @@
+START TIME: Tue Nov 18 22:31:07 CET 2025
+END TIME: Tue Nov 18 22:31:07 CET 2025
+[sbatch-master] running on nid006641
+[sbatch-master] SLURM_NODELIST: nid[006641,007647]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006641 noderank=0 localrank=0
+W1118 22:31:27.794000 226308 torch/distributed/run.py:792] 
+W1118 22:31:27.794000 226308 torch/distributed/run.py:792] *****************************************
+W1118 22:31:27.794000 226308 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:31:27.794000 226308 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007647 noderank=1 localrank=0
+W1118 22:31:32.898000 131084 torch/distributed/run.py:792] 
+W1118 22:31:32.898000 131084 torch/distributed/run.py:792] *****************************************
+W1118 22:31:32.898000 131084 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:31:32.898000 131084 torch/distributed/run.py:792] *****************************************
+2025-11-18 22:31:41,777 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:41,777 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:41,777 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:41,777 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:42,572 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:42,573 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:42,573 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:42,579 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:31:48,446 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:48,787 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:48,789 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:48,790 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:49,304 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:49,781 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:49,788 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:49,794 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:31:56,039 - root - INFO - Setting up Model...
+2025-11-18 22:31:56,064 - root - INFO - Setting up Model...
+2025-11-18 22:31:56,064 - root - INFO - Setting up Model...
+2025-11-18 22:31:56,179 - root - INFO - Setting up Model...
+2025-11-18 22:32:00,428 - root - INFO - Setting up Model...
+2025-11-18 22:32:00,428 - root - INFO - Setting up Model...
+2025-11-18 22:32:00,428 - root - INFO - Setting up Model...
+2025-11-18 22:32:00,428 - root - INFO - Setting up Model...
+2025-11-18 22:32:02,543 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:02,543 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:02,917 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:05,017 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:06,465 - root - INFO - Starting training!
+2025-11-18 22:32:06,475 - root - INFO - Starting training!
+2025-11-18 22:32:06,780 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:06,918 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:06,945 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:07,044 - root - INFO - Starting training!
+2025-11-18 22:32:07,050 - root - INFO - Starting training!
+2025-11-18 22:32:08,575 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:32:11,875 - root - INFO - Starting training!
+2025-11-18 22:32:11,875 - root - INFO - Starting training!
+2025-11-18 22:32:12,366 - root - INFO - Starting training!
+2025-11-18 22:32:12,367 - root - INFO - Starting training!
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 5] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+2025-11-18 22:32:17,045 - root - INFO - Step: 1 | Loss (Avg): 11.94 | Tokens per second: 7003.83 | Training tokens per second (%): 19.55 | MFU (%): 3.78 | TFLOPs: 37.37
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+2025-11-18 22:32:19,370 - root - INFO - Step: 5 | Loss (Avg): 11.47 | Tokens per second: 56374.94 | Training tokens per second (%): 26.90 | MFU (%): 30.41 | TFLOPs: 300.78
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+2025-11-18 22:32:22,297 - root - INFO - Step: 10 | Loss (Avg): 10.04 | Tokens per second: 55985.50 | Training tokens per second (%): 24.17 | MFU (%): 30.20 | TFLOPs: 298.70
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+[Rank 2] loss before all_reduce: torch.Size([])
+
+2025-11-18 22:32:25,187 - root - INFO - Step: 15 | Loss (Avg): 9.41 | Tokens per second: 56698.20 | Training tokens per second (%): 22.83 | MFU (%): 30.59 | TFLOPs: 302.51
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+
+
+2025-11-18 22:32:28,076 - root - INFO - Step: 20 | Loss (Avg): 9.03 | Tokens per second: 56708.40 | Training tokens per second (%): 24.43 | MFU (%): 30.59 | TFLOPs: 302.56
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 3] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+2025-11-18 22:32:30,947 - root - INFO - Step: 25 | Loss (Avg): 8.60 | Tokens per second: 57068.67 | Training tokens per second (%): 21.14 | MFU (%): 30.79 | TFLOPs: 304.48
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+2025-11-18 22:32:33,832 - root - INFO - Step: 30 | Loss (Avg): 8.26 | Tokens per second: 56806.37 | Training tokens per second (%): 20.92 | MFU (%): 30.65 | TFLOPs: 303.08
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+2025-11-18 22:32:36,714 - root - INFO - Step: 35 | Loss (Avg): 8.05 | Tokens per second: 56859.43 | Training tokens per second (%): 18.63 | MFU (%): 30.67 | TFLOPs: 303.37
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+2025-11-18 22:32:39,606 - root - INFO - Step: 40 | Loss (Avg): 7.73 | Tokens per second: 56650.84 | Training tokens per second (%): 18.74 | MFU (%): 30.56 | TFLOPs: 302.25
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 6] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 5] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+2025-11-18 22:32:42,731 - root - INFO - Step: 45 | Loss (Avg): 7.57 | Tokens per second: 52427.89 | Training tokens per second (%): 23.35 | MFU (%): 28.28 | TFLOPs: 279.72
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])
+
+[Rank 2] loss before all_reduce: torch.Size([])
+[Rank 3] loss before all_reduce: torch.Size([])
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 6] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+
+
+2025-11-18 22:32:45,867 - root - INFO - Step: 50 | Loss (Avg): 7.44 | Tokens per second: 52260.69 | Training tokens per second (%): 19.41 | MFU (%): 28.19 | TFLOPs: 278.83
+[Rank 5] loss before all_reduce: torch.Size([])[Rank 4] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 1] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])[Rank 0] loss before all_reduce: torch.Size([])[Rank 2] loss before all_reduce: torch.Size([])
+
+
+
+[Rank 4] loss before all_reduce: torch.Size([])[Rank 5] loss before all_reduce: torch.Size([])[Rank 6] loss before all_reduce: torch.Size([])
+
+
+[Rank 0] loss before all_reduce: torch.Size([])[Rank 1] loss before all_reduce: torch.Size([])
+
+[Rank 7] loss before all_reduce: torch.Size([])
+[Rank 2] loss before all_reduce: torch.Size([])[Rank 3] loss before all_reduce: torch.Size([])
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1107800.0 ON nid006641 CANCELLED AT 2025-11-18T22:32:47 ***
+W1118 22:32:47.723000 131084 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+slurmstepd: error: *** JOB 1107800 ON nid006641 CANCELLED AT 2025-11-18T22:32:47 ***
+W1118 22:32:47.724000 131084 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 131557 closing signal SIGTERM
+srun: forcing job termination
+srun: got SIGCONT
+W1118 22:32:47.724000 226308 torch/distributed/elastic/agent/server/api.py:719] Received 15 death signal, shutting down workers
+W1118 22:32:47.726000 226308 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 226777 closing signal SIGTERM
+W1118 22:32:47.727000 226308 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 226778 closing signal SIGTERM
+W1118 22:32:47.727000 131084 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 131558 closing signal SIGTERM
+W1118 22:32:47.729000 226308 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 226779 closing signal SIGTERM
+W1118 22:32:47.729000 131084 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 131559 closing signal SIGTERM
+W1118 22:32:47.730000 226308 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 226780 closing signal SIGTERM
+W1118 22:32:47.733000 131084 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 131560 closing signal SIGTERM

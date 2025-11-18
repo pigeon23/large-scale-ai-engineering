@@ -1,0 +1,365 @@
+START TIME: Tue Nov 18 22:13:04 CET 2025
+END TIME: Tue Nov 18 22:13:04 CET 2025
+[sbatch-master] running on nid007486
+[sbatch-master] SLURM_NODELIST: nid[007486,007490]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007486 noderank=0 localrank=0
+W1118 22:13:22.819000 112027 torch/distributed/run.py:792] 
+W1118 22:13:22.819000 112027 torch/distributed/run.py:792] *****************************************
+W1118 22:13:22.819000 112027 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:13:22.819000 112027 torch/distributed/run.py:792] *****************************************
+[srun] rank=1 host=nid007490 noderank=1 localrank=0
+W1118 22:13:31.554000 116574 torch/distributed/run.py:792] 
+W1118 22:13:31.554000 116574 torch/distributed/run.py:792] *****************************************
+W1118 22:13:31.554000 116574 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 22:13:31.554000 116574 torch/distributed/run.py:792] *****************************************
+2025-11-18 22:13:39,313 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,313 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,313 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,313 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:39,460 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 22:13:46,094 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,217 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,464 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,472 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,483 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,597 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,612 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:46,616 - root - INFO - Setting up DataLoaders...
+2025-11-18 22:13:51,858 - root - INFO - Setting up Model...
+2025-11-18 22:13:52,686 - root - INFO - Setting up Model...
+2025-11-18 22:13:52,686 - root - INFO - Setting up Model...
+2025-11-18 22:13:52,785 - root - INFO - Setting up Model...
+2025-11-18 22:13:55,946 - root - INFO - Setting up Model...
+2025-11-18 22:13:55,946 - root - INFO - Setting up Model...
+2025-11-18 22:13:55,954 - root - INFO - Setting up Model...
+2025-11-18 22:13:55,954 - root - INFO - Setting up Model...
+2025-11-18 22:13:58,805 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:13:59,037 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:13:59,066 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:13:59,160 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:14:02,322 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:14:02,395 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:14:02,432 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:14:02,711 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-11-18 22:14:03,918 - root - INFO - Starting training!
+2025-11-18 22:14:03,922 - root - INFO - Starting training!
+2025-11-18 22:14:03,923 - root - INFO - Starting training!
+2025-11-18 22:14:03,923 - root - INFO - Starting training!
+2025-11-18 22:14:07,231 - root - INFO - Starting training!
+2025-11-18 22:14:07,231 - root - INFO - Starting training!
+2025-11-18 22:14:07,233 - root - INFO - Starting training!
+2025-11-18 22:14:07,234 - root - INFO - Starting training!
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank1]:     work = group.allreduce([tensor], opts)
+[rank1]:            ^^^^^^^^^^^^^^^
+[rank1]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank1]: During handling of the above exception, another exception occurred:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank1]:     train(args)
+[rank1]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank1]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank1]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank1]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank1]:     "backend": f"{dist.get_backend(group)}",
+[rank1]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank1]:     return Backend(not_none(pg_store)[0])
+[rank1]:                    ^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank1]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank1]: TypeError: Invariant encountered: value was None when it should not be
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank7]:     return func(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank7]:     work = group.allreduce([tensor], opts)
+[rank7]:            ^^^^^^^^^^^^^^^
+[rank7]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank7]: During handling of the above exception, another exception occurred:
+
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank7]:     train(args)
+[rank7]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank7]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank7]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank7]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank7]:     "backend": f"{dist.get_backend(group)}",
+[rank7]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank7]:     return Backend(not_none(pg_store)[0])
+[rank7]:                    ^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank7]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank7]: TypeError: Invariant encountered: value was None when it should not be
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank5]:     return func(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank5]:     work = group.allreduce([tensor], opts)
+[rank5]:            ^^^^^^^^^^^^^^^
+[rank5]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank5]: During handling of the above exception, another exception occurred:
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank5]:     train(args)
+[rank5]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank5]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank5]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank5]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank5]:     "backend": f"{dist.get_backend(group)}",
+[rank5]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank5]:     return Backend(not_none(pg_store)[0])
+[rank5]:                    ^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank5]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank5]: TypeError: Invariant encountered: value was None when it should not be
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank6]:     return func(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank6]:     work = group.allreduce([tensor], opts)
+[rank6]:            ^^^^^^^^^^^^^^^
+[rank6]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank6]: During handling of the above exception, another exception occurred:
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank6]:     train(args)
+[rank6]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank6]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank6]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank6]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank6]:     "backend": f"{dist.get_backend(group)}",
+[rank6]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank6]:     return Backend(not_none(pg_store)[0])
+[rank6]:                    ^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank6]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank6]: TypeError: Invariant encountered: value was None when it should not be
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank3]:     work = group.allreduce([tensor], opts)
+[rank3]:            ^^^^^^^^^^^^^^^
+[rank3]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank3]: During handling of the above exception, another exception occurred:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank3]:     train(args)
+[rank3]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank3]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank3]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank3]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank3]:     "backend": f"{dist.get_backend(group)}",
+[rank3]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank3]:     return Backend(not_none(pg_store)[0])
+[rank3]:                    ^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank3]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank3]: TypeError: Invariant encountered: value was None when it should not be
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank2]:     work = group.allreduce([tensor], opts)
+[rank2]:            ^^^^^^^^^^^^^^^
+[rank2]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank2]: During handling of the above exception, another exception occurred:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank2]:     train(args)
+[rank2]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank2]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank2]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank2]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank2]:     "backend": f"{dist.get_backend(group)}",
+[rank2]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank2]:     return Backend(not_none(pg_store)[0])
+[rank2]:                    ^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank2]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank2]: TypeError: Invariant encountered: value was None when it should not be
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank4]:     work = group.allreduce([tensor], opts)
+[rank4]:            ^^^^^^^^^^^^^^^
+[rank4]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank4]: During handling of the above exception, another exception occurred:
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank4]:     train(args)
+[rank4]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank4]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank4]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank4]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank4]:     "backend": f"{dist.get_backend(group)}",
+[rank4]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank4]:     return Backend(not_none(pg_store)[0])
+[rank4]:                    ^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank4]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank4]: TypeError: Invariant encountered: value was None when it should not be
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2729, in all_reduce
+[rank0]:     work = group.allreduce([tensor], opts)
+[rank0]:            ^^^^^^^^^^^^^^^
+[rank0]: AttributeError: 'DeviceMesh' object has no attribute 'allreduce'
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 172, in <module>
+[rank0]:     train(args)
+[rank0]:   File "/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py", line 142, in train
+[rank0]:     dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh["data"])
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank0]:     msg_dict = _get_msg_dict(func.__name__, *args, **kwargs)
+[rank0]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 57, in _get_msg_dict
+[rank0]:     "backend": f"{dist.get_backend(group)}",
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 1341, in get_backend
+[rank0]:     return Backend(not_none(pg_store)[0])
+[rank0]:                    ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_typing_utils.py", line 13, in not_none
+[rank0]:     raise TypeError("Invariant encountered: value was None when it should not be")
+[rank0]: TypeError: Invariant encountered: value was None when it should not be
+[rank6]:[W1118 22:14:12.819232411 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank4]:[W1118 22:14:12.137459091 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank0]:[W1118 22:14:12.374221278 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[rank2]:[W1118 22:14:12.407083020 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W1118 22:14:13.520000 112027 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 112528 closing signal SIGTERM
+W1118 22:14:13.521000 112027 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 112530 closing signal SIGTERM
+W1118 22:14:13.523000 112027 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 112531 closing signal SIGTERM
+W1118 22:14:13.523000 116574 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 117049 closing signal SIGTERM
+W1118 22:14:13.524000 116574 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 117051 closing signal SIGTERM
+W1118 22:14:13.525000 116574 torch/distributed/elastic/multiprocessing/api.py:897] Sending process 117052 closing signal SIGTERM
+E1118 22:14:14.106000 116574 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 117050) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+E1118 22:14:14.155000 112027 torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 112529) of binary: /usr/bin/python
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_22:14:13
+  host      : nid007490
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 117050)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.6.0a0+ecf3bae40a.nv25.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/iopsstor/scratch/cscs/yiswang/large-sc/project/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-18_22:14:13
+  host      : nid007486
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 112529)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: nid007486: task 0: Exited with exit code 1
+srun: Terminating StepId=1107773.0
+srun: error: nid007490: task 1: Exited with exit code 1

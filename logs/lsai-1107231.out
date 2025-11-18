@@ -1,0 +1,67 @@
+START TIME: Tue Nov 18 19:37:18 CET 2025
+END TIME: Tue Nov 18 19:37:18 CET 2025
+[sbatch-master] running on nid007479
+[sbatch-master] SLURM_NODELIST: nid007479
+[sbatch-master] SLURM_NNODES: 1
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007479 noderank=0 localrank=0
+W1118 19:37:35.992000 167274 torch/distributed/run.py:792] 
+W1118 19:37:35.992000 167274 torch/distributed/run.py:792] *****************************************
+W1118 19:37:35.992000 167274 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1118 19:37:35.992000 167274 torch/distributed/run.py:792] *****************************************
+2025-11-18 19:37:45,001 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=4, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:37:45,001 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=4, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:37:45,001 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=4, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+2025-11-18 19:37:45,001 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=4096, batch_size=4, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=5, training_steps=100, logging_frequency=5, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False)
+[Distributed Init] Rank 0 initialized on 0 on GPU 0.
+[rank0]:[W1118 19:37:50.212937855 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 2 initialized on 0 on GPU 2.[Distributed Init] Rank 3 initialized on 0 on GPU 3.
+
+[rank2]:[W1118 19:37:51.559628589 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank3]:[W1118 19:37:51.559635437 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Distributed Init] Rank 1 initialized on 0 on GPU 1.
+[rank1]:[W1118 19:37:51.652931708 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[Rank 0] All ranks ready!
+2025-11-18 19:37:58,193 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:37:58,193 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:37:58,193 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:37:58,193 - root - INFO - Setting up DataLoaders...
+2025-11-18 19:38:13,872 - root - INFO - Setting up Model...
+2025-11-18 19:38:13,872 - root - INFO - Setting up Model...
+2025-11-18 19:38:13,872 - root - INFO - Setting up Model...
+2025-11-18 19:38:13,873 - root - INFO - Setting up Model...
+2025-11-18 19:38:22,150 - root - INFO - Starting training!
+2025-11-18 19:38:22,150 - root - INFO - Starting training!
+2025-11-18 19:38:22,150 - root - INFO - Starting training!
+2025-11-18 19:38:22,151 - root - INFO - Starting training!
+2025-11-18 19:38:24,762 - root - INFO - Step: 1 | Loss: 11.96 | Tokens per second: 6279.95 | Training tokens per second (%): 20.78 | MFU (%): 6.78 | TFLOPs: 67.01
+2025-11-18 19:38:27,725 - root - INFO - Step: 5 | Loss: 11.18 | Tokens per second: 22215.78 | Training tokens per second (%): 11.11 | MFU (%): 23.97 | TFLOPs: 237.06
+2025-11-18 19:38:31,385 - root - INFO - Step: 10 | Loss: 9.38 | Tokens per second: 22459.65 | Training tokens per second (%): 23.56 | MFU (%): 24.23 | TFLOPs: 239.66
+2025-11-18 19:38:35,056 - root - INFO - Step: 15 | Loss: 9.48 | Tokens per second: 22393.56 | Training tokens per second (%): 36.00 | MFU (%): 24.16 | TFLOPs: 238.96
+2025-11-18 19:38:38,753 - root - INFO - Step: 20 | Loss: 8.87 | Tokens per second: 22231.00 | Training tokens per second (%): 18.53 | MFU (%): 23.99 | TFLOPs: 237.22
+2025-11-18 19:38:42,420 - root - INFO - Step: 25 | Loss: 8.56 | Tokens per second: 22422.07 | Training tokens per second (%): 23.83 | MFU (%): 24.19 | TFLOPs: 239.26
+2025-11-18 19:38:46,093 - root - INFO - Step: 30 | Loss: 8.24 | Tokens per second: 22380.51 | Training tokens per second (%): 21.27 | MFU (%): 24.15 | TFLOPs: 238.82
+2025-11-18 19:38:49,773 - root - INFO - Step: 35 | Loss: 7.78 | Tokens per second: 22336.81 | Training tokens per second (%): 17.79 | MFU (%): 24.10 | TFLOPs: 238.35
+2025-11-18 19:38:53,454 - root - INFO - Step: 40 | Loss: 7.87 | Tokens per second: 22329.95 | Training tokens per second (%): 23.97 | MFU (%): 24.09 | TFLOPs: 238.28
+2025-11-18 19:38:57,175 - root - INFO - Step: 45 | Loss: 7.99 | Tokens per second: 22092.49 | Training tokens per second (%): 20.32 | MFU (%): 23.84 | TFLOPs: 235.74
+2025-11-18 19:39:00,877 - root - INFO - Step: 50 | Loss: 7.93 | Tokens per second: 22203.67 | Training tokens per second (%): 26.70 | MFU (%): 23.96 | TFLOPs: 236.93
+2025-11-18 19:39:04,598 - root - INFO - Step: 55 | Loss: 7.62 | Tokens per second: 22086.55 | Training tokens per second (%): 26.58 | MFU (%): 23.83 | TFLOPs: 235.68
+2025-11-18 19:39:08,250 - root - INFO - Step: 60 | Loss: 7.24 | Tokens per second: 22509.56 | Training tokens per second (%): 21.28 | MFU (%): 24.29 | TFLOPs: 240.19
+2025-11-18 19:39:11,891 - root - INFO - Step: 65 | Loss: 7.25 | Tokens per second: 22577.91 | Training tokens per second (%): 16.23 | MFU (%): 24.36 | TFLOPs: 240.92
+2025-11-18 19:39:15,569 - root - INFO - Step: 70 | Loss: 7.22 | Tokens per second: 22347.09 | Training tokens per second (%): 27.12 | MFU (%): 24.11 | TFLOPs: 238.46
+2025-11-18 19:39:19,277 - root - INFO - Step: 75 | Loss: 7.30 | Tokens per second: 22172.05 | Training tokens per second (%): 40.58 | MFU (%): 23.92 | TFLOPs: 236.59
+2025-11-18 19:39:22,959 - root - INFO - Step: 80 | Loss: 7.08 | Tokens per second: 22325.07 | Training tokens per second (%): 13.98 | MFU (%): 24.09 | TFLOPs: 238.22
+2025-11-18 19:39:26,647 - root - INFO - Step: 85 | Loss: 7.33 | Tokens per second: 22285.51 | Training tokens per second (%): 22.08 | MFU (%): 24.04 | TFLOPs: 237.80
+2025-11-18 19:39:30,309 - root - INFO - Step: 90 | Loss: 7.31 | Tokens per second: 22443.97 | Training tokens per second (%): 29.60 | MFU (%): 24.22 | TFLOPs: 239.49
+2025-11-18 19:39:33,957 - root - INFO - Step: 95 | Loss: 7.25 | Tokens per second: 22538.48 | Training tokens per second (%): 27.32 | MFU (%): 24.32 | TFLOPs: 240.50
+2025-11-18 19:39:37,593 - root - INFO - Training completed
+2025-11-18 19:39:37,594 - root - INFO - Training completed
+2025-11-18 19:39:37,594 - root - INFO - Training completed
+2025-11-18 19:39:37,606 - root - INFO - Step: 100 | Loss: 7.25 | Tokens per second: 22527.48 | Training tokens per second (%): 13.27 | MFU (%): 24.31 | TFLOPs: 240.38
+2025-11-18 19:39:37,606 - root - INFO - Training completed
+[rank0]:[W1118 19:39:37.212084474 ProcessGroupNCCL.cpp:1427] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+[sbatch-master] task finished
