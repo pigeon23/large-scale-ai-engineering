@@ -36,6 +36,9 @@ class IterableParquetDataset(IterableDataset):
         self.bos_token_id = bos_token_id
         self.current_index = 0
         self.token_buffer = []
+        
+    def __len__(self):
+        return self.real_length
     
     def __iter__(self):
         # Reset buffer and index when starting a new iteration

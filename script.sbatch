@@ -3,15 +3,16 @@
 #SBATCH --time=00:07:59
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/yiswang/large-sc/project/logs/%x-%j.out
-#SBATCH --nodes=4
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
-#SBATCH --mem=460000
 #SBATCH --environment=/iopsstor/scratch/cscs/yiswang/large-sc/ngc_pt_jan.toml   # Vanilla 25.01 PyTorch NGC Image 
 #SBATCH --no-requeue	# Prevent Slurm to requeue the job if the execution crashes (e.g. node failure) so we don't loose the logs
 
 # Stop the script if a command fails or if an undefined variable is used
 set -eo pipefail
+
+export NCCL_NET="AWS Libfabric"
 
 # pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 
@@ -51,12 +52,12 @@ numactl --membind=0-3 torchrun \
     --master_addr="${MASTER_ADDR}" \
     --master_port="${MASTER_PORT}" \
     "${ASSIGNMENT_DIR}"/train.py \
-    --batch-size 16 \
-    --learning-rate 5e-5 \
-    --lr-warmup-steps 5 \
-    --training-steps 300 \
+    --batch-size 2 \
+    --learning-rate 1e-4 \
+    --lr-warmup-steps 100 \
+    --training-steps 1000 \
     --sequence-length 4096 \
-    --tp-size 16 \
+    --tp-size 4 \
 "
 
 # Submits the CMD to all the processes on all the nodes.

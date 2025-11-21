@@ -2,6 +2,7 @@ import argparse
 import functools
 import logging
 import os
+import math
 import torch.distributed as dist
 
 from contextlib import contextmanager
@@ -50,6 +51,17 @@ def init_logger():
     )
     ch.setFormatter(formatter)
     logger.addHandler(ch)
+    
+def init_weights(model):
+    for name, module in model.named_modules():
+        if isinstance(module, torch.nn.Linear):
+            module.reset_parameters()
+        elif isinstance(module, torch.nn.Embedding):
+            module.reset_parameters()
+        
+        elif hasattr(module, 'weight'):
+             if "norm" in name.lower():
+                torch.nn.init.normal_(module.weight)
 
 def get_num_params(model: torch.nn.Module, exclude_embedding: bool = False) -> int:
     num_params = sum(p.numel() for p in model.parameters())
