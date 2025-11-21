@@ -17,7 +17,6 @@ from model import Transformer, TransformerModelArgs, apply_tensor_parallel
 from utils import init_weights, build_lr_scheduler, clip_grad_norm_, get_args, get_num_params, get_num_flop_per_token, init_logger, logger, PRECISION_STR_TO_DTYPE, set_default_dtype
 
 def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, mesh, world_size):
-    logger.info(f"[{mesh.get_coordinate()}] input_ids: {input_ids}")
     input_ids = input_ids.to(device)
     labels = labels.to(device)
     optimizer.zero_grad()
