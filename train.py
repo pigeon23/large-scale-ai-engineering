@@ -1,5 +1,6 @@
 import os
 import time
+import numpy as np
 
 import torch
 import torch.distributed as dist
@@ -142,7 +143,10 @@ def train(args):
     fully_shard(model, mesh=mesh['data'])
     model = model.to_empty(device=device)
     
-    init_weights(model)
+    rng = torch.Generator(device=device)
+    rng.manual_seed(tp_rank)
+    
+    init_weights(model, rng)
     
 
   

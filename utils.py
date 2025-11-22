@@ -52,16 +52,23 @@ def init_logger():
     ch.setFormatter(formatter)
     logger.addHandler(ch)
     
-def init_weights(model):
+def init_weights(model, generator: torch.Generator):
     for name, module in model.named_modules():
         if isinstance(module, torch.nn.Linear):
-            module.reset_parameters()
+            # module.reset_parameters()
+            torch.nn.init.kaiming_uniform_(module.weight, a=math.sqrt(5), generator=generator)
+            if module.bias is not None:
+                fan_in, _ = torch.nn.init._calculate_fan_in_and_fan_out(module.weight)
+                bound = 1 / math.sqrt(fan_in) if fan_in > 0 else 0
+                torch.nn.init.uniform_(module.bias, -bound, bound, generator=generator)
         elif isinstance(module, torch.nn.Embedding):
-            module.reset_parameters()
+            # module.reset_parameters()
+            torch.nn.init.normal_(module.weight, generator=generator)
+            module._fill_padding_idx_with_zero()
         
         elif hasattr(module, 'weight'):
              if "norm" in name.lower():
-                torch.nn.init.normal_(module.weight)
+                torch.nn.init.normal_(module.weight, generator=generator)
 
 def get_num_params(model: torch.nn.Module, exclude_embedding: bool = False) -> int:
     num_params = sum(p.numel() for p in model.parameters())
