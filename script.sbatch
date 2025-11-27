@@ -15,6 +15,7 @@ set -eo pipefail
 export NCCL_NET="AWS Libfabric"
 
 # pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip install datasets
 
 echo "START TIME: $(date)"
 
@@ -58,6 +59,9 @@ numactl --membind=0-3 torchrun \
     --training-steps 1000 \
     --sequence-length 4096 \
     --tp-size 4 \
+    --checkpoint-frequency 100 \
+    --checkpoint-save-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt \
+    --checkpoint-load-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt
 "
 
 # Submits the CMD to all the processes on all the nodes.

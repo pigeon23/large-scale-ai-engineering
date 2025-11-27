@@ -11,11 +11,13 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.distributed._composable.fsdp import fully_shard
 from transformers import AutoTokenizer
 from torch.distributed.tensor.parallel import loss_parallel
+import torch.distributed.checkpoint as dcp
 
 from dataset import CollatorForCLM, ParquetDataset
 from model import Transformer, TransformerModelArgs, apply_tensor_parallel
 # Removed init_distributed from utils as we handle it explicitly with DeviceMesh now
 from utils import init_weights, build_lr_scheduler, clip_grad_norm_, get_args, get_num_params, get_num_flop_per_token, init_logger, logger, PRECISION_STR_TO_DTYPE, set_default_dtype
+from checkpoint_manager import CheckpointManager
 
 def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, mesh, world_size):
     input_ids = input_ids.to(device)
@@ -148,17 +150,23 @@ def train(args):
     
     init_weights(model, rng)
     
-
-  
   # if args.compile:
   #   logger.info("Using `torch.compile`")
   #   model = torch.compile(model, fullgraph=True)
   
-  model.train()
-
   # Build Optimizers & LR Scheduler
   optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, fused=args.fused_optimizer)
   lr_scheduler = build_lr_scheduler(optimizer, args.lr_warmup_steps)
+  
+  checkpoint_manager = CheckpointManager(model, optimizer)
+  if args.checkpoint_load_path is not None:
+    logger.info(f"Load checkpoint from {args.checkpoint_load_path}")
+    state_dict = { "app": checkpoint_manager}
+    dcp.load(
+        state_dict=state_dict,
+        checkpoint_id=args.checkpoint_load_path,
+    )
+    torch.distributed.barrier()
 
   # Utils
   num_flop_per_token = get_num_flop_per_token(
@@ -173,6 +181,7 @@ def train(args):
   # logger.info(f"[Rank {device}] Memory allocation: {round(torch.cuda.memory_allocated(device) / 1e9, 3)} GB; Max allocation: {round(torch.cuda.max_memory_allocated(device) / 1e9, 3)} GB")
 
   logger.info("Starting training!")
+  model.train()
   train_step = 0
   for input_ids, labels in train_dl:
     train_step += 1
@@ -193,6 +202,14 @@ def train(args):
       ntokens_since_last_log = 0
       ntraining_tokens_since_last_log = 0
       time_last_log = time.perf_counter()
+      
+      
+    if train_step % args.checkpoint_frequency == 0 and args.checkpoint_save_path is not None:
+      logger.info(f"Step: {train_step} | Save checkpoint into {args.checkpoint_save_path}")
+      state_dict = { "app": checkpoint_manager}
+      dcp.save(state_dict, checkpoint_id=args.checkpoint_save_path)
+      torch.distributed.barrier()
+      
     
   logger.info("Training completed")
   torch.distributed.destroy_process_group()

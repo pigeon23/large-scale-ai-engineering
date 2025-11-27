@@ -195,6 +195,24 @@ def get_args():
         help="Log every `--logging-frequency` steps"
     )
     parser.add_argument(
+        "--checkpoint-frequency",
+        type=int,
+        default=100,
+        help="save checkpoints every `--checkpoint-frequency` steps"
+    )
+    parser.add_argument(
+        "--checkpoint-save-path",
+        type=str,
+        default=None,
+        help="checkpoints saving path"
+    )
+    parser.add_argument(
+        "--checkpoint-load-path",
+        type=str,
+        default=None,
+        help="checkpoints loading path"
+    )
+    parser.add_argument(
         "--profile",
         action='store_true',
         help="Profile the run using the NSYS profiler"
