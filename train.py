@@ -8,12 +8,12 @@ from torch.distributed.device_mesh import init_device_mesh
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 from torch.nn.parallel import DistributedDataParallel as DDP
-from torch.distributed._composable.fsdp import fully_shard
+from torch.distributed._composable.fsdp import fully_shard, MixedPrecisionPolicy
 from transformers import AutoTokenizer
 from torch.distributed.tensor.parallel import loss_parallel
 import torch.distributed.checkpoint as dcp
 
-from dataset import CollatorForCLM, ParquetDataset
+from dataset import CollatorForCLM, ParquetDataset, IterableParquetDataset
 from model import Transformer, TransformerModelArgs, apply_tensor_parallel
 # Removed init_distributed from utils as we handle it explicitly with DeviceMesh now
 from utils import init_weights, build_lr_scheduler, clip_grad_norm_, get_args, get_num_params, get_num_flop_per_token, init_logger, logger, PRECISION_STR_TO_DTYPE, set_default_dtype
@@ -31,6 +31,9 @@ def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, m
     with loss_parallel():
       loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
       loss.backward()
+      
+    if torch.isnan(loss):
+      print(f"[Rank {device}] NaN loss detected at step!")
     
     # --- START: Loss Aggregation Logic for Logging ---
     reduced_loss = loss.clone().detach()
@@ -103,27 +106,31 @@ def train(args):
   tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name_or_path)
   
   # TODO: each sample only contain one text with many paddings, but iterable dataset doesn't support DistributedSampler
-  train_ds = ParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_size*args.batch_size*args.training_steps)
-  train_collator = CollatorForCLM(args.sequence_length, tokenizer.pad_token_id)
+  # train_ds = ParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_size*args.batch_size*args.training_steps)
+  # train_collator = CollatorForCLM(args.sequence_length, tokenizer.pad_token_id)  
   
   # DistributedSampler needs to know the DP rank and size.
   # Ranks within the same TP group (same DP rank) will receive the SAME data batch.
-  train_dl = DataLoader(train_ds,
-                        batch_size=args.batch_size,
-                        pin_memory=True,
-                        num_workers=4,
-                        sampler=DistributedSampler(train_ds, num_replicas=dp_size, rank=dp_rank, shuffle=True),
-                        collate_fn=train_collator)
+  # train_dl = DataLoader(train_ds,
+  #                       batch_size=args.batch_size,
+  #                       pin_memory=True,
+  #                       num_workers=4,
+  #                       sampler=DistributedSampler(train_ds, num_replicas=dp_size, rank=dp_rank, shuffle=True),
+  #                       collate_fn=train_collator)
+  
+  train_ds = IterableParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_rank, dp_size)
+  
+  train_dl = DataLoader(train_ds, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
   
 
   # Set up Model
   logger.info("Setting up Model...")
   model_config = TransformerModelArgs(
         dim=4096,
-        n_layers=32,
-        n_heads=32,
+        n_layers=16,
+        n_heads=16,
         n_kv_heads=8,
-        ffn_dim_multiplier=3.5,
+        ffn_dim_multiplier=1.3,
         multiple_of=1024,
         rope_theta=500000,
         vocab_size=tokenizer.vocab_size,
@@ -140,33 +147,35 @@ def train(args):
     # Pass the mesh's "data" process group to DDP
     # This ensures DDP syncs gradients only across the "data" dimension
     # (i.e., across DP ranks, but not across TP ranks)
+    
+    mixture = MixedPrecisionPolicy(torch.bfloat16, torch.float32)
+    
     for layer in model.layers.values():
-        fully_shard(layer, mesh=mesh['data'])
-    fully_shard(model, mesh=mesh['data'])
+        fully_shard(layer, mesh=mesh['data'], reshard_after_forward=True, mp_policy=mixture)
+    fully_shard(model, mesh=mesh['data'], reshard_after_forward=False, mp_policy=mixture)
     model = model.to_empty(device=device)
     
     rng = torch.Generator(device=device)
     rng.manual_seed(tp_rank)
     
     init_weights(model, rng)
-    
-  # if args.compile:
-  #   logger.info("Using `torch.compile`")
-  #   model = torch.compile(model, fullgraph=True)
   
   # Build Optimizers & LR Scheduler
   optimizer = torch.optim.AdamW(model.parameters(), lr=args.learning_rate, fused=args.fused_optimizer)
   lr_scheduler = build_lr_scheduler(optimizer, args.lr_warmup_steps)
   
   checkpoint_manager = CheckpointManager(model, optimizer)
-  if args.checkpoint_load_path is not None:
+  if args.checkpoint_load_path is not None and os.path.isdir(args.checkpoint_load_path):
     logger.info(f"Load checkpoint from {args.checkpoint_load_path}")
     state_dict = { "app": checkpoint_manager}
     dcp.load(
         state_dict=state_dict,
         checkpoint_id=args.checkpoint_load_path,
     )
-    torch.distributed.barrier()
+  torch.distributed.barrier()
+    
+  if rank == 0 and args.checkpoint_save_path and not os.path.exists(args.checkpoint_save_path):
+    os.mkdir(args.checkpoint_save_path)
 
   # Utils
   num_flop_per_token = get_num_flop_per_token(
@@ -184,6 +193,9 @@ def train(args):
   model.train()
   train_step = 0
   for input_ids, labels in train_dl:
+    if train_step > args.training_steps:
+      break
+    
     train_step += 1
     ntokens_since_last_log += args.batch_size * args.sequence_length * dp_size
     num_items_in_batch = labels.ne(-100).sum()
@@ -195,10 +207,11 @@ def train(args):
     if (train_step == 1 or train_step % args.logging_frequency == 0) and rank == 0:
       time_delta = time.perf_counter() - time_last_log
       tps = ntokens_since_last_log / time_delta 
-      mfu = 100 * num_flop_per_token * tps / 989e12
+      mfu = 100 * num_flop_per_token * tps / (989e12 * world_size)
       tflops = num_flop_per_token * tps / 1e12
       training_tps = ntraining_tokens_since_last_log / time_delta
-      logger.info(f"Step: {train_step} | Loss (Avg): {average_loss:.2f} | Tokens per second: {tps:.2f} | Training tokens per second (%): {100*training_tps/tps:.2f} | MFU (%): {mfu:.2f} | TFLOPs: {tflops:.2f}")
+      memory = torch.cuda.memory.memory_reserved() / 2**30
+      logger.info(f"Step: {train_step} | Loss (Avg): {average_loss:.2f} | Reserved Memory {memory:.2f} GB  | Tokens per second: {tps:.2f} | Training tokens per second (%): {100*training_tps/tps:.2f} | MFU (%): {mfu:.2f} | TFLOPs: {tflops:.2f}")
       ntokens_since_last_log = 0
       ntraining_tokens_since_last_log = 0
       time_last_log = time.perf_counter()

@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --account=large-sc-2
-#SBATCH --time=00:07:59
+#SBATCH --time=00:59:59
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/yiswang/large-sc/project/logs/%x-%j.out
 #SBATCH --nodes=2
@@ -20,8 +20,6 @@ pip install datasets
 echo "START TIME: $(date)"
 
 ASSIGNMENT_DIR="/iopsstor/scratch/cscs/$USER/large-sc/project"
-
-echo "END TIME: $(date)"
 
 # The sbatch script is executed by only one node.
 echo "[sbatch-master] running on $(hostname)"
@@ -53,18 +51,19 @@ numactl --membind=0-3 torchrun \
     --master_addr="${MASTER_ADDR}" \
     --master_port="${MASTER_PORT}" \
     "${ASSIGNMENT_DIR}"/train.py \
-    --batch-size 2 \
+    --batch-size 12 \
     --learning-rate 1e-4 \
     --lr-warmup-steps 100 \
     --training-steps 1000 \
-    --sequence-length 4096 \
-    --tp-size 4 \
-    --checkpoint-frequency 100 \
-    --checkpoint-save-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt \
-    --checkpoint-load-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt
+    --sequence-length 2048 \
+    --tp-size 2 \
+    --checkpoint-frequency 200 \
+#     --checkpoint-save-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt \
+#     --checkpoint-load-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt
 "
 
 # Submits the CMD to all the processes on all the nodes.
 srun bash -c "$CMD"
 
+echo "END TIME: $(date)"
 echo "[sbatch-master] task finished"

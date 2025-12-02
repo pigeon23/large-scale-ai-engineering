@@ -1,6 +1,6 @@
 # TODO
 1. <del>add distributed checkpoint save and load</del>
-2. now dataset only return one text per sample, should concat multiple texts in one sample. But if using iterable dataset, distributedsampler doesn't work because it only supports indexed dataset. Either implement a sampler for distributed training or implement an indexed datset that concats texts.
+2. <del>now dataset only return one text per sample, should concat multiple texts in one sample. But if using iterable dataset, distributedsampler doesn't work because it only supports indexed dataset. Either implement a sampler for distributed training or implement an indexed datset that concats texts.</del>
 3. evaluation dataset? split current dataset or simply look for another public dataset?
 4. performance evaluation method
 5. <del>tp model weight initialization under same random seed</del>
