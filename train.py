@@ -31,29 +31,12 @@ def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, m
     with loss_parallel():
       loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
       loss.backward()
-      
-    if torch.isnan(loss):
-      print(f"[Rank {device}] NaN loss detected at step!")
     
     # --- START: Loss Aggregation Logic for Logging ---
     reduced_loss = loss.clone().detach()
     average_loss = reduced_loss.item() 
     
     # print(f"[Rank {rank}] loss before all_reduce: {loss}")
-    
-    if world_size > 1:
-      with torch.no_grad():
-        if isinstance(loss, torch.distributed.tensor.DTensor):
-            loss_log = loss.full_tensor()
-        else:
-            loss_log = loss
-
-        # Reduce across Data Parallel dimension only
-        dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh.get_group("data"))
-        average_loss = loss_log / mesh["data"].size()
-        average_loss = average_loss.item()
-
-    del logits
     
     torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
@@ -62,7 +45,7 @@ def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, m
     optimizer.step()
     lr_scheduler.step()
     
-    return average_loss
+    return loss
 
 def train(args):
   logger.info(f"Experiment args: {args}")
@@ -130,7 +113,6 @@ def train(args):
         n_layers=16,
         n_heads=16,
         n_kv_heads=8,
-        ffn_dim_multiplier=1.3,
         multiple_of=1024,
         rope_theta=500000,
         vocab_size=tokenizer.vocab_size,
@@ -154,6 +136,12 @@ def train(args):
         fully_shard(layer, mesh=mesh['data'], reshard_after_forward=True, mp_policy=mixture)
     fully_shard(model, mesh=mesh['data'], reshard_after_forward=False, mp_policy=mixture)
     model = model.to_empty(device=device)
+    
+    # Some problem with Embedding layer and output layer when compiling related to tp
+    if args.compile:
+      logger.info("Compiling model...")
+      for key in model.layers:
+          model.layers[key] = torch.compile(model.layers[key])
     
     rng = torch.Generator(device=device)
     rng.manual_seed(tp_rank)
@@ -201,17 +189,29 @@ def train(args):
     num_items_in_batch = labels.ne(-100).sum()
     ntraining_tokens_since_last_log += num_items_in_batch
       
-    average_loss = train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, mesh, world_size)
+    loss_tensor = train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, mesh, world_size)
     
     # Logging
-    if (train_step == 1 or train_step % args.logging_frequency == 0) and rank == 0:
+    if (train_step == 1 or train_step % args.logging_frequency == 0):
+      with torch.no_grad():
+        if isinstance(loss_tensor, torch.distributed.tensor.DTensor):
+            loss_log = loss_tensor.full_tensor()
+        else:
+            loss_log = loss_tensor
+            
+        # Reduce across Data Parallel dimension only
+        dist.all_reduce(loss_log, op=dist.ReduceOp.SUM, group=mesh.get_group("data"))
+        average_loss = loss_log / mesh["data"].size()
+        average_loss = average_loss.item()
+      
       time_delta = time.perf_counter() - time_last_log
       tps = ntokens_since_last_log / time_delta 
       mfu = 100 * num_flop_per_token * tps / (989e12 * world_size)
-      tflops = num_flop_per_token * tps / 1e12
+      tflops = num_flop_per_token * tps / 1e12 / world_size
       training_tps = ntraining_tokens_since_last_log / time_delta
       memory = torch.cuda.memory.memory_reserved() / 2**30
-      logger.info(f"Step: {train_step} | Loss (Avg): {average_loss:.2f} | Reserved Memory {memory:.2f} GB  | Tokens per second: {tps:.2f} | Training tokens per second (%): {100*training_tps/tps:.2f} | MFU (%): {mfu:.2f} | TFLOPs: {tflops:.2f}")
+      if rank == 0:
+        logger.info(f"Step: {train_step} | Loss (Avg): {average_loss:.2f} | Reserved Memory {memory:.2f} GB  | Tokens per second: {tps:.2f} | Training tokens per second (%): {100*training_tps/tps:.2f} | MFU (%): {mfu:.2f} | TFLOP/s/GPU: {tflops:.2f}")
       ntokens_since_last_log = 0
       ntraining_tokens_since_last_log = 0
       time_last_log = time.perf_counter()

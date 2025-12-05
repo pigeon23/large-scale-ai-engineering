@@ -3,7 +3,7 @@
 #SBATCH --time=00:59:59
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/yiswang/large-sc/project/logs/%x-%j.out
-#SBATCH --nodes=2
+#SBATCH --nodes=8
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
 #SBATCH --environment=/iopsstor/scratch/cscs/yiswang/large-sc/ngc_pt_jan.toml   # Vanilla 25.01 PyTorch NGC Image 
@@ -51,12 +51,14 @@ numactl --membind=0-3 torchrun \
     --master_addr="${MASTER_ADDR}" \
     --master_port="${MASTER_PORT}" \
     "${ASSIGNMENT_DIR}"/train.py \
-    --batch-size 12 \
+    --batch-size 8 \
     --learning-rate 1e-4 \
     --lr-warmup-steps 100 \
     --training-steps 1000 \
     --sequence-length 2048 \
-    --tp-size 2 \
+    --compile \
+    --fused-optimizer \
+    --tp-size 1 \
     --checkpoint-frequency 200 \
 #     --checkpoint-save-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt \
 #     --checkpoint-load-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt
