@@ -2,11 +2,12 @@
 #SBATCH --account=large-sc-2
 #SBATCH --time=00:59:59
 #SBATCH --job-name=lsai
-#SBATCH --output=/iopsstor/scratch/cscs/yiswang/large-sc/project/logs/%x-%j.out
+#SBATCH --output=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.out
+#SBATCH --error=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.err
 #SBATCH --nodes=8
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
-#SBATCH --environment=/iopsstor/scratch/cscs/yiswang/large-sc/ngc_pt_jan.toml   # Vanilla 25.01 PyTorch NGC Image 
+#SBATCH --environment=/iopsstor/scratch/cscs/jiahli/large-sc/project/environment/project_env.toml   # Vanilla 25.01 PyTorch NGC Image
 #SBATCH --no-requeue	# Prevent Slurm to requeue the job if the execution crashes (e.g. node failure) so we don't loose the logs
 
 # Stop the script if a command fails or if an undefined variable is used
@@ -31,7 +32,7 @@ echo "[sbatch-master] SLURM_NODEID: $SLURM_NODEID"
 echo "[sbatch-master] define some env vars that will be passed to the compute nodes"
 
 # The defined environment vars will be shared with the other compute nodes.
-export MASTER_ADDR=$(scontrol show hostname "$SLURM_NODELIST" | head -n1)  
+export MASTER_ADDR=$(scontrol show hostname "$SLURM_NODELIST" | head -n1)
 export MASTER_PORT=12345   # Choose an unused port
 export FOOBAR=666
 export WORLD_SIZE=$(( SLURM_NNODES * SLURM_NTASKS_PER_NODE ))
@@ -60,8 +61,8 @@ numactl --membind=0-3 torchrun \
     --fused-optimizer \
     --tp-size 1 \
     --checkpoint-frequency 200 \
-#     --checkpoint-save-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt \
-#     --checkpoint-load-path /iopsstor/scratch/cscs/yiswang/large-sc/project/ckpt
+#     --checkpoint-save-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt \
+#     --checkpoint-load-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt
 "
 
 # Submits the CMD to all the processes on all the nodes.

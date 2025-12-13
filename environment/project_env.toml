@@ -1,0 +1,11 @@
+image = "/iopsstor/scratch/cscs/jiahli/my_pytorch_25_01.sqsh"
+mounts = [
+    "/capstor",
+    "/iopsstor",
+    "/users",
+]
+workdir = "/workspace"
+
+[annotations]
+com.hooks.aws_ofi_nccl.enabled = "true"
+com.hooks.aws_ofi_nccl.variant = "cuda12"
