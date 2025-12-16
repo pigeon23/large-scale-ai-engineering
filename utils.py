@@ -29,13 +29,13 @@ def init_distributed():
     world_size = int(os.environ["WORLD_SIZE"])
 
     node_id = os.environ.get("SLURM_NODEID", "N/A")
-    
+
     # Set the current device for this process
     torch.cuda.set_device(local_rank)
 
     # Initialise the process group with NCCL backend (requires Nvidia GPUs)
     dist.init_process_group(backend="nccl")
-    
+
     print(f"[Distributed Init] Rank {rank} initialized on {node_id} on GPU {local_rank}.")
     dist.barrier()
     if rank == 0:
@@ -51,7 +51,7 @@ def init_logger():
     )
     ch.setFormatter(formatter)
     logger.addHandler(ch)
-    
+
 def init_weights(model, generator: torch.Generator):
     for name, module in model.named_modules():
         if isinstance(module, torch.nn.Linear):
@@ -65,7 +65,7 @@ def init_weights(model, generator: torch.Generator):
             # module.reset_parameters()
             torch.nn.init.normal_(module.weight, generator=generator)
             module._fill_padding_idx_with_zero()
-        
+
         elif hasattr(module, 'weight'):
              if "norm" in name.lower():
                 torch.nn.init.normal_(module.weight, generator=generator)
@@ -124,7 +124,7 @@ def build_lr_scheduler(optimizer: torch.optim, warmup_steps: int):
 
     lr_lambda = functools.partial(linear_warmup_constant, warmup_steps)
     return LambdaLR(optimizer, lr_lambda)
-    
+
 @torch.no_grad()
 def clip_grad_norm_(parameters, grad_max_norm):
   grads = [p.grad for p in parameters if p.grad is not None]
@@ -186,7 +186,7 @@ def get_args():
     parser.add_argument(
         "--training-steps",
         type=int,
-        default=10,
+        default=1000,
     )
     parser.add_argument(
         "--logging-frequency",
