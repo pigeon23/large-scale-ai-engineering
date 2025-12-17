@@ -59,7 +59,7 @@ numactl --membind=0-3 torchrun \
     --sequence-length 2048 \
     --compile \
     --fused-optimizer \
-    --tp-size 1 \
+    --tp-size 2 \
     --checkpoint-frequency 200 \
 #     --checkpoint-save-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt \
 #     --checkpoint-load-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt

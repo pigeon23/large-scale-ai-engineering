@@ -205,62 +205,35 @@ class Transformer(nn.Module):
 # ------------------------------------------------------------------------
 # TENSOR PARALLEL API
 # ------------------------------------------------------------------------
-
-def apply_tensor_parallel(model: Transformer, device_mesh: DeviceMesh):
-    """
-    Applies Tensor Parallelism using String Paths (FQNs).
-    """
-    
-    tp_plan = {}
-    
-    # 1. Parallelize Embeddings
-    # Note: Using string "tok_embeddings" instead of model.tok_embeddings
-    tp_plan["tok_embeddings"] = RowwiseParallel(
-            input_layouts=Replicate(),
-            output_layouts=Shard(1),
-        ),
-    
-    # 2. Parallelize Output Linear Layer
-    tp_plan["output"] = ColwiseParallel(
-            input_layouts=Shard(1),
-            output_layouts=Replicate()
-        )
-    
-    tp_plan["norm"] = SequenceParallel()
-    
+def apply_tensor_parallel(model: Transformer, device_mesh: DeviceMesh):    
     layer_tp_plan = {
-        # Now the input and output of SequenceParallel has Shard(1) layouts,
-        # to represent the input/output tensors sharded on the sequence dimension
-        "attention_norm": SequenceParallel(),
-        "attention": PrepareModuleInput(
-            input_layouts=(Shard(1), Replicate()),
-            desired_input_layouts=(Replicate(), Replicate()),
-        ),
-        "attention.wq": ColwiseParallel(use_local_output=False),
-        "attention.wk": ColwiseParallel(use_local_output=False),
-        "attention.wv": ColwiseParallel(use_local_output=False),
-        "attention.wo": RowwiseParallel(output_layouts=Shard(1)),
-        "ffn_norm": SequenceParallel(),
-        "feed_forward": PrepareModuleInput(
-            input_layouts=(Shard(1),),
-            desired_input_layouts=(Replicate(),),
-        ),
-        "feed_forward.w1": ColwiseParallel(),
-        "feed_forward.w2": RowwiseParallel(output_layouts=Shard(1)),
-        "feed_forward.w3": ColwiseParallel(),
-    }
+            "attention_norm": SequenceParallel(),
+            "attention": PrepareModuleInput(
+                input_layouts=(Shard(1), None),
+                desired_input_layouts=(Replicate(), None),
+            ),
+            "attention.wq": ColwiseParallel(),
+            "attention.wk": ColwiseParallel(),
+            "attention.wv": ColwiseParallel(),
+            "attention.wo": RowwiseParallel(output_layouts=Shard(1)),
+            "ffn_norm": SequenceParallel(),
+            "feed_forward": PrepareModuleInput(
+                input_layouts=(Shard(1),),
+                desired_input_layouts=(Replicate(),),
+            ),
+            "feed_forward.w1": ColwiseParallel(),
+            "feed_forward.w2": RowwiseParallel(output_layouts=Shard(1)),
+            "feed_forward.w3": ColwiseParallel(),
+        }
 
-    # 3. Parallelize Transformer Block Layers
     for transformer_block in model.layers.values():
         parallelize_module(
             module=transformer_block,
             device_mesh=device_mesh,
             parallelize_plan=layer_tp_plan,
         )
-        
-
-    # Apply the plan
-    model = parallelize_module(
+    
+    parallelize_module(
         model,
         device_mesh,
         {
@@ -271,10 +244,9 @@ def apply_tensor_parallel(model: Transformer, device_mesh: DeviceMesh):
             "norm": SequenceParallel(),
             "output": ColwiseParallel(
                 input_layouts=Shard(1),
-                # use DTensor as the output
+                output_layouts=Shard(-1),
                 use_local_output=False,
             ),
         },
     )
     
-    return model

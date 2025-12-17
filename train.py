@@ -71,7 +71,7 @@ def train(args):
       raise ValueError(f"World size {world_size} must be divisible by TP size {tp_size}")
   
   # Create a 2D mesh: (Data Parallel, Tensor Parallel)
-  # "data" dim: used for DDP gradient synchronization
+  # "data" dim: used for DP gradient synchronization
   # "tensor" dim: used for intra-layer tensor parallelism (if implemented in model)
   mesh = init_device_mesh("cuda", (dp_size, tp_size), mesh_dim_names=("data", "tensor"))
   
@@ -122,26 +122,22 @@ def train(args):
   with set_default_dtype(model_dtype):
     with torch.device('meta'):
       model = Transformer(model_config)
-    # model = model.to_empty(device=device)
     if tp_size > 1:
       logger.info(f"Applying Tensor Parallelism with size {tp_size}...")
-      model = apply_tensor_parallel(model, mesh['tensor'])
-    # Pass the mesh's "data" process group to DDP
-    # This ensures DDP syncs gradients only across the "data" dimension
-    # (i.e., across DP ranks, but not across TP ranks)
+      apply_tensor_parallel(model, mesh['tensor'])
+    
+     # Some problem with Embedding layer and output layer when compiling related to tp
+    if args.compile:
+      logger.info("Compiling model...")
+      for layer_id, transformer_block in model.layers.named_children():
+        transformer_block = torch.compile(transformer_block, fullgraph=True)
+        model.layers.register_module(layer_id, transformer_block)
     
     mixture = MixedPrecisionPolicy(torch.bfloat16, torch.float32)
-    
     for layer in model.layers.values():
         fully_shard(layer, mesh=mesh['data'], reshard_after_forward=True, mp_policy=mixture)
     fully_shard(model, mesh=mesh['data'], reshard_after_forward=False, mp_policy=mixture)
     model = model.to_empty(device=device)
-    
-    # Some problem with Embedding layer and output layer when compiling related to tp
-    if args.compile:
-      logger.info("Compiling model...")
-      for key in model.layers:
-          model.layers[key] = torch.compile(model.layers[key])
     
     rng = torch.Generator(device=device)
     rng.manual_seed(tp_rank)
