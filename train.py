@@ -32,12 +32,6 @@ def train_iteration(input_ids, labels, model, optimizer, lr_scheduler, device, m
       loss = torch.nn.functional.cross_entropy(logits.flatten(0, 1).float(), labels.flatten(0, 1))
       loss.backward()
     
-    # --- START: Loss Aggregation Logic for Logging ---
-    reduced_loss = loss.clone().detach()
-    average_loss = reduced_loss.item() 
-    
-    # print(f"[Rank {rank}] loss before all_reduce: {loss}")
-    
     torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 
     # logger.info(f"[Rank {device}] Memory allocation: {round(torch.cuda.memory_allocated(device) / 1e9, 3)} GB; Max allocation: {round(torch.cuda.max_memory_allocated(device) / 1e9, 3)} GB")
