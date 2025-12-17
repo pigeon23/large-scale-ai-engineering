@@ -9,7 +9,7 @@
 #SBATCH --gpus-per-node=4
 #SBATCH --cpus-per-task=72
 #SBATCH --mem=460000
-#SBATCH --environment=/iopsstor/scratch/cscs/yiswang/large-sc/ngc_pt_jan.toml   # Vanilla 25.01 PyTorch NGC Image 
+#SBATCH --environment=/iopsstor/scratch/cscs/yiswang/large-sc/ngc_pt_jan.toml   # Vanilla 25.01 PyTorch NGC Image
 #SBATCH --no-requeue	# Prevent Slurm to requeue the job if the execution crashes (e.g. node failure) so we don't loose the logs
 
 echo "START TIME: $(date)"
@@ -25,7 +25,7 @@ TRAINING_CMD="python3 $ASSIGNMENT_DIR/train.py \
     --learning-rate 5e-5 \
     --lr-warmup-steps 100 \
     --training-steps 1000 \
-    --sequence-length 4096
+    --sequence-length 2048
     "
 
 srun --cpus-per-task=$SLURM_CPUS_PER_TASK bash -c "$CMD_PREFIX $TRAINING_CMD"

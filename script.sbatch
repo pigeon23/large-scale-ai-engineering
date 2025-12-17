@@ -3,7 +3,6 @@
 #SBATCH --time=00:59:59
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.out
-#SBATCH --error=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.err
 #SBATCH --nodes=8
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
@@ -16,7 +15,7 @@ set -eo pipefail
 export NCCL_NET="AWS Libfabric"
 
 # pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
-pip install datasets
+# pip install datasets
 
 echo "START TIME: $(date)"
 
@@ -52,15 +51,15 @@ numactl --membind=0-3 torchrun \
     --master_addr="${MASTER_ADDR}" \
     --master_port="${MASTER_PORT}" \
     "${ASSIGNMENT_DIR}"/train.py \
-    --batch-size 8 \
-    --learning-rate 1e-4 \
+    --batch-size 1 \
+    --learning-rate 5e-5 \
     --lr-warmup-steps 100 \
     --training-steps 1000 \
     --sequence-length 2048 \
-    --compile \
-    --fused-optimizer \
     --tp-size 1 \
-    --checkpoint-frequency 200 \
+#     --compile \
+#     --fused-optimizer \
+#     --checkpoint-frequency 200 \
 #     --checkpoint-save-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt \
 #     --checkpoint-load-path /iopsstor/scratch/cscs/$USER/large-sc/project/ckpt
 "

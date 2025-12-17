@@ -89,30 +89,31 @@ def train(args):
   tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name_or_path)
 
   # TODO: each sample only contain one text with many paddings, but iterable dataset doesn't support DistributedSampler
-  # train_ds = ParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_size*args.batch_size*args.training_steps)
-  # train_collator = CollatorForCLM(args.sequence_length, tokenizer.pad_token_id)
+  train_ds = ParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_size*args.batch_size*args.training_steps)
+  train_collator = CollatorForCLM(args.sequence_length, tokenizer.pad_token_id)
 
   # DistributedSampler needs to know the DP rank and size.
   # Ranks within the same TP group (same DP rank) will receive the SAME data batch.
-  # train_dl = DataLoader(train_ds,
-  #                       batch_size=args.batch_size,
-  #                       pin_memory=True,
-  #                       num_workers=4,
-  #                       sampler=DistributedSampler(train_ds, num_replicas=dp_size, rank=dp_rank, shuffle=True),
-  #                       collate_fn=train_collator)
+  train_dl = DataLoader(train_ds,
+                        batch_size=args.batch_size,
+                        pin_memory=True,
+                        num_workers=4,
+                        sampler=DistributedSampler(train_ds, num_replicas=dp_size, rank=dp_rank, shuffle=True),
+                        collate_fn=train_collator)
 
-  train_ds = IterableParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_rank, dp_size)
+  # train_ds = IterableParquetDataset(args.dataset, tokenizer, args.sequence_length, dp_rank, dp_size)
 
-  train_dl = DataLoader(train_ds, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
+  # train_dl = DataLoader(train_ds, batch_size=args.batch_size, shuffle=False, num_workers=4, pin_memory=True)
 
 
   # Set up Model
   logger.info("Setting up Model...")
   model_config = TransformerModelArgs(
         dim=4096,
-        n_layers=16,
-        n_heads=16,
+        n_layers=32,
+        n_heads=32,
         n_kv_heads=8,
+        ffn_dim_multiplier=1.3,
         multiple_of=1024,
         rope_theta=500000,
         vocab_size=tokenizer.vocab_size,
