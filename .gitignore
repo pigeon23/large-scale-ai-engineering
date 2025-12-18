@@ -1,4 +1,5 @@
-logs/
+/logs/
 __pycache__/
 core_*
 ckpt/
+/experiments/plots/*.pdf

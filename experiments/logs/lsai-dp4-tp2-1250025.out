@@ -1,0 +1,136 @@
+START TIME: Wed Dec 17 02:35:37 CET 2025
+[sbatch-master] running on nid007164
+[sbatch-master] SLURM_NODELIST: nid[007164,007182]
+[sbatch-master] SLURM_NNODES: 2
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007164 noderank=0 localrank=0
+[srun] rank=1 host=nid007182 noderank=1 localrank=0
+W1217 02:35:48.610000 31132 torch/distributed/run.py:792] 
+W1217 02:35:48.610000 31132 torch/distributed/run.py:792] *****************************************
+W1217 02:35:48.610000 31132 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:48.610000 31132 torch/distributed/run.py:792] *****************************************
+W1217 02:35:49.486000 227847 torch/distributed/run.py:792] 
+W1217 02:35:49.486000 227847 torch/distributed/run.py:792] *****************************************
+W1217 02:35:49.486000 227847 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:49.486000 227847 torch/distributed/run.py:792] *****************************************
+2025-12-17 02:35:54,608 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+2025-12-17 02:35:54,608 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+Setting device to local rank: 1Setting device to local rank: 0
+
+2025-12-17 02:35:54,608 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+Setting device to local rank: 2
+2025-12-17 02:35:54,608 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+Setting device to local rank: 3
+2025-12-17 02:35:54,749 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+2025-12-17 02:35:54,749 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+2025-12-17 02:35:54,749 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+Setting device to local rank: 2Setting device to local rank: 3Setting device to local rank: 1
+
+
+2025-12-17 02:35:54,749 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=2, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=2)
+Setting device to local rank: 0
+[Rank 4] World Size: 8, DP: 2 / 4, TP: 0 / 2
+2025-12-17 02:36:01,438 - root - INFO - Setting up DataLoaders...
+[Rank 0] World Size: 8, DP: 0 / 4, TP: 0 / 2
+2025-12-17 02:36:01,700 - root - INFO - Setting up DataLoaders...
+[Rank 5] World Size: 8, DP: 2 / 4, TP: 1 / 2[Rank 6] World Size: 8, DP: 3 / 4, TP: 0 / 2
+
+2025-12-17 02:36:01,921 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:01,921 - root - INFO - Setting up DataLoaders...
+[Rank 7] World Size: 8, DP: 3 / 4, TP: 1 / 2
+2025-12-17 02:36:01,931 - root - INFO - Setting up DataLoaders...
+[Rank 1] World Size: 8, DP: 0 / 4, TP: 1 / 2[Rank 2] World Size: 8, DP: 1 / 4, TP: 0 / 2
+
+2025-12-17 02:36:02,226 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:02,226 - root - INFO - Setting up DataLoaders...
+[Rank 3] World Size: 8, DP: 1 / 4, TP: 1 / 2
+2025-12-17 02:36:02,274 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:06,974 - root - INFO - Setting up Model...
+2025-12-17 02:36:07,000 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:07,101 - root - INFO - Setting up Model...
+2025-12-17 02:36:07,120 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:07,193 - root - INFO - Setting up Model...
+2025-12-17 02:36:07,214 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:07,228 - root - INFO - Setting up Model...
+2025-12-17 02:36:07,248 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank2]:[W1217 02:36:07.671904945 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1217 02:36:07.734858029 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank3]:[W1217 02:36:07.762845426 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank0]:[W1217 02:36:07.797686925 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:09,199 - root - INFO - Setting up Model...
+2025-12-17 02:36:09,199 - root - INFO - Setting up Model...
+2025-12-17 02:36:09,206 - root - INFO - Setting up Model...
+2025-12-17 02:36:09,206 - root - INFO - Setting up Model...
+2025-12-17 02:36:09,217 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:09,219 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:09,223 - root - INFO - Applying Tensor Parallelism with size 2...
+2025-12-17 02:36:09,223 - root - INFO - Applying Tensor Parallelism with size 2...
+[rank7]:[W1217 02:36:09.905117196 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 7]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W1217 02:36:09.905470815 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 5]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank6]:[W1217 02:36:09.905576475 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 6]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W1217 02:36:09.055534076 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 4]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:16,369 - root - INFO - Starting training!
+2025-12-17 02:36:16,369 - root - INFO - Starting training!
+2025-12-17 02:36:16,369 - root - INFO - Starting training!
+2025-12-17 02:36:16,370 - root - INFO - Starting training!
+2025-12-17 02:36:16,370 - root - INFO - Starting training!
+2025-12-17 02:36:16,370 - root - INFO - Starting training!
+2025-12-17 02:36:16,370 - root - INFO - Starting training!
+2025-12-17 02:36:16,370 - root - INFO - Starting training!
+2025-12-17 02:36:22,462 - root - INFO - Step: 1 | Loss (Avg): 11.96 | Reserved Memory 28.87 GB  | Tokens per second: 2689.36 | Training tokens per second (%): 1.99 | MFU (%): 1.64 | TFLOP/s/GPU: 16.24
+2025-12-17 02:36:27,623 - root - INFO - Step: 5 | Loss (Avg): 11.94 | Reserved Memory 34.87 GB  | Tokens per second: 12701.77 | Training tokens per second (%): 9.81 | MFU (%): 7.76 | TFLOP/s/GPU: 76.72
+2025-12-17 02:36:33,840 - root - INFO - Step: 10 | Loss (Avg): 11.80 | Reserved Memory 34.87 GB  | Tokens per second: 13179.17 | Training tokens per second (%): 4.32 | MFU (%): 8.05 | TFLOP/s/GPU: 79.60
+2025-12-17 02:36:40,110 - root - INFO - Step: 15 | Loss (Avg): 11.47 | Reserved Memory 34.87 GB  | Tokens per second: 13067.62 | Training tokens per second (%): 9.30 | MFU (%): 7.98 | TFLOP/s/GPU: 78.93
+2025-12-17 02:36:46,426 - root - INFO - Step: 20 | Loss (Avg): 10.97 | Reserved Memory 34.87 GB  | Tokens per second: 12973.23 | Training tokens per second (%): 9.27 | MFU (%): 7.92 | TFLOP/s/GPU: 78.36
+2025-12-17 02:36:52,355 - root - INFO - Step: 25 | Loss (Avg): 10.63 | Reserved Memory 34.87 GB  | Tokens per second: 13818.40 | Training tokens per second (%): 14.56 | MFU (%): 8.44 | TFLOP/s/GPU: 83.46
+2025-12-17 02:36:58,105 - root - INFO - Step: 30 | Loss (Avg): 10.33 | Reserved Memory 34.87 GB  | Tokens per second: 14250.14 | Training tokens per second (%): 14.12 | MFU (%): 8.70 | TFLOP/s/GPU: 86.07
+2025-12-17 02:37:03,569 - root - INFO - Step: 35 | Loss (Avg): 9.94 | Reserved Memory 34.87 GB  | Tokens per second: 14997.44 | Training tokens per second (%): 8.58 | MFU (%): 9.16 | TFLOP/s/GPU: 90.58
+2025-12-17 02:37:09,017 - root - INFO - Step: 40 | Loss (Avg): 9.62 | Reserved Memory 34.87 GB  | Tokens per second: 15038.40 | Training tokens per second (%): 9.44 | MFU (%): 9.18 | TFLOP/s/GPU: 90.83
+2025-12-17 02:37:14,471 - root - INFO - Step: 45 | Loss (Avg): 9.44 | Reserved Memory 34.87 GB  | Tokens per second: 15024.86 | Training tokens per second (%): 11.04 | MFU (%): 9.18 | TFLOP/s/GPU: 90.75
+2025-12-17 02:37:19,941 - root - INFO - Step: 50 | Loss (Avg): 8.87 | Reserved Memory 34.87 GB  | Tokens per second: 14979.52 | Training tokens per second (%): 7.85 | MFU (%): 9.15 | TFLOP/s/GPU: 90.48
+2025-12-17 02:37:25,418 - root - INFO - Step: 55 | Loss (Avg): 8.44 | Reserved Memory 34.87 GB  | Tokens per second: 14958.45 | Training tokens per second (%): 11.38 | MFU (%): 9.14 | TFLOP/s/GPU: 90.35
+2025-12-17 02:37:30,891 - root - INFO - Step: 60 | Loss (Avg): 8.14 | Reserved Memory 34.87 GB  | Tokens per second: 14972.82 | Training tokens per second (%): 6.51 | MFU (%): 9.14 | TFLOP/s/GPU: 90.44
+2025-12-17 02:37:36,345 - root - INFO - Step: 65 | Loss (Avg): 7.98 | Reserved Memory 34.87 GB  | Tokens per second: 15024.12 | Training tokens per second (%): 6.70 | MFU (%): 9.18 | TFLOP/s/GPU: 90.75
+2025-12-17 02:37:42,019 - root - INFO - Step: 70 | Loss (Avg): 7.83 | Reserved Memory 34.87 GB  | Tokens per second: 14441.34 | Training tokens per second (%): 8.59 | MFU (%): 8.82 | TFLOP/s/GPU: 87.23
+2025-12-17 02:37:47,499 - root - INFO - Step: 75 | Loss (Avg): 7.65 | Reserved Memory 34.87 GB  | Tokens per second: 14950.83 | Training tokens per second (%): 9.65 | MFU (%): 9.13 | TFLOP/s/GPU: 90.30
+2025-12-17 02:37:52,963 - root - INFO - Step: 80 | Loss (Avg): 7.24 | Reserved Memory 34.87 GB  | Tokens per second: 14995.51 | Training tokens per second (%): 9.83 | MFU (%): 9.16 | TFLOP/s/GPU: 90.57
+2025-12-17 02:37:58,451 - root - INFO - Step: 85 | Loss (Avg): 7.41 | Reserved Memory 34.87 GB  | Tokens per second: 14930.02 | Training tokens per second (%): 9.48 | MFU (%): 9.12 | TFLOP/s/GPU: 90.18
+2025-12-17 02:38:03,939 - root - INFO - Step: 90 | Loss (Avg): 7.63 | Reserved Memory 34.87 GB  | Tokens per second: 14930.60 | Training tokens per second (%): 9.67 | MFU (%): 9.12 | TFLOP/s/GPU: 90.18
+2025-12-17 02:38:09,413 - root - INFO - Step: 95 | Loss (Avg): 7.33 | Reserved Memory 34.87 GB  | Tokens per second: 14969.93 | Training tokens per second (%): 10.41 | MFU (%): 9.14 | TFLOP/s/GPU: 90.42
+2025-12-17 02:38:14,892 - root - INFO - Step: 100 | Loss (Avg): 7.06 | Reserved Memory 34.87 GB  | Tokens per second: 14952.83 | Training tokens per second (%): 9.37 | MFU (%): 9.13 | TFLOP/s/GPU: 90.32
+2025-12-17 02:38:20,368 - root - INFO - Step: 105 | Loss (Avg): 7.19 | Reserved Memory 34.87 GB  | Tokens per second: 14962.75 | Training tokens per second (%): 7.86 | MFU (%): 9.14 | TFLOP/s/GPU: 90.38
+2025-12-17 02:38:25,844 - root - INFO - Step: 110 | Loss (Avg): 7.29 | Reserved Memory 34.87 GB  | Tokens per second: 14964.69 | Training tokens per second (%): 12.33 | MFU (%): 9.14 | TFLOP/s/GPU: 90.39
+2025-12-17 02:38:31,519 - root - INFO - Step: 115 | Loss (Avg): 7.21 | Reserved Memory 34.87 GB  | Tokens per second: 14438.60 | Training tokens per second (%): 7.63 | MFU (%): 8.82 | TFLOP/s/GPU: 87.21
+2025-12-17 02:38:36,988 - root - INFO - Step: 120 | Loss (Avg): 7.19 | Reserved Memory 34.87 GB  | Tokens per second: 14982.10 | Training tokens per second (%): 12.38 | MFU (%): 9.15 | TFLOP/s/GPU: 90.49
+2025-12-17 02:38:42,446 - root - INFO - Step: 125 | Loss (Avg): 7.15 | Reserved Memory 34.87 GB  | Tokens per second: 15010.42 | Training tokens per second (%): 7.86 | MFU (%): 9.17 | TFLOP/s/GPU: 90.66
+2025-12-17 02:38:47,912 - root - INFO - Step: 130 | Loss (Avg): 7.06 | Reserved Memory 34.87 GB  | Tokens per second: 14991.69 | Training tokens per second (%): 8.38 | MFU (%): 9.16 | TFLOP/s/GPU: 90.55
+2025-12-17 02:38:53,391 - root - INFO - Step: 135 | Loss (Avg): 7.10 | Reserved Memory 34.87 GB  | Tokens per second: 14954.73 | Training tokens per second (%): 11.79 | MFU (%): 9.13 | TFLOP/s/GPU: 90.33
+2025-12-17 02:38:58,871 - root - INFO - Step: 140 | Loss (Avg): 6.77 | Reserved Memory 34.87 GB  | Tokens per second: 14952.67 | Training tokens per second (%): 11.21 | MFU (%): 9.13 | TFLOP/s/GPU: 90.31
+2025-12-17 02:39:04,356 - root - INFO - Step: 145 | Loss (Avg): 7.18 | Reserved Memory 34.87 GB  | Tokens per second: 14937.41 | Training tokens per second (%): 12.79 | MFU (%): 9.12 | TFLOP/s/GPU: 90.22
+2025-12-17 02:39:09,814 - root - INFO - Step: 150 | Loss (Avg): 6.89 | Reserved Memory 34.87 GB  | Tokens per second: 15012.82 | Training tokens per second (%): 17.55 | MFU (%): 9.17 | TFLOP/s/GPU: 90.68
+2025-12-17 02:39:15,467 - root - INFO - Step: 155 | Loss (Avg): 6.85 | Reserved Memory 34.87 GB  | Tokens per second: 14493.79 | Training tokens per second (%): 7.23 | MFU (%): 8.85 | TFLOP/s/GPU: 87.54
+2025-12-17 02:39:20,938 - root - INFO - Step: 160 | Loss (Avg): 6.75 | Reserved Memory 34.87 GB  | Tokens per second: 14974.11 | Training tokens per second (%): 6.34 | MFU (%): 9.14 | TFLOP/s/GPU: 90.44
+2025-12-17 02:39:26,411 - root - INFO - Step: 165 | Loss (Avg): 6.87 | Reserved Memory 34.87 GB  | Tokens per second: 14972.85 | Training tokens per second (%): 8.55 | MFU (%): 9.14 | TFLOP/s/GPU: 90.44
+2025-12-17 02:39:31,871 - root - INFO - Step: 170 | Loss (Avg): 7.21 | Reserved Memory 34.87 GB  | Tokens per second: 15004.86 | Training tokens per second (%): 10.00 | MFU (%): 9.16 | TFLOP/s/GPU: 90.63
+2025-12-17 02:39:37,340 - root - INFO - Step: 175 | Loss (Avg): 6.89 | Reserved Memory 34.87 GB  | Tokens per second: 14980.81 | Training tokens per second (%): 12.34 | MFU (%): 9.15 | TFLOP/s/GPU: 90.48
+2025-12-17 02:39:42,819 - root - INFO - Step: 180 | Loss (Avg): 6.94 | Reserved Memory 34.87 GB  | Tokens per second: 14955.70 | Training tokens per second (%): 11.32 | MFU (%): 9.13 | TFLOP/s/GPU: 90.33
+2025-12-17 02:39:48,289 - root - INFO - Step: 185 | Loss (Avg): 6.90 | Reserved Memory 34.87 GB  | Tokens per second: 14979.61 | Training tokens per second (%): 12.51 | MFU (%): 9.15 | TFLOP/s/GPU: 90.48
+2025-12-17 02:39:53,759 - root - INFO - Step: 190 | Loss (Avg): 6.75 | Reserved Memory 34.87 GB  | Tokens per second: 14980.54 | Training tokens per second (%): 10.79 | MFU (%): 9.15 | TFLOP/s/GPU: 90.48
+2025-12-17 02:39:59,431 - root - INFO - Step: 195 | Loss (Avg): 6.93 | Reserved Memory 34.87 GB  | Tokens per second: 14445.12 | Training tokens per second (%): 7.33 | MFU (%): 8.82 | TFLOP/s/GPU: 87.25
+2025-12-17 02:40:04,926 - root - INFO - Step: 200 | Loss (Avg): 7.08 | Reserved Memory 34.87 GB  | Tokens per second: 14909.48 | Training tokens per second (%): 5.93 | MFU (%): 9.11 | TFLOP/s/GPU: 90.05
+2025-12-17 02:40:04,990 - root - INFO - Training completed
+2025-12-17 02:40:04,999 - root - INFO - Training completed
+2025-12-17 02:40:05,002 - root - INFO - Training completed
+2025-12-17 02:40:05,008 - root - INFO - Training completed
+2025-12-17 02:40:05,009 - root - INFO - Training completed
+2025-12-17 02:40:05,013 - root - INFO - Training completed
+2025-12-17 02:40:05,017 - root - INFO - Training completed
+2025-12-17 02:40:05,025 - root - INFO - Training completed
+END TIME: Wed Dec 17 02:40:09 CET 2025
+[sbatch-master] task finished

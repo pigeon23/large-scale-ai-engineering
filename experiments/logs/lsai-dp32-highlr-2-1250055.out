@@ -1,0 +1,330 @@
+START TIME: Wed Dec 17 02:53:12 CET 2025
+[sbatch-master] running on nid007285
+[sbatch-master] SLURM_NODELIST: nid[007285-007286,007288,007296,007303,007306-007308]
+[sbatch-master] SLURM_NNODES: 8
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007285 noderank=0 localrank=0
+[srun] rank=6 host=nid007307 noderank=6 localrank=0
+[srun] rank=7 host=nid007308 noderank=7 localrank=0
+[srun] rank=3 host=nid007296 noderank=3 localrank=0
+[srun] rank=5 host=nid007306 noderank=5 localrank=0
+[srun] rank=4 host=nid007303 noderank=4 localrank=0
+[srun] rank=2 host=nid007288 noderank=2 localrank=0
+[srun] rank=1 host=nid007286 noderank=1 localrank=0
+W1217 02:53:23.044000 43788 torch/distributed/run.py:792] 
+W1217 02:53:23.044000 43788 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.044000 43788 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:23.044000 43788 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.171000 57865 torch/distributed/run.py:792] 
+W1217 02:53:23.171000 57865 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.171000 57865 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:23.171000 57865 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.337000 256314 torch/distributed/run.py:792] 
+W1217 02:53:23.337000 256314 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.337000 256314 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:23.337000 256314 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.515000 101543 torch/distributed/run.py:792] 
+W1217 02:53:23.515000 101543 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.515000 101543 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:23.515000 101543 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.609000 176182 torch/distributed/run.py:792] 
+W1217 02:53:23.609000 176182 torch/distributed/run.py:792] *****************************************
+W1217 02:53:23.609000 176182 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:23.609000 176182 torch/distributed/run.py:792] *****************************************
+W1217 02:53:24.407000 229329 torch/distributed/run.py:792] 
+W1217 02:53:24.407000 229329 torch/distributed/run.py:792] *****************************************
+W1217 02:53:24.407000 229329 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:24.407000 229329 torch/distributed/run.py:792] *****************************************
+W1217 02:53:24.533000 135397 torch/distributed/run.py:792] 
+W1217 02:53:24.533000 135397 torch/distributed/run.py:792] *****************************************
+W1217 02:53:24.533000 135397 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:24.533000 135397 torch/distributed/run.py:792] *****************************************
+W1217 02:53:25.388000 36038 torch/distributed/run.py:792] 
+W1217 02:53:25.388000 36038 torch/distributed/run.py:792] *****************************************
+W1217 02:53:25.388000 36038 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:53:25.388000 36038 torch/distributed/run.py:792] *****************************************
+2025-12-17 02:53:30,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:30,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:30,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+Setting device to local rank: 3
+Setting device to local rank: 1
+2025-12-17 02:53:30,600 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 1
+2025-12-17 02:53:30,600 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,600 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+2025-12-17 02:53:30,600 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+2025-12-17 02:53:30,622 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,622 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+2025-12-17 02:53:30,622 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 1
+2025-12-17 02:53:30,622 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+2025-12-17 02:53:30,625 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 1
+2025-12-17 02:53:30,625 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,625 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:30,625 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+Setting device to local rank: 3
+2025-12-17 02:53:30,714 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,714 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:30,714 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+Setting device to local rank: 1
+2025-12-17 02:53:30,714 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+2025-12-17 02:53:30,913 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 0
+2025-12-17 02:53:30,913 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+2025-12-17 02:53:30,913 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 1
+2025-12-17 02:53:30,914 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+2025-12-17 02:53:31,560 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:31,560 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:31,560 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:31,560 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+Setting device to local rank: 2
+Setting device to local rank: 1
+Setting device to local rank: 0
+2025-12-17 02:53:33,027 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 3
+2025-12-17 02:53:33,027 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+2025-12-17 02:53:33,027 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 2
+Setting device to local rank: 0
+2025-12-17 02:53:33,027 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=1, fused_optimizer=False, learning_rate=0.001, lr_warmup_steps=5, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=1)
+Setting device to local rank: 1
+[Rank 24] World Size: 32, DP: 24 / 32, TP: 0 / 1
+2025-12-17 02:53:36,051 - root - INFO - Setting up DataLoaders...
+[Rank 28] World Size: 32, DP: 28 / 32, TP: 0 / 1
+2025-12-17 02:53:36,083 - root - INFO - Setting up DataLoaders...
+[Rank 12] World Size: 32, DP: 12 / 32, TP: 0 / 1
+2025-12-17 02:53:36,088 - root - INFO - Setting up DataLoaders...
+[Rank 25] World Size: 32, DP: 25 / 32, TP: 0 / 1
+2025-12-17 02:53:36,407 - root - INFO - Setting up DataLoaders...
+[Rank 27] World Size: 32, DP: 27 / 32, TP: 0 / 1
+[Rank 26] World Size: 32, DP: 26 / 32, TP: 0 / 1
+2025-12-17 02:53:36,417 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:36,417 - root - INFO - Setting up DataLoaders...
+[Rank 29] World Size: 32, DP: 29 / 32, TP: 0 / 1[Rank 31] World Size: 32, DP: 31 / 32, TP: 0 / 1
+
+[Rank 30] World Size: 32, DP: 30 / 32, TP: 0 / 1
+2025-12-17 02:53:36,515 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:36,515 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:36,515 - root - INFO - Setting up DataLoaders...
+[Rank 15] World Size: 32, DP: 15 / 32, TP: 0 / 1[Rank 13] World Size: 32, DP: 13 / 32, TP: 0 / 1[Rank 14] World Size: 32, DP: 14 / 32, TP: 0 / 1
+
+
+2025-12-17 02:53:36,563 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:36,563 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:36,563 - root - INFO - Setting up DataLoaders...
+[Rank 20] World Size: 32, DP: 20 / 32, TP: 0 / 1
+2025-12-17 02:53:37,059 - root - INFO - Setting up DataLoaders...
+[Rank 23] World Size: 32, DP: 23 / 32, TP: 0 / 1
+2025-12-17 02:53:37,403 - root - INFO - Setting up DataLoaders...
+[Rank 22] World Size: 32, DP: 22 / 32, TP: 0 / 1
+2025-12-17 02:53:37,412 - root - INFO - Setting up DataLoaders...
+[Rank 21] World Size: 32, DP: 21 / 32, TP: 0 / 1
+2025-12-17 02:53:37,422 - root - INFO - Setting up DataLoaders...
+[Rank 16] World Size: 32, DP: 16 / 32, TP: 0 / 1
+2025-12-17 02:53:37,479 - root - INFO - Setting up DataLoaders...
+[Rank 0] World Size: 32, DP: 0 / 32, TP: 0 / 1
+2025-12-17 02:53:37,500 - root - INFO - Setting up DataLoaders...
+[Rank 4] World Size: 32, DP: 4 / 32, TP: 0 / 1
+2025-12-17 02:53:37,813 - root - INFO - Setting up DataLoaders...
+[Rank 2] World Size: 32, DP: 2 / 32, TP: 0 / 1
+2025-12-17 02:53:37,956 - root - INFO - Setting up DataLoaders...
+[Rank 3] World Size: 32, DP: 3 / 32, TP: 0 / 1
+2025-12-17 02:53:37,965 - root - INFO - Setting up DataLoaders...
+[Rank 1] World Size: 32, DP: 1 / 32, TP: 0 / 1
+2025-12-17 02:53:38,015 - root - INFO - Setting up DataLoaders...
+[Rank 17] World Size: 32, DP: 17 / 32, TP: 0 / 1[Rank 19] World Size: 32, DP: 19 / 32, TP: 0 / 1
+
+2025-12-17 02:53:38,061 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:38,061 - root - INFO - Setting up DataLoaders...
+[Rank 18] World Size: 32, DP: 18 / 32, TP: 0 / 1
+2025-12-17 02:53:38,070 - root - INFO - Setting up DataLoaders...
+[Rank 6] World Size: 32, DP: 6 / 32, TP: 0 / 1
+2025-12-17 02:53:38,341 - root - INFO - Setting up DataLoaders...
+[Rank 7] World Size: 32, DP: 7 / 32, TP: 0 / 1
+2025-12-17 02:53:38,341 - root - INFO - Setting up DataLoaders...
+[Rank 5] World Size: 32, DP: 5 / 32, TP: 0 / 1
+2025-12-17 02:53:38,351 - root - INFO - Setting up DataLoaders...
+[Rank 8] World Size: 32, DP: 8 / 32, TP: 0 / 1
+2025-12-17 02:53:39,629 - root - INFO - Setting up DataLoaders...
+[Rank 11] World Size: 32, DP: 11 / 32, TP: 0 / 1
+[Rank 9] World Size: 32, DP: 9 / 32, TP: 0 / 1
+2025-12-17 02:53:40,176 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:40,176 - root - INFO - Setting up DataLoaders...
+[Rank 10] World Size: 32, DP: 10 / 32, TP: 0 / 1
+2025-12-17 02:53:40,185 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:53:41,354 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,389 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,389 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,402 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,469 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,597 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,609 - root - INFO - Setting up Model...
+2025-12-17 02:53:41,680 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,194 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,303 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,326 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,469 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,663 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,830 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,847 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,877 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,947 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,947 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,948 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,952 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,967 - root - INFO - Setting up Model...
+2025-12-17 02:53:42,980 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,076 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,083 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,266 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,287 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,287 - root - INFO - Setting up Model...
+2025-12-17 02:53:43,315 - root - INFO - Setting up Model...
+2025-12-17 02:53:44,869 - root - INFO - Setting up Model...
+2025-12-17 02:53:45,155 - root - INFO - Setting up Model...
+2025-12-17 02:53:45,211 - root - INFO - Setting up Model...
+2025-12-17 02:53:45,571 - root - INFO - Setting up Model...
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,608 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:52,609 - root - INFO - Starting training!
+2025-12-17 02:53:58,440 - root - INFO - Step: 1 | Loss (Avg): 11.91 | Reserved Memory 26.88 GB  | Tokens per second: 11238.34 | Training tokens per second (%): 0.55 | MFU (%): 1.72 | TFLOP/s/GPU: 16.97
+2025-12-17 02:54:01,965 - root - INFO - Step: 5 | Loss (Avg): 9.01 | Reserved Memory 30.89 GB  | Tokens per second: 74414.17 | Training tokens per second (%): 0.54 | MFU (%): 11.36 | TFLOP/s/GPU: 112.37
+2025-12-17 02:54:06,368 - root - INFO - Step: 10 | Loss (Avg): 8.54 | Reserved Memory 30.89 GB  | Tokens per second: 74423.28 | Training tokens per second (%): 1.37 | MFU (%): 11.36 | TFLOP/s/GPU: 112.38
+2025-12-17 02:54:10,719 - root - INFO - Step: 15 | Loss (Avg): 8.04 | Reserved Memory 30.89 GB  | Tokens per second: 75344.10 | Training tokens per second (%): 0.92 | MFU (%): 11.50 | TFLOP/s/GPU: 113.77
+2025-12-17 02:54:15,091 - root - INFO - Step: 20 | Loss (Avg): 7.84 | Reserved Memory 30.89 GB  | Tokens per second: 74971.03 | Training tokens per second (%): 2.17 | MFU (%): 11.45 | TFLOP/s/GPU: 113.21
+2025-12-17 02:54:19,485 - root - INFO - Step: 25 | Loss (Avg): 7.92 | Reserved Memory 30.89 GB  | Tokens per second: 74639.29 | Training tokens per second (%): 1.40 | MFU (%): 11.40 | TFLOP/s/GPU: 112.71
+2025-12-17 02:54:23,935 - root - INFO - Step: 30 | Loss (Avg): 8.06 | Reserved Memory 30.89 GB  | Tokens per second: 73653.79 | Training tokens per second (%): 1.78 | MFU (%): 11.25 | TFLOP/s/GPU: 111.22
+2025-12-17 02:54:28,365 - root - INFO - Step: 35 | Loss (Avg): 7.94 | Reserved Memory 30.89 GB  | Tokens per second: 74003.64 | Training tokens per second (%): 1.01 | MFU (%): 11.30 | TFLOP/s/GPU: 111.75
+2025-12-17 02:54:32,814 - root - INFO - Step: 40 | Loss (Avg): 7.81 | Reserved Memory 30.89 GB  | Tokens per second: 73669.10 | Training tokens per second (%): 1.05 | MFU (%): 11.25 | TFLOP/s/GPU: 111.24
+2025-12-17 02:54:37,264 - root - INFO - Step: 45 | Loss (Avg): 7.79 | Reserved Memory 30.89 GB  | Tokens per second: 73670.87 | Training tokens per second (%): 1.38 | MFU (%): 11.25 | TFLOP/s/GPU: 111.24
+2025-12-17 02:54:41,716 - root - INFO - Step: 50 | Loss (Avg): 7.77 | Reserved Memory 30.89 GB  | Tokens per second: 73614.73 | Training tokens per second (%): 1.03 | MFU (%): 11.24 | TFLOP/s/GPU: 111.16
+2025-12-17 02:54:46,179 - root - INFO - Step: 55 | Loss (Avg): 7.79 | Reserved Memory 30.89 GB  | Tokens per second: 73455.25 | Training tokens per second (%): 1.39 | MFU (%): 11.22 | TFLOP/s/GPU: 110.92
+2025-12-17 02:54:50,636 - root - INFO - Step: 60 | Loss (Avg): 7.80 | Reserved Memory 30.89 GB  | Tokens per second: 73535.55 | Training tokens per second (%): 1.60 | MFU (%): 11.23 | TFLOP/s/GPU: 111.04
+2025-12-17 02:54:55,083 - root - INFO - Step: 65 | Loss (Avg): 7.69 | Reserved Memory 30.89 GB  | Tokens per second: 73711.05 | Training tokens per second (%): 0.59 | MFU (%): 11.25 | TFLOP/s/GPU: 111.30
+2025-12-17 02:54:59,529 - root - INFO - Step: 70 | Loss (Avg): 7.75 | Reserved Memory 30.89 GB  | Tokens per second: 73734.64 | Training tokens per second (%): 1.28 | MFU (%): 11.26 | TFLOP/s/GPU: 111.34
+2025-12-17 02:55:03,959 - root - INFO - Step: 75 | Loss (Avg): 7.83 | Reserved Memory 30.89 GB  | Tokens per second: 73977.22 | Training tokens per second (%): 2.02 | MFU (%): 11.29 | TFLOP/s/GPU: 111.71
+2025-12-17 02:55:08,406 - root - INFO - Step: 80 | Loss (Avg): 7.76 | Reserved Memory 30.89 GB  | Tokens per second: 73713.01 | Training tokens per second (%): 1.41 | MFU (%): 11.25 | TFLOP/s/GPU: 111.31
+2025-12-17 02:55:12,865 - root - INFO - Step: 85 | Loss (Avg): 7.78 | Reserved Memory 30.89 GB  | Tokens per second: 73516.60 | Training tokens per second (%): 0.69 | MFU (%): 11.22 | TFLOP/s/GPU: 111.01
+2025-12-17 02:55:17,316 - root - INFO - Step: 90 | Loss (Avg): 7.72 | Reserved Memory 30.89 GB  | Tokens per second: 73636.31 | Training tokens per second (%): 1.69 | MFU (%): 11.24 | TFLOP/s/GPU: 111.19
+2025-12-17 02:55:21,767 - root - INFO - Step: 95 | Loss (Avg): 7.78 | Reserved Memory 30.89 GB  | Tokens per second: 73640.62 | Training tokens per second (%): 1.32 | MFU (%): 11.24 | TFLOP/s/GPU: 111.20
+2025-12-17 02:55:26,216 - root - INFO - Step: 100 | Loss (Avg): 7.77 | Reserved Memory 30.89 GB  | Tokens per second: 73682.59 | Training tokens per second (%): 1.01 | MFU (%): 11.25 | TFLOP/s/GPU: 111.26
+2025-12-17 02:55:30,671 - root - INFO - Step: 105 | Loss (Avg): 7.66 | Reserved Memory 30.89 GB  | Tokens per second: 73567.46 | Training tokens per second (%): 1.49 | MFU (%): 11.23 | TFLOP/s/GPU: 111.09
+2025-12-17 02:55:35,129 - root - INFO - Step: 110 | Loss (Avg): 7.68 | Reserved Memory 30.89 GB  | Tokens per second: 73521.14 | Training tokens per second (%): 0.91 | MFU (%): 11.23 | TFLOP/s/GPU: 111.02
+2025-12-17 02:55:39,588 - root - INFO - Step: 115 | Loss (Avg): 7.67 | Reserved Memory 30.89 GB  | Tokens per second: 73513.81 | Training tokens per second (%): 0.55 | MFU (%): 11.22 | TFLOP/s/GPU: 111.01
+2025-12-17 02:55:44,024 - root - INFO - Step: 120 | Loss (Avg): 7.79 | Reserved Memory 30.89 GB  | Tokens per second: 73889.23 | Training tokens per second (%): 1.34 | MFU (%): 11.28 | TFLOP/s/GPU: 111.57
+2025-12-17 02:55:48,472 - root - INFO - Step: 125 | Loss (Avg): 7.79 | Reserved Memory 30.89 GB  | Tokens per second: 73691.71 | Training tokens per second (%): 1.88 | MFU (%): 11.25 | TFLOP/s/GPU: 111.27
+2025-12-17 02:55:52,902 - root - INFO - Step: 130 | Loss (Avg): 7.74 | Reserved Memory 30.89 GB  | Tokens per second: 74006.08 | Training tokens per second (%): 1.32 | MFU (%): 11.30 | TFLOP/s/GPU: 111.75
+2025-12-17 02:55:57,359 - root - INFO - Step: 135 | Loss (Avg): 7.78 | Reserved Memory 30.89 GB  | Tokens per second: 73542.64 | Training tokens per second (%): 0.98 | MFU (%): 11.23 | TFLOP/s/GPU: 111.05
+2025-12-17 02:56:01,806 - root - INFO - Step: 140 | Loss (Avg): 7.68 | Reserved Memory 30.89 GB  | Tokens per second: 73713.00 | Training tokens per second (%): 1.10 | MFU (%): 11.25 | TFLOP/s/GPU: 111.31
+2025-12-17 02:56:06,253 - root - INFO - Step: 145 | Loss (Avg): 7.70 | Reserved Memory 30.89 GB  | Tokens per second: 73707.17 | Training tokens per second (%): 1.34 | MFU (%): 11.25 | TFLOP/s/GPU: 111.30
+2025-12-17 02:56:10,703 - root - INFO - Step: 150 | Loss (Avg): 7.72 | Reserved Memory 30.89 GB  | Tokens per second: 73649.39 | Training tokens per second (%): 1.01 | MFU (%): 11.24 | TFLOP/s/GPU: 111.21
+2025-12-17 02:56:15,160 - root - INFO - Step: 155 | Loss (Avg): 7.62 | Reserved Memory 30.89 GB  | Tokens per second: 73550.62 | Training tokens per second (%): 1.49 | MFU (%): 11.23 | TFLOP/s/GPU: 111.06
+2025-12-17 02:56:19,617 - root - INFO - Step: 160 | Loss (Avg): 7.68 | Reserved Memory 30.89 GB  | Tokens per second: 73528.63 | Training tokens per second (%): 1.15 | MFU (%): 11.23 | TFLOP/s/GPU: 111.03
+2025-12-17 02:56:24,073 - root - INFO - Step: 165 | Loss (Avg): 7.63 | Reserved Memory 30.89 GB  | Tokens per second: 73553.49 | Training tokens per second (%): 0.88 | MFU (%): 11.23 | TFLOP/s/GPU: 111.07
+2025-12-17 02:56:28,503 - root - INFO - Step: 170 | Loss (Avg): 7.81 | Reserved Memory 30.89 GB  | Tokens per second: 73992.65 | Training tokens per second (%): 1.33 | MFU (%): 11.30 | TFLOP/s/GPU: 111.73
+2025-12-17 02:56:32,955 - root - INFO - Step: 175 | Loss (Avg): 7.70 | Reserved Memory 30.89 GB  | Tokens per second: 73631.92 | Training tokens per second (%): 1.72 | MFU (%): 11.24 | TFLOP/s/GPU: 111.18
+2025-12-17 02:56:37,410 - root - INFO - Step: 180 | Loss (Avg): 7.61 | Reserved Memory 30.89 GB  | Tokens per second: 73571.56 | Training tokens per second (%): 1.91 | MFU (%): 11.23 | TFLOP/s/GPU: 111.09
+2025-12-17 02:56:41,864 - root - INFO - Step: 185 | Loss (Avg): 7.72 | Reserved Memory 30.89 GB  | Tokens per second: 73591.91 | Training tokens per second (%): 1.43 | MFU (%): 11.24 | TFLOP/s/GPU: 111.12
+2025-12-17 02:56:46,288 - root - INFO - Step: 190 | Loss (Avg): 7.62 | Reserved Memory 30.89 GB  | Tokens per second: 74101.74 | Training tokens per second (%): 1.50 | MFU (%): 11.31 | TFLOP/s/GPU: 111.89
+2025-12-17 02:56:50,795 - root - INFO - Step: 195 | Loss (Avg): 7.67 | Reserved Memory 30.89 GB  | Tokens per second: 72729.07 | Training tokens per second (%): 1.03 | MFU (%): 11.10 | TFLOP/s/GPU: 109.82
+2025-12-17 02:56:55,319 - root - INFO - Step: 200 | Loss (Avg): 7.76 | Reserved Memory 30.89 GB  | Tokens per second: 72450.50 | Training tokens per second (%): 0.73 | MFU (%): 11.06 | TFLOP/s/GPU: 109.40
+2025-12-17 02:56:55,366 - root - INFO - Training completed
+2025-12-17 02:56:55,367 - root - INFO - Training completed
+2025-12-17 02:56:55,379 - root - INFO - Training completed
+2025-12-17 02:56:55,379 - root - INFO - Training completed
+2025-12-17 02:56:55,382 - root - INFO - Training completed
+2025-12-17 02:56:55,383 - root - INFO - Training completed
+2025-12-17 02:56:55,384 - root - INFO - Training completed
+2025-12-17 02:56:55,388 - root - INFO - Training completed
+2025-12-17 02:56:55,388 - root - INFO - Training completed
+2025-12-17 02:56:55,389 - root - INFO - Training completed
+2025-12-17 02:56:55,389 - root - INFO - Training completed
+2025-12-17 02:56:55,390 - root - INFO - Training completed
+2025-12-17 02:56:55,391 - root - INFO - Training completed
+2025-12-17 02:56:55,392 - root - INFO - Training completed
+2025-12-17 02:56:55,394 - root - INFO - Training completed
+2025-12-17 02:56:55,395 - root - INFO - Training completed
+2025-12-17 02:56:55,396 - root - INFO - Training completed
+2025-12-17 02:56:55,396 - root - INFO - Training completed
+2025-12-17 02:56:55,399 - root - INFO - Training completed
+2025-12-17 02:56:55,399 - root - INFO - Training completed
+2025-12-17 02:56:55,400 - root - INFO - Training completed
+2025-12-17 02:56:55,402 - root - INFO - Training completed
+2025-12-17 02:56:55,402 - root - INFO - Training completed
+2025-12-17 02:56:55,402 - root - INFO - Training completed
+2025-12-17 02:56:55,402 - root - INFO - Training completed
+2025-12-17 02:56:55,403 - root - INFO - Training completed
+2025-12-17 02:56:55,403 - root - INFO - Training completed
+2025-12-17 02:56:55,404 - root - INFO - Training completed
+2025-12-17 02:56:55,406 - root - INFO - Training completed
+2025-12-17 02:56:55,411 - root - INFO - Training completed
+2025-12-17 02:56:55,415 - root - INFO - Training completed
+2025-12-17 02:56:55,425 - root - INFO - Training completed
+END TIME: Wed Dec 17 02:56:59 CET 2025
+[sbatch-master] task finished

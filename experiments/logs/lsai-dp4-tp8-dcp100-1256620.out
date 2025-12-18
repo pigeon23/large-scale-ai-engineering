@@ -1,0 +1,522 @@
+START TIME: Thu Dec 18 00:35:31 CET 2025
+[sbatch-master] running on nid007500
+[sbatch-master] SLURM_NODELIST: nid[007500,007505,007508-007511,007522,007530]
+[sbatch-master] SLURM_NNODES: 8
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007500 noderank=0 localrank=0
+[srun] rank=3 host=nid007509 noderank=3 localrank=0
+[srun] rank=1 host=nid007505 noderank=1 localrank=0
+[srun] rank=4 host=nid007510 noderank=4 localrank=0
+[srun] rank=2 host=nid007508 noderank=2 localrank=0
+[srun] rank=7 host=nid007530 noderank=7 localrank=0
+W1218 00:35:40.796000 78155 torch/distributed/run.py:792] 
+W1218 00:35:40.796000 78155 torch/distributed/run.py:792] *****************************************
+W1218 00:35:40.796000 78155 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:40.796000 78155 torch/distributed/run.py:792] *****************************************
+[srun] rank=6 host=nid007522 noderank=6 localrank=0
+[srun] rank=5 host=nid007511 noderank=5 localrank=0
+W1218 00:35:42.809000 246733 torch/distributed/run.py:792] 
+W1218 00:35:42.809000 246733 torch/distributed/run.py:792] *****************************************
+W1218 00:35:42.809000 246733 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:42.809000 246733 torch/distributed/run.py:792] *****************************************
+W1218 00:35:42.977000 210570 torch/distributed/run.py:792] 
+W1218 00:35:42.977000 210570 torch/distributed/run.py:792] *****************************************
+W1218 00:35:42.977000 210570 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:42.977000 210570 torch/distributed/run.py:792] *****************************************
+W1218 00:35:42.978000 99559 torch/distributed/run.py:792] 
+W1218 00:35:42.978000 99559 torch/distributed/run.py:792] *****************************************
+W1218 00:35:42.978000 99559 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:42.978000 99559 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.065000 186762 torch/distributed/run.py:792] 
+W1218 00:35:43.065000 186762 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.065000 186762 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:43.065000 186762 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.094000 83392 torch/distributed/run.py:792] 
+W1218 00:35:43.094000 83392 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.094000 83392 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:43.094000 83392 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.245000 179021 torch/distributed/run.py:792] 
+W1218 00:35:43.245000 179021 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.245000 179021 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:43.245000 179021 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.249000 24141 torch/distributed/run.py:792] 
+W1218 00:35:43.249000 24141 torch/distributed/run.py:792] *****************************************
+W1218 00:35:43.249000 24141 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:35:43.249000 24141 torch/distributed/run.py:792] *****************************************
+2025-12-18 00:35:48,457 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+Setting device to local rank: 3
+2025-12-18 00:35:48,457 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,457 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:35:48,457 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-18 00:35:48,474 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+Setting device to local rank: 2
+2025-12-18 00:35:48,474 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,475 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:35:48,475 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-18 00:35:48,493 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-18 00:35:48,493 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,493 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+Setting device to local rank: 2
+2025-12-18 00:35:48,493 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:35:48,513 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+Setting device to local rank: 0
+2025-12-18 00:35:48,513 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,513 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:35:48,513 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:35:48,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-18 00:35:48,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-18 00:35:48,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:35:48,554 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:35:48,562 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+Setting device to local rank: 3
+Setting device to local rank: 1
+2025-12-18 00:35:48,562 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,562 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,580 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,580 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,580 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2Setting device to local rank: 1Setting device to local rank: 3
+
+
+Setting device to local rank: 0
+2025-12-18 00:35:48,581 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:48,658 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-18 00:35:50,393 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+Setting device to local rank: 1
+Setting device to local rank: 2
+2025-12-18 00:35:50,393 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:50,393 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:35:50,393 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+[Rank 0] World Size: 32, DP: 0 / 4, TP: 0 / 8
+2025-12-18 00:35:53,988 - root - INFO - Setting up DataLoaders...
+[Rank 1] World Size: 32, DP: 0 / 4, TP: 1 / 8
+2025-12-18 00:35:54,526 - root - INFO - Setting up DataLoaders...
+[Rank 3] World Size: 32, DP: 0 / 4, TP: 3 / 8
+2025-12-18 00:35:54,546 - root - INFO - Setting up DataLoaders...
+[Rank 2] World Size: 32, DP: 0 / 4, TP: 2 / 8
+2025-12-18 00:35:54,547 - root - INFO - Setting up DataLoaders...
+[Rank 24] World Size: 32, DP: 3 / 4, TP: 0 / 8
+2025-12-18 00:35:55,135 - root - INFO - Setting up DataLoaders...
+[Rank 28] World Size: 32, DP: 3 / 4, TP: 4 / 8
+2025-12-18 00:35:55,250 - root - INFO - Setting up DataLoaders...
+[Rank 12] World Size: 32, DP: 1 / 4, TP: 4 / 8
+2025-12-18 00:35:55,272 - root - INFO - Setting up DataLoaders...
+[Rank 16] World Size: 32, DP: 2 / 4, TP: 0 / 8
+2025-12-18 00:35:55,365 - root - INFO - Setting up DataLoaders...
+[Rank 4] World Size: 32, DP: 0 / 4, TP: 4 / 8
+2025-12-18 00:35:55,367 - root - INFO - Setting up DataLoaders...
+[Rank 20] World Size: 32, DP: 2 / 4, TP: 4 / 8
+2025-12-18 00:35:55,427 - root - INFO - Setting up DataLoaders...
+[Rank 25] World Size: 32, DP: 3 / 4, TP: 1 / 8
+2025-12-18 00:35:55,654 - root - INFO - Setting up DataLoaders...
+[Rank 27] World Size: 32, DP: 3 / 4, TP: 3 / 8
+[Rank 26] World Size: 32, DP: 3 / 4, TP: 2 / 8
+2025-12-18 00:35:55,694 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:35:55,694 - root - INFO - Setting up DataLoaders...
+[Rank 29] World Size: 32, DP: 3 / 4, TP: 5 / 8[Rank 31] World Size: 32, DP: 3 / 4, TP: 7 / 8
+
+2025-12-18 00:35:55,737 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:35:55,737 - root - INFO - Setting up DataLoaders...
+[Rank 30] World Size: 32, DP: 3 / 4, TP: 6 / 8
+2025-12-18 00:35:55,746 - root - INFO - Setting up DataLoaders...
+[Rank 13] World Size: 32, DP: 1 / 4, TP: 5 / 8
+2025-12-18 00:35:55,753 - root - INFO - Setting up DataLoaders...
+[Rank 14] World Size: 32, DP: 1 / 4, TP: 6 / 8
+2025-12-18 00:35:55,773 - root - INFO - Setting up DataLoaders...
+[Rank 15] World Size: 32, DP: 1 / 4, TP: 7 / 8
+2025-12-18 00:35:55,793 - root - INFO - Setting up DataLoaders...
+[Rank 7] World Size: 32, DP: 0 / 4, TP: 7 / 8[Rank 6] World Size: 32, DP: 0 / 4, TP: 6 / 8
+
+2025-12-18 00:35:55,856 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:35:55,856 - root - INFO - Setting up DataLoaders...
+[Rank 5] World Size: 32, DP: 0 / 4, TP: 5 / 8
+2025-12-18 00:35:55,865 - root - INFO - Setting up DataLoaders...
+[Rank 21] World Size: 32, DP: 2 / 4, TP: 5 / 8
+2025-12-18 00:35:55,895 - root - INFO - Setting up DataLoaders...
+[Rank 19] World Size: 32, DP: 2 / 4, TP: 3 / 8[Rank 18] World Size: 32, DP: 2 / 4, TP: 2 / 8
+
+2025-12-18 00:35:55,951 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:35:55,951 - root - INFO - Setting up DataLoaders...
+[Rank 23] World Size: 32, DP: 2 / 4, TP: 7 / 8
+2025-12-18 00:35:55,955 - root - INFO - Setting up DataLoaders...
+[Rank 17] World Size: 32, DP: 2 / 4, TP: 1 / 8
+2025-12-18 00:35:55,960 - root - INFO - Setting up DataLoaders...
+[Rank 22] World Size: 32, DP: 2 / 4, TP: 6 / 8
+2025-12-18 00:35:55,965 - root - INFO - Setting up DataLoaders...
+[Rank 8] World Size: 32, DP: 1 / 4, TP: 0 / 8
+2025-12-18 00:35:57,054 - root - INFO - Setting up DataLoaders...
+[Rank 11] World Size: 32, DP: 1 / 4, TP: 3 / 8
+2025-12-18 00:35:57,586 - root - INFO - Setting up DataLoaders...
+[Rank 9] World Size: 32, DP: 1 / 4, TP: 1 / 8
+[Rank 10] World Size: 32, DP: 1 / 4, TP: 2 / 8
+2025-12-18 00:35:57,606 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:35:57,606 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:36:00,339 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,359 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,390 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,393 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,413 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,415 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,466 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,473 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,482 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,493 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,493 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,493 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,510 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,511 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,511 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,513 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,513 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,524 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,529 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,529 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,538 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,544 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,570 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,588 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,599 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,615 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,621 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,623 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,629 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,634 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,635 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,641 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,641 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,659 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,673 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,673 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,692 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,693 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,787 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,792 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,805 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,807 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,815 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:00,817 - root - INFO - Setting up Model...
+2025-12-18 00:36:00,823 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank31]:[W1218 00:36:00.836981429 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 31]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:36:00,842 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank25]:[W1218 00:36:00.705773163 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 25]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank27]:[W1218 00:36:00.708653567 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 27]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank13]:[W1218 00:36:00.743269695 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 13]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank14]:[W1218 00:36:00.743700145 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 14]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank26]:[W1218 00:36:00.766367744 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 26]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:36:00,945 - root - INFO - Setting up Model...
+[rank28]:[W1218 00:36:00.951608851 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 28]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank30]:[W1218 00:36:00.963899244 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 30]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank29]:[W1218 00:36:00.964191618 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 29]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank15]:[W1218 00:36:00.811416686 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 15]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:36:00,972 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank24]:[W1218 00:36:00.832725401 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 24]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank6]:[W1218 00:36:01.941227970 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 6]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W1218 00:36:01.941228034 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 5]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank22]:[W1218 00:36:01.401789667 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 22]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank23]:[W1218 00:36:01.401789603 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 23]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank12]:[W1218 00:36:01.886791705 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 12]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank16]:[W1218 00:36:01.013616160 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 16]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank20]:[W1218 00:36:01.503655499 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 20]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W1218 00:36:01.086502259 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 4]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank17]:[W1218 00:36:01.077914575 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 17]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank21]:[W1218 00:36:01.540601967 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 21]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank18]:[W1218 00:36:01.101353802 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 18]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank19]:[W1218 00:36:01.106934937 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 19]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank7]:[W1218 00:36:01.229416983 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 7]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:36:02,115 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,115 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,115 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,115 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,133 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,134 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,134 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,142 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,282 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,303 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,407 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,427 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,511 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,521 - root - INFO - Setting up Model...
+2025-12-18 00:36:02,538 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:36:02,539 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank3]:[W1218 00:36:02.685180468 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1218 00:36:02.685180372 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank2]:[W1218 00:36:02.749758467 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank10]:[W1218 00:36:02.452456638 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank0]:[W1218 00:36:02.854296714 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank9]:[W1218 00:36:02.614700959 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank8]:[W1218 00:36:02.616125806 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank11]:[W1218 00:36:02.616617309 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,726 - root - INFO - Starting training!
+2025-12-18 00:36:08,727 - root - INFO - Starting training!
+2025-12-18 00:36:08,727 - root - INFO - Starting training!
+2025-12-18 00:36:15,433 - root - INFO - Step: 1 | Loss (Avg): 11.95 | Reserved Memory 28.25 GB  | Tokens per second: 9773.76 | Training tokens per second (%): 5.64 | MFU (%): 1.49 | TFLOP/s/GPU: 14.76
+2025-12-18 00:36:20,565 - root - INFO - Step: 5 | Loss (Avg): 11.95 | Reserved Memory 35.76 GB  | Tokens per second: 51088.22 | Training tokens per second (%): 9.70 | MFU (%): 7.80 | TFLOP/s/GPU: 77.14
+2025-12-18 00:36:27,419 - root - INFO - Step: 10 | Loss (Avg): 11.87 | Reserved Memory 35.76 GB  | Tokens per second: 47811.21 | Training tokens per second (%): 9.53 | MFU (%): 7.30 | TFLOP/s/GPU: 72.19
+2025-12-18 00:36:34,062 - root - INFO - Step: 15 | Loss (Avg): 11.66 | Reserved Memory 35.76 GB  | Tokens per second: 49335.79 | Training tokens per second (%): 10.43 | MFU (%): 7.53 | TFLOP/s/GPU: 74.50
+2025-12-18 00:36:40,545 - root - INFO - Step: 20 | Loss (Avg): 11.29 | Reserved Memory 35.76 GB  | Tokens per second: 50552.86 | Training tokens per second (%): 11.37 | MFU (%): 7.72 | TFLOP/s/GPU: 76.33
+2025-12-18 00:36:46,983 - root - INFO - Step: 25 | Loss (Avg): 10.87 | Reserved Memory 35.76 GB  | Tokens per second: 50907.99 | Training tokens per second (%): 10.14 | MFU (%): 7.77 | TFLOP/s/GPU: 76.87
+2025-12-18 00:36:53,760 - root - INFO - Step: 30 | Loss (Avg): 10.64 | Reserved Memory 35.76 GB  | Tokens per second: 48363.15 | Training tokens per second (%): 9.80 | MFU (%): 7.38 | TFLOP/s/GPU: 73.03
+2025-12-18 00:37:00,232 - root - INFO - Step: 35 | Loss (Avg): 10.36 | Reserved Memory 35.76 GB  | Tokens per second: 50639.57 | Training tokens per second (%): 9.18 | MFU (%): 7.73 | TFLOP/s/GPU: 76.47
+2025-12-18 00:37:06,613 - root - INFO - Step: 40 | Loss (Avg): 9.92 | Reserved Memory 35.76 GB  | Tokens per second: 51364.04 | Training tokens per second (%): 8.91 | MFU (%): 7.84 | TFLOP/s/GPU: 77.56
+2025-12-18 00:37:13,022 - root - INFO - Step: 45 | Loss (Avg): 9.66 | Reserved Memory 35.76 GB  | Tokens per second: 51135.31 | Training tokens per second (%): 9.00 | MFU (%): 7.81 | TFLOP/s/GPU: 77.21
+2025-12-18 00:37:19,442 - root - INFO - Step: 50 | Loss (Avg): 8.98 | Reserved Memory 35.76 GB  | Tokens per second: 51053.15 | Training tokens per second (%): 8.42 | MFU (%): 7.79 | TFLOP/s/GPU: 77.09
+2025-12-18 00:37:25,899 - root - INFO - Step: 55 | Loss (Avg): 8.61 | Reserved Memory 35.76 GB  | Tokens per second: 50761.66 | Training tokens per second (%): 9.63 | MFU (%): 7.75 | TFLOP/s/GPU: 76.65
+2025-12-18 00:37:32,362 - root - INFO - Step: 60 | Loss (Avg): 8.10 | Reserved Memory 35.76 GB  | Tokens per second: 50704.27 | Training tokens per second (%): 9.73 | MFU (%): 7.74 | TFLOP/s/GPU: 76.56
+2025-12-18 00:37:38,816 - root - INFO - Step: 65 | Loss (Avg): 7.72 | Reserved Memory 35.76 GB  | Tokens per second: 50789.55 | Training tokens per second (%): 10.86 | MFU (%): 7.75 | TFLOP/s/GPU: 76.69
+2025-12-18 00:37:45,545 - root - INFO - Step: 70 | Loss (Avg): 7.50 | Reserved Memory 35.76 GB  | Tokens per second: 48702.19 | Training tokens per second (%): 9.57 | MFU (%): 7.44 | TFLOP/s/GPU: 73.54
+2025-12-18 00:37:52,002 - root - INFO - Step: 75 | Loss (Avg): 7.43 | Reserved Memory 35.76 GB  | Tokens per second: 50760.57 | Training tokens per second (%): 11.15 | MFU (%): 7.75 | TFLOP/s/GPU: 76.65
+2025-12-18 00:37:58,475 - root - INFO - Step: 80 | Loss (Avg): 7.40 | Reserved Memory 35.76 GB  | Tokens per second: 50628.90 | Training tokens per second (%): 8.00 | MFU (%): 7.73 | TFLOP/s/GPU: 76.45
+2025-12-18 00:38:04,886 - root - INFO - Step: 85 | Loss (Avg): 7.32 | Reserved Memory 35.76 GB  | Tokens per second: 51122.64 | Training tokens per second (%): 8.42 | MFU (%): 7.81 | TFLOP/s/GPU: 77.20
+2025-12-18 00:38:11,425 - root - INFO - Step: 90 | Loss (Avg): 7.22 | Reserved Memory 35.76 GB  | Tokens per second: 50123.52 | Training tokens per second (%): 10.18 | MFU (%): 7.65 | TFLOP/s/GPU: 75.69
+2025-12-18 00:38:17,935 - root - INFO - Step: 95 | Loss (Avg): 7.29 | Reserved Memory 35.76 GB  | Tokens per second: 50340.63 | Training tokens per second (%): 9.57 | MFU (%): 7.69 | TFLOP/s/GPU: 76.01
+2025-12-18 00:38:24,471 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,472 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,472 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,472 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,474 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,474 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,474 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,474 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,477 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,478 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,478 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,478 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,494 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,494 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,495 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,495 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,500 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,500 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,500 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,501 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,504 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,504 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,504 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,505 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,509 - root - INFO - Step: 100 | Loss (Avg): 7.20 | Reserved Memory 35.76 GB  | Tokens per second: 49857.77 | Training tokens per second (%): 8.89 | MFU (%): 7.61 | TFLOP/s/GPU: 75.29
+2025-12-18 00:38:24,509 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,509 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,509 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,509 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,566 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,567 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,567 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:24,567 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:38:35,294 - root - INFO - Step: 105 | Loss (Avg): 7.10 | Reserved Memory 35.76 GB  | Tokens per second: 30386.44 | Training tokens per second (%): 8.18 | MFU (%): 4.64 | TFLOP/s/GPU: 45.88
+2025-12-18 00:38:41,800 - root - INFO - Step: 110 | Loss (Avg): 6.97 | Reserved Memory 35.76 GB  | Tokens per second: 50371.55 | Training tokens per second (%): 10.67 | MFU (%): 7.69 | TFLOP/s/GPU: 76.06
+2025-12-18 00:38:48,569 - root - INFO - Step: 115 | Loss (Avg): 7.02 | Reserved Memory 35.76 GB  | Tokens per second: 48417.83 | Training tokens per second (%): 11.63 | MFU (%): 7.39 | TFLOP/s/GPU: 73.11
+2025-12-18 00:38:55,093 - root - INFO - Step: 120 | Loss (Avg): 7.09 | Reserved Memory 35.76 GB  | Tokens per second: 50235.66 | Training tokens per second (%): 11.40 | MFU (%): 7.67 | TFLOP/s/GPU: 75.86
+2025-12-18 00:39:01,595 - root - INFO - Step: 125 | Loss (Avg): 7.04 | Reserved Memory 35.76 GB  | Tokens per second: 50404.06 | Training tokens per second (%): 9.27 | MFU (%): 7.70 | TFLOP/s/GPU: 76.11
+2025-12-18 00:39:08,117 - root - INFO - Step: 130 | Loss (Avg): 6.99 | Reserved Memory 35.76 GB  | Tokens per second: 50248.39 | Training tokens per second (%): 10.11 | MFU (%): 7.67 | TFLOP/s/GPU: 75.88
+2025-12-18 00:39:14,650 - root - INFO - Step: 135 | Loss (Avg): 6.97 | Reserved Memory 35.76 GB  | Tokens per second: 50164.86 | Training tokens per second (%): 8.98 | MFU (%): 7.66 | TFLOP/s/GPU: 75.75
+2025-12-18 00:39:21,181 - root - INFO - Step: 140 | Loss (Avg): 6.87 | Reserved Memory 35.76 GB  | Tokens per second: 50185.61 | Training tokens per second (%): 10.12 | MFU (%): 7.66 | TFLOP/s/GPU: 75.78
+2025-12-18 00:39:27,703 - root - INFO - Step: 145 | Loss (Avg): 6.92 | Reserved Memory 35.76 GB  | Tokens per second: 50251.92 | Training tokens per second (%): 8.98 | MFU (%): 7.67 | TFLOP/s/GPU: 75.88
+2025-12-18 00:39:34,460 - root - INFO - Step: 150 | Loss (Avg): 6.99 | Reserved Memory 35.76 GB  | Tokens per second: 48499.90 | Training tokens per second (%): 8.43 | MFU (%): 7.40 | TFLOP/s/GPU: 73.23
+2025-12-18 00:39:40,982 - root - INFO - Step: 155 | Loss (Avg): 6.74 | Reserved Memory 35.76 GB  | Tokens per second: 50256.64 | Training tokens per second (%): 7.31 | MFU (%): 7.67 | TFLOP/s/GPU: 75.89
+2025-12-18 00:39:47,453 - root - INFO - Step: 160 | Loss (Avg): 6.78 | Reserved Memory 35.76 GB  | Tokens per second: 50643.93 | Training tokens per second (%): 9.34 | MFU (%): 7.73 | TFLOP/s/GPU: 76.47
+2025-12-18 00:39:53,956 - root - INFO - Step: 165 | Loss (Avg): 6.72 | Reserved Memory 35.76 GB  | Tokens per second: 50400.41 | Training tokens per second (%): 10.40 | MFU (%): 7.70 | TFLOP/s/GPU: 76.10
+2025-12-18 00:40:00,511 - root - INFO - Step: 170 | Loss (Avg): 6.85 | Reserved Memory 35.76 GB  | Tokens per second: 49995.85 | Training tokens per second (%): 11.87 | MFU (%): 7.63 | TFLOP/s/GPU: 75.49
+2025-12-18 00:40:07,092 - root - INFO - Step: 175 | Loss (Avg): 6.77 | Reserved Memory 35.76 GB  | Tokens per second: 49803.56 | Training tokens per second (%): 9.23 | MFU (%): 7.60 | TFLOP/s/GPU: 75.20
+2025-12-18 00:40:13,637 - root - INFO - Step: 180 | Loss (Avg): 6.74 | Reserved Memory 35.76 GB  | Tokens per second: 50075.00 | Training tokens per second (%): 11.42 | MFU (%): 7.65 | TFLOP/s/GPU: 75.61
+2025-12-18 00:40:20,390 - root - INFO - Step: 185 | Loss (Avg): 6.77 | Reserved Memory 35.76 GB  | Tokens per second: 48529.86 | Training tokens per second (%): 11.44 | MFU (%): 7.41 | TFLOP/s/GPU: 73.28
+2025-12-18 00:40:26,949 - root - INFO - Step: 190 | Loss (Avg): 6.76 | Reserved Memory 35.76 GB  | Tokens per second: 49963.96 | Training tokens per second (%): 10.22 | MFU (%): 7.63 | TFLOP/s/GPU: 75.45
+2025-12-18 00:40:33,468 - root - INFO - Step: 195 | Loss (Avg): 6.69 | Reserved Memory 35.76 GB  | Tokens per second: 50275.73 | Training tokens per second (%): 8.71 | MFU (%): 7.68 | TFLOP/s/GPU: 75.92
+2025-12-18 00:40:39,948 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,948 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,948 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,949 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,953 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,953 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,953 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,954 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,956 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,956 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,956 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,957 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,980 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,980 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,981 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,981 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,984 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,984 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,984 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,985 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,986 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,986 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,986 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,987 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:40:39,992 - root - INFO - Step: 200 | Loss (Avg): 6.81 | Reserved Memory 35.76 GB  | Tokens per second: 50235.03 | Training tokens per second (%): 8.52 | MFU (%): 7.67 | TFLOP/s/GPU: 75.85
+2025-12-18 00:40:39,992 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,992 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,992 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:39,993 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:40:40,025 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:40,025 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:40:40,026 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+2025-12-18 00:40:40,026 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp100-1256620/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:40:43,864 - root - INFO - Training completed
+2025-12-18 00:40:43,885 - root - INFO - Training completed
+2025-12-18 00:40:43,886 - root - INFO - Training completed
+2025-12-18 00:40:43,889 - root - INFO - Training completed
+2025-12-18 00:40:43,893 - root - INFO - Training completed
+2025-12-18 00:40:43,894 - root - INFO - Training completed
+2025-12-18 00:40:43,896 - root - INFO - Training completed
+2025-12-18 00:40:43,897 - root - INFO - Training completed
+2025-12-18 00:40:43,902 - root - INFO - Training completed
+2025-12-18 00:40:43,902 - root - INFO - Training completed
+2025-12-18 00:40:43,902 - root - INFO - Training completed
+2025-12-18 00:40:43,903 - root - INFO - Training completed
+2025-12-18 00:40:43,904 - root - INFO - Training completed
+2025-12-18 00:40:43,905 - root - INFO - Training completed
+2025-12-18 00:40:43,906 - root - INFO - Training completed
+2025-12-18 00:40:43,907 - root - INFO - Training completed
+2025-12-18 00:40:43,907 - root - INFO - Training completed
+2025-12-18 00:40:43,908 - root - INFO - Training completed
+2025-12-18 00:40:43,910 - root - INFO - Training completed
+2025-12-18 00:40:43,916 - root - INFO - Training completed
+2025-12-18 00:40:43,916 - root - INFO - Training completed
+2025-12-18 00:40:43,916 - root - INFO - Training completed
+2025-12-18 00:40:43,919 - root - INFO - Training completed
+2025-12-18 00:40:43,919 - root - INFO - Training completed
+2025-12-18 00:40:43,920 - root - INFO - Training completed
+2025-12-18 00:40:43,921 - root - INFO - Training completed
+2025-12-18 00:40:43,926 - root - INFO - Training completed
+2025-12-18 00:40:43,926 - root - INFO - Training completed
+2025-12-18 00:40:43,926 - root - INFO - Training completed
+2025-12-18 00:40:43,927 - root - INFO - Training completed
+2025-12-18 00:40:43,928 - root - INFO - Training completed
+2025-12-18 00:40:43,934 - root - INFO - Training completed
+END TIME: Thu Dec 18 00:40:48 CET 2025
+[sbatch-master] task finished

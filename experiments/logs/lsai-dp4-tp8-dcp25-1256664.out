@@ -1,0 +1,714 @@
+START TIME: Thu Dec 18 00:36:45 CET 2025
+[sbatch-master] running on nid006876
+[sbatch-master] SLURM_NODELIST: nid[006876-006883]
+[sbatch-master] SLURM_NNODES: 8
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid006876 noderank=0 localrank=0
+[srun] rank=1 host=nid006877 noderank=1 localrank=0
+[srun] rank=5 host=nid006881 noderank=5 localrank=0
+[srun] rank=6 host=nid006882 noderank=6 localrank=0
+[srun] rank=3 host=nid006879 noderank=3 localrank=0
+[srun] rank=7 host=nid006883 noderank=7 localrank=0
+[srun] rank=2 host=nid006878 noderank=2 localrank=0
+[srun] rank=4 host=nid006880 noderank=4 localrank=0
+W1218 00:36:56.522000 48649 torch/distributed/run.py:792] 
+W1218 00:36:56.522000 48649 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.522000 48649 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:56.522000 48649 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.524000 183097 torch/distributed/run.py:792] 
+W1218 00:36:56.524000 183097 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.524000 183097 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:56.524000 183097 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.847000 232939 torch/distributed/run.py:792] 
+W1218 00:36:56.847000 232939 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.847000 232939 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:56.847000 232939 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.859000 19569 torch/distributed/run.py:792] 
+W1218 00:36:56.859000 19569 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.859000 19569 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:56.859000 19569 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.948000 69619 torch/distributed/run.py:792] 
+W1218 00:36:56.948000 69619 torch/distributed/run.py:792] *****************************************
+W1218 00:36:56.948000 69619 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:56.948000 69619 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.019000 163925 torch/distributed/run.py:792] 
+W1218 00:36:57.019000 163925 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.019000 163925 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:57.019000 163925 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.022000 244278 torch/distributed/run.py:792] 
+W1218 00:36:57.022000 244278 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.022000 244278 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:57.022000 244278 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.346000 185216 torch/distributed/run.py:792] 
+W1218 00:36:57.346000 185216 torch/distributed/run.py:792] *****************************************
+W1218 00:36:57.346000 185216 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1218 00:36:57.346000 185216 torch/distributed/run.py:792] *****************************************
+2025-12-18 00:37:02,657 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,657 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,657 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3Setting device to local rank: 2Setting device to local rank: 0
+
+
+2025-12-18 00:37:02,657 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:37:02,709 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+Setting device to local rank: 0
+Setting device to local rank: 1
+2025-12-18 00:37:02,709 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,709 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,709 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-18 00:37:02,748 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,748 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3Setting device to local rank: 0
+
+Setting device to local rank: 1
+Setting device to local rank: 2
+2025-12-18 00:37:02,748 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,748 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,769 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+Setting device to local rank: 2
+2025-12-18 00:37:02,769 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:37:02,769 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,769 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:37:02,774 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:02,774 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0Setting device to local rank: 1
+
+Setting device to local rank: 2
+2025-12-18 00:37:02,774 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:37:02,774 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:04,660 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-18 00:37:04,661 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:37:04,661 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-18 00:37:04,661 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-18 00:37:04,978 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:04,978 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3Setting device to local rank: 2
+
+2025-12-18 00:37:04,978 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-18 00:37:04,978 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-18 00:37:05,149 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:05,149 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-18 00:37:05,149 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1Setting device to local rank: 0
+
+Setting device to local rank: 2
+Setting device to local rank: 3
+2025-12-18 00:37:05,149 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=25, checkpoint_save_path='/iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664', checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+[Rank 28] World Size: 32, DP: 3 / 4, TP: 4 / 8
+2025-12-18 00:37:08,148 - root - INFO - Setting up DataLoaders...
+[Rank 8] World Size: 32, DP: 1 / 4, TP: 0 / 8
+2025-12-18 00:37:08,181 - root - INFO - Setting up DataLoaders...
+[Rank 20] World Size: 32, DP: 2 / 4, TP: 4 / 8
+2025-12-18 00:37:08,228 - root - INFO - Setting up DataLoaders...
+[Rank 24] World Size: 32, DP: 3 / 4, TP: 0 / 8
+2025-12-18 00:37:08,239 - root - INFO - Setting up DataLoaders...
+[Rank 29] World Size: 32, DP: 3 / 4, TP: 5 / 8
+2025-12-18 00:37:08,538 - root - INFO - Setting up DataLoaders...
+[Rank 30] World Size: 32, DP: 3 / 4, TP: 6 / 8
+2025-12-18 00:37:08,597 - root - INFO - Setting up DataLoaders...
+[Rank 11] World Size: 32, DP: 1 / 4, TP: 3 / 8
+2025-12-18 00:37:08,627 - root - INFO - Setting up DataLoaders...
+[Rank 26] World Size: 32, DP: 3 / 4, TP: 2 / 8[Rank 27] World Size: 32, DP: 3 / 4, TP: 3 / 8[Rank 25] World Size: 32, DP: 3 / 4, TP: 1 / 8
+
+
+2025-12-18 00:37:08,630 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:08,630 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:08,630 - root - INFO - Setting up DataLoaders...
+[Rank 9] World Size: 32, DP: 1 / 4, TP: 1 / 8
+2025-12-18 00:37:08,637 - root - INFO - Setting up DataLoaders...
+[Rank 10] World Size: 32, DP: 1 / 4, TP: 2 / 8
+2025-12-18 00:37:08,646 - root - INFO - Setting up DataLoaders...
+[Rank 22] World Size: 32, DP: 2 / 4, TP: 6 / 8
+2025-12-18 00:37:08,664 - root - INFO - Setting up DataLoaders...
+[Rank 31] World Size: 32, DP: 3 / 4, TP: 7 / 8
+2025-12-18 00:37:08,667 - root - INFO - Setting up DataLoaders...
+[Rank 23] World Size: 32, DP: 2 / 4, TP: 7 / 8
+[Rank 21] World Size: 32, DP: 2 / 4, TP: 5 / 8
+2025-12-18 00:37:08,723 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:08,723 - root - INFO - Setting up DataLoaders...
+[Rank 16] World Size: 32, DP: 2 / 4, TP: 0 / 8
+2025-12-18 00:37:09,490 - root - INFO - Setting up DataLoaders...
+[Rank 17] World Size: 32, DP: 2 / 4, TP: 1 / 8
+2025-12-18 00:37:10,018 - root - INFO - Setting up DataLoaders...
+[Rank 18] World Size: 32, DP: 2 / 4, TP: 2 / 8
+2025-12-18 00:37:10,027 - root - INFO - Setting up DataLoaders...
+[Rank 0] World Size: 32, DP: 0 / 4, TP: 0 / 8
+2025-12-18 00:37:10,059 - root - INFO - Setting up DataLoaders...
+[Rank 19] World Size: 32, DP: 2 / 4, TP: 3 / 8
+2025-12-18 00:37:10,078 - root - INFO - Setting up DataLoaders...
+[Rank 12] World Size: 32, DP: 1 / 4, TP: 4 / 8
+2025-12-18 00:37:10,464 - root - INFO - Setting up DataLoaders...
+[Rank 2] World Size: 32, DP: 0 / 4, TP: 2 / 8
+2025-12-18 00:37:10,577 - root - INFO - Setting up DataLoaders...
+[Rank 1] World Size: 32, DP: 0 / 4, TP: 1 / 8
+2025-12-18 00:37:10,587 - root - INFO - Setting up DataLoaders...
+[Rank 4] World Size: 32, DP: 0 / 4, TP: 4 / 8
+2025-12-18 00:37:10,588 - root - INFO - Setting up DataLoaders...
+[Rank 3] World Size: 32, DP: 0 / 4, TP: 3 / 8
+2025-12-18 00:37:10,597 - root - INFO - Setting up DataLoaders...
+[Rank 14] World Size: 32, DP: 1 / 4, TP: 6 / 8
+2025-12-18 00:37:10,883 - root - INFO - Setting up DataLoaders...
+[Rank 15] World Size: 32, DP: 1 / 4, TP: 7 / 8
+[Rank 13] World Size: 32, DP: 1 / 4, TP: 5 / 8
+2025-12-18 00:37:10,892 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:10,892 - root - INFO - Setting up DataLoaders...
+[Rank 5] World Size: 32, DP: 0 / 4, TP: 5 / 8
+2025-12-18 00:37:11,063 - root - INFO - Setting up DataLoaders...
+[Rank 7] World Size: 32, DP: 0 / 4, TP: 7 / 8
+[Rank 6] World Size: 32, DP: 0 / 4, TP: 6 / 8
+2025-12-18 00:37:11,083 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:11,083 - root - INFO - Setting up DataLoaders...
+2025-12-18 00:37:13,599 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,605 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,613 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,622 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,623 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,627 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,629 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,634 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,642 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,647 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,678 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,679 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,685 - root - INFO - Setting up Model...
+2025-12-18 00:37:13,697 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,697 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:13,707 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank29]:[W1218 00:37:14.731992948 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 29]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank30]:[W1218 00:37:14.732749214 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 30]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank31]:[W1218 00:37:14.732863931 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 31]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank23]:[W1218 00:37:14.034038606 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 23]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank22]:[W1218 00:37:14.035211147 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 22]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank21]:[W1218 00:37:14.037401993 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 21]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank28]:[W1218 00:37:14.903867888 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 28]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank20]:[W1218 00:37:14.237181037 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 20]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:14,742 - root - INFO - Setting up Model...
+2025-12-18 00:37:14,767 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:14,863 - root - INFO - Setting up Model...
+2025-12-18 00:37:14,872 - root - INFO - Setting up Model...
+2025-12-18 00:37:14,872 - root - INFO - Setting up Model...
+2025-12-18 00:37:14,886 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:14,890 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:14,895 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,107 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,127 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank17]:[W1218 00:37:15.935814443 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 17]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank18]:[W1218 00:37:15.936188639 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 18]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank19]:[W1218 00:37:15.936665392 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 19]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:15,364 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,384 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank16]:[W1218 00:37:15.076825169 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 16]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:15,441 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,444 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,461 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,461 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,516 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,529 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,536 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,549 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank0]:[W1218 00:37:15.795196259 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank2]:[W1218 00:37:15.797667599 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:15,714 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,734 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,749 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,756 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,767 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,783 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank1]:[W1218 00:37:15.906495440 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank3]:[W1218 00:37:15.906495376 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:15,824 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,825 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,831 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,831 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,844 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,848 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,848 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,848 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,856 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,857 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,876 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,881 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,894 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,912 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,920 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,924 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,924 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,926 - root - INFO - Setting up Model...
+2025-12-18 00:37:15,940 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,942 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,942 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-18 00:37:15,943 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank14]:[W1218 00:37:16.320516512 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 14]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank13]:[W1218 00:37:16.320617757 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 13]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank15]:[W1218 00:37:16.333817143 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 15]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W1218 00:37:16.751091599 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 4]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank7]:[W1218 00:37:16.761056848 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 7]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W1218 00:37:16.767120207 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 5]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank6]:[W1218 00:37:16.771484483 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 6]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank12]:[W1218 00:37:16.503675874 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 12]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank26]:[W1218 00:37:16.096438063 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 26]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank27]:[W1218 00:37:16.096437967 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 27]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank25]:[W1218 00:37:16.097740457 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 25]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank11]:[W1218 00:37:16.426146327 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank9]:[W1218 00:37:16.426529802 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank10]:[W1218 00:37:16.427822367 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank24]:[W1218 00:37:16.247795606 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 24]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank8]:[W1218 00:37:16.619646702 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,781 - root - INFO - Starting training!
+2025-12-18 00:37:21,782 - root - INFO - Starting training!
+2025-12-18 00:37:21,782 - root - INFO - Starting training!
+2025-12-18 00:37:21,782 - root - INFO - Starting training!
+2025-12-18 00:37:28,329 - root - INFO - Step: 1 | Loss (Avg): 11.95 | Reserved Memory 29.75 GB  | Tokens per second: 10010.88 | Training tokens per second (%): 5.64 | MFU (%): 1.53 | TFLOP/s/GPU: 15.12
+2025-12-18 00:37:33,364 - root - INFO - Step: 5 | Loss (Avg): 11.95 | Reserved Memory 35.76 GB  | Tokens per second: 52072.42 | Training tokens per second (%): 9.70 | MFU (%): 7.95 | TFLOP/s/GPU: 78.63
+2025-12-18 00:37:39,699 - root - INFO - Step: 10 | Loss (Avg): 11.87 | Reserved Memory 35.76 GB  | Tokens per second: 51740.62 | Training tokens per second (%): 9.53 | MFU (%): 7.90 | TFLOP/s/GPU: 78.13
+2025-12-18 00:37:46,080 - root - INFO - Step: 15 | Loss (Avg): 11.66 | Reserved Memory 35.76 GB  | Tokens per second: 51361.09 | Training tokens per second (%): 10.43 | MFU (%): 7.84 | TFLOP/s/GPU: 77.56
+2025-12-18 00:37:52,447 - root - INFO - Step: 20 | Loss (Avg): 11.29 | Reserved Memory 35.76 GB  | Tokens per second: 51476.04 | Training tokens per second (%): 11.37 | MFU (%): 7.86 | TFLOP/s/GPU: 77.73
+2025-12-18 00:37:58,770 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,770 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,770 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,771 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,778 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,778 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,779 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,779 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,779 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,779 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,780 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,780 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,797 - root - INFO - Step: 25 | Loss (Avg): 10.87 | Reserved Memory 35.76 GB  | Tokens per second: 51615.96 | Training tokens per second (%): 10.14 | MFU (%): 7.88 | TFLOP/s/GPU: 77.94
+2025-12-18 00:37:58,797 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,797 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,797 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,798 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,814 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,814 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,814 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,815 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,817 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,817 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,817 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,817 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,818 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,818 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,818 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,819 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,835 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,835 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,835 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:37:58,836 - root - INFO - Step: 25 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:10,085 - root - INFO - Step: 30 | Loss (Avg): 10.64 | Reserved Memory 35.76 GB  | Tokens per second: 29031.82 | Training tokens per second (%): 9.80 | MFU (%): 4.43 | TFLOP/s/GPU: 43.84
+2025-12-18 00:38:16,410 - root - INFO - Step: 35 | Loss (Avg): 10.36 | Reserved Memory 35.76 GB  | Tokens per second: 51818.42 | Training tokens per second (%): 9.18 | MFU (%): 7.91 | TFLOP/s/GPU: 78.25
+2025-12-18 00:38:22,698 - root - INFO - Step: 40 | Loss (Avg): 9.92 | Reserved Memory 35.76 GB  | Tokens per second: 52121.44 | Training tokens per second (%): 8.91 | MFU (%): 7.96 | TFLOP/s/GPU: 78.70
+2025-12-18 00:38:29,035 - root - INFO - Step: 45 | Loss (Avg): 9.66 | Reserved Memory 35.76 GB  | Tokens per second: 51719.01 | Training tokens per second (%): 9.00 | MFU (%): 7.90 | TFLOP/s/GPU: 78.10
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,338 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,339 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,339 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,341 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,341 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,341 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,341 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,341 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,342 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,342 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,342 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,347 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,347 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,347 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,348 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:35,380 - root - INFO - Step: 50 | Loss (Avg): 8.98 | Reserved Memory 35.76 GB  | Tokens per second: 51653.47 | Training tokens per second (%): 8.42 | MFU (%): 7.89 | TFLOP/s/GPU: 78.00
+2025-12-18 00:38:35,380 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,380 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:35,380 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:35,381 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:35,386 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,387 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,387 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,387 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:35,395 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,395 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,395 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:38:35,396 - root - INFO - Step: 50 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/filesystem.py:490: UserWarning: Detected an existing checkpoint in /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664/.metadata, overwriting since self.overwrite=True. Past version 2.5 of PyTorch, `overwrite` will default to False. Set this variable to True to maintain this functionality or False to raise when an existing checkpoint is found.
+  warnings.warn(
+2025-12-18 00:38:45,326 - root - INFO - Step: 55 | Loss (Avg): 8.61 | Reserved Memory 35.76 GB  | Tokens per second: 32951.13 | Training tokens per second (%): 9.63 | MFU (%): 5.03 | TFLOP/s/GPU: 49.76
+2025-12-18 00:38:51,584 - root - INFO - Step: 60 | Loss (Avg): 8.10 | Reserved Memory 35.76 GB  | Tokens per second: 52372.63 | Training tokens per second (%): 9.73 | MFU (%): 8.00 | TFLOP/s/GPU: 79.08
+2025-12-18 00:38:58,102 - root - INFO - Step: 65 | Loss (Avg): 7.72 | Reserved Memory 35.76 GB  | Tokens per second: 50285.05 | Training tokens per second (%): 10.86 | MFU (%): 7.68 | TFLOP/s/GPU: 75.93
+2025-12-18 00:39:04,401 - root - INFO - Step: 70 | Loss (Avg): 7.50 | Reserved Memory 35.76 GB  | Tokens per second: 52031.97 | Training tokens per second (%): 9.57 | MFU (%): 7.94 | TFLOP/s/GPU: 78.57
+2025-12-18 00:39:10,640 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,640 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,640 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,641 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,642 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,642 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,642 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,643 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,643 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,643 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,643 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,644 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,644 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,644 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,644 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,645 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,649 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,649 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,649 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,650 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,665 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,665 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,665 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,665 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,682 - root - INFO - Step: 75 | Loss (Avg): 7.43 | Reserved Memory 35.76 GB  | Tokens per second: 52173.35 | Training tokens per second (%): 11.15 | MFU (%): 7.97 | TFLOP/s/GPU: 78.78
+2025-12-18 00:39:10,682 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,682 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,683 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,683 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,699 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,699 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,699 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:10,700 - root - INFO - Step: 75 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:20,541 - root - INFO - Step: 80 | Loss (Avg): 7.40 | Reserved Memory 35.76 GB  | Tokens per second: 33239.77 | Training tokens per second (%): 8.00 | MFU (%): 5.08 | TFLOP/s/GPU: 50.19
+2025-12-18 00:39:26,902 - root - INFO - Step: 85 | Loss (Avg): 7.32 | Reserved Memory 35.76 GB  | Tokens per second: 51523.38 | Training tokens per second (%): 8.42 | MFU (%): 7.87 | TFLOP/s/GPU: 77.80
+2025-12-18 00:39:33,160 - root - INFO - Step: 90 | Loss (Avg): 7.22 | Reserved Memory 35.76 GB  | Tokens per second: 52371.57 | Training tokens per second (%): 10.18 | MFU (%): 8.00 | TFLOP/s/GPU: 79.08
+2025-12-18 00:39:39,392 - root - INFO - Step: 95 | Loss (Avg): 7.29 | Reserved Memory 35.76 GB  | Tokens per second: 52591.83 | Training tokens per second (%): 9.57 | MFU (%): 8.03 | TFLOP/s/GPU: 79.41
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,628 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,629 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,629 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,630 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,630 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,630 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,631 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,631 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,631 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,631 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,631 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,633 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,634 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,634 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,671 - root - INFO - Step: 100 | Loss (Avg): 7.20 | Reserved Memory 35.76 GB  | Tokens per second: 52196.37 | Training tokens per second (%): 8.89 | MFU (%): 7.97 | TFLOP/s/GPU: 78.82
+2025-12-18 00:39:45,671 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,671 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,671 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,671 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,673 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,673 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,674 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:45,674 - root - INFO - Step: 100 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:39:55,693 - root - INFO - Step: 105 | Loss (Avg): 7.10 | Reserved Memory 35.76 GB  | Tokens per second: 32699.95 | Training tokens per second (%): 8.18 | MFU (%): 4.99 | TFLOP/s/GPU: 49.38
+2025-12-18 00:40:01,534 - root - INFO - Step: 110 | Loss (Avg): 6.97 | Reserved Memory 35.76 GB  | Tokens per second: 56112.85 | Training tokens per second (%): 10.67 | MFU (%): 8.57 | TFLOP/s/GPU: 84.73
+2025-12-18 00:40:07,330 - root - INFO - Step: 115 | Loss (Avg): 7.02 | Reserved Memory 35.76 GB  | Tokens per second: 56550.10 | Training tokens per second (%): 11.63 | MFU (%): 8.63 | TFLOP/s/GPU: 85.39
+2025-12-18 00:40:13,274 - root - INFO - Step: 120 | Loss (Avg): 7.09 | Reserved Memory 35.76 GB  | Tokens per second: 55139.04 | Training tokens per second (%): 11.40 | MFU (%): 8.42 | TFLOP/s/GPU: 83.26
+2025-12-18 00:40:19,284 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,284 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,284 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,285 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,288 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,289 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,290 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,291 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,291 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,291 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,292 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,292 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,292 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,293 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,293 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,328 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,328 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,329 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,329 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,336 - root - INFO - Step: 125 | Loss (Avg): 7.04 | Reserved Memory 35.76 GB  | Tokens per second: 54060.90 | Training tokens per second (%): 9.27 | MFU (%): 8.25 | TFLOP/s/GPU: 81.63
+2025-12-18 00:40:19,337 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,337 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,337 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:19,337 - root - INFO - Step: 125 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:28,917 - root - INFO - Step: 130 | Loss (Avg): 6.99 | Reserved Memory 35.76 GB  | Tokens per second: 34206.76 | Training tokens per second (%): 10.11 | MFU (%): 5.22 | TFLOP/s/GPU: 51.65
+2025-12-18 00:40:34,787 - root - INFO - Step: 135 | Loss (Avg): 6.97 | Reserved Memory 35.76 GB  | Tokens per second: 55837.78 | Training tokens per second (%): 8.98 | MFU (%): 8.53 | TFLOP/s/GPU: 84.32
+2025-12-18 00:40:40,696 - root - INFO - Step: 140 | Loss (Avg): 6.87 | Reserved Memory 35.76 GB  | Tokens per second: 55468.68 | Training tokens per second (%): 10.12 | MFU (%): 8.47 | TFLOP/s/GPU: 83.76
+2025-12-18 00:40:46,663 - root - INFO - Step: 145 | Loss (Avg): 6.92 | Reserved Memory 35.76 GB  | Tokens per second: 54927.22 | Training tokens per second (%): 8.98 | MFU (%): 8.39 | TFLOP/s/GPU: 82.94
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,655 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,656 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,656 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,656 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,660 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,660 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,660 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,661 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,662 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,662 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,662 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,663 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,663 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,663 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,663 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,663 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,697 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,697 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,697 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,697 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,710 - root - INFO - Step: 150 | Loss (Avg): 6.99 | Reserved Memory 35.76 GB  | Tokens per second: 54195.44 | Training tokens per second (%): 8.43 | MFU (%): 8.27 | TFLOP/s/GPU: 81.84
+2025-12-18 00:40:52,710 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,710 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,710 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:40:52,711 - root - INFO - Step: 150 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:02,695 - root - INFO - Step: 155 | Loss (Avg): 6.74 | Reserved Memory 35.76 GB  | Tokens per second: 32821.75 | Training tokens per second (%): 7.31 | MFU (%): 5.01 | TFLOP/s/GPU: 49.56
+2025-12-18 00:41:08,500 - root - INFO - Step: 160 | Loss (Avg): 6.78 | Reserved Memory 35.76 GB  | Tokens per second: 56462.14 | Training tokens per second (%): 9.34 | MFU (%): 8.62 | TFLOP/s/GPU: 85.26
+2025-12-18 00:41:14,316 - root - INFO - Step: 165 | Loss (Avg): 6.72 | Reserved Memory 35.76 GB  | Tokens per second: 56355.50 | Training tokens per second (%): 10.40 | MFU (%): 8.60 | TFLOP/s/GPU: 85.10
+2025-12-18 00:41:20,125 - root - INFO - Step: 170 | Loss (Avg): 6.85 | Reserved Memory 35.76 GB  | Tokens per second: 56423.53 | Training tokens per second (%): 11.87 | MFU (%): 8.61 | TFLOP/s/GPU: 85.20
+2025-12-18 00:41:26,140 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,140 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,140 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,141 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,141 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,141 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,141 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,141 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,143 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,144 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,146 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,146 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,146 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,147 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,147 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,148 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,148 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,149 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,178 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,178 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,178 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,178 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,188 - root - INFO - Step: 175 | Loss (Avg): 6.77 | Reserved Memory 35.76 GB  | Tokens per second: 54051.72 | Training tokens per second (%): 9.23 | MFU (%): 8.25 | TFLOP/s/GPU: 81.62
+2025-12-18 00:41:26,188 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,188 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,188 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:26,189 - root - INFO - Step: 175 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:41:35,842 - root - INFO - Step: 180 | Loss (Avg): 6.74 | Reserved Memory 35.76 GB  | Tokens per second: 33948.15 | Training tokens per second (%): 11.42 | MFU (%): 5.18 | TFLOP/s/GPU: 51.26
+2025-12-18 00:41:41,857 - root - INFO - Step: 185 | Loss (Avg): 6.77 | Reserved Memory 35.76 GB  | Tokens per second: 54482.71 | Training tokens per second (%): 11.44 | MFU (%): 8.32 | TFLOP/s/GPU: 82.27
+2025-12-18 00:41:48,006 - root - INFO - Step: 190 | Loss (Avg): 6.76 | Reserved Memory 35.76 GB  | Tokens per second: 53304.45 | Training tokens per second (%): 10.22 | MFU (%): 8.14 | TFLOP/s/GPU: 80.49
+2025-12-18 00:41:54,028 - root - INFO - Step: 195 | Loss (Avg): 6.69 | Reserved Memory 35.76 GB  | Tokens per second: 54418.13 | Training tokens per second (%): 8.71 | MFU (%): 8.31 | TFLOP/s/GPU: 82.17
+2025-12-18 00:42:00,091 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,091 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,091 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,092 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,093 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,093 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,093 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,093 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,094 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,094 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,094 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,094 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,096 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,096 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,096 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,096 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,098 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,098 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,098 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,099 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,101 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,102 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,102 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,102 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,133 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,133 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,134 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,134 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,139 - root - INFO - Step: 200 | Loss (Avg): 6.81 | Reserved Memory 35.76 GB  | Tokens per second: 53633.72 | Training tokens per second (%): 8.52 | MFU (%): 8.19 | TFLOP/s/GPU: 80.99
+2025-12-18 00:42:00,139 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,139 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,139 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:00,140 - root - INFO - Step: 200 | Save checkpoint into /iopsstor/scratch/cscs/jiahli/large-sc/project/ckpt/lsai-dp4-tp8-dcp25-1256664
+2025-12-18 00:42:03,895 - root - INFO - Training completed
+2025-12-18 00:42:03,906 - root - INFO - Training completed
+2025-12-18 00:42:03,909 - root - INFO - Training completed
+2025-12-18 00:42:03,909 - root - INFO - Training completed
+2025-12-18 00:42:03,910 - root - INFO - Training completed
+2025-12-18 00:42:03,910 - root - INFO - Training completed
+2025-12-18 00:42:03,911 - root - INFO - Training completed
+2025-12-18 00:42:03,912 - root - INFO - Training completed
+2025-12-18 00:42:03,912 - root - INFO - Training completed
+2025-12-18 00:42:03,913 - root - INFO - Training completed
+2025-12-18 00:42:03,914 - root - INFO - Training completed
+2025-12-18 00:42:03,914 - root - INFO - Training completed
+2025-12-18 00:42:03,915 - root - INFO - Training completed
+2025-12-18 00:42:03,917 - root - INFO - Training completed
+2025-12-18 00:42:03,918 - root - INFO - Training completed
+2025-12-18 00:42:03,918 - root - INFO - Training completed
+2025-12-18 00:42:03,919 - root - INFO - Training completed
+2025-12-18 00:42:03,919 - root - INFO - Training completed
+2025-12-18 00:42:03,922 - root - INFO - Training completed
+2025-12-18 00:42:03,922 - root - INFO - Training completed
+2025-12-18 00:42:03,922 - root - INFO - Training completed
+2025-12-18 00:42:03,923 - root - INFO - Training completed
+2025-12-18 00:42:03,924 - root - INFO - Training completed
+2025-12-18 00:42:03,924 - root - INFO - Training completed
+2025-12-18 00:42:03,931 - root - INFO - Training completed
+2025-12-18 00:42:03,931 - root - INFO - Training completed
+2025-12-18 00:42:03,932 - root - INFO - Training completed
+2025-12-18 00:42:03,933 - root - INFO - Training completed
+2025-12-18 00:42:03,933 - root - INFO - Training completed
+2025-12-18 00:42:03,934 - root - INFO - Training completed
+2025-12-18 00:42:03,934 - root - INFO - Training completed
+2025-12-18 00:42:03,938 - root - INFO - Training completed
+END TIME: Thu Dec 18 00:42:08 CET 2025
+[sbatch-master] task finished

@@ -1,0 +1,394 @@
+START TIME: Wed Dec 17 02:35:45 CET 2025
+[sbatch-master] running on nid007255
+[sbatch-master] SLURM_NODELIST: nid[007255-007257,007265-007266,007288,007303,007306]
+[sbatch-master] SLURM_NNODES: 8
+[sbatch-master] SLURM_NODEID: 0
+[sbatch-master] define some env vars that will be passed to the compute nodes
+[sbatch-master] execute command on compute nodes
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+slurmstepd: error: couldn't chdir to `/workspace': No such file or directory: going to /tmp instead
+[srun] rank=0 host=nid007255 noderank=0 localrank=0
+[srun] rank=7 host=nid007306 noderank=7 localrank=0
+[srun] rank=1 host=nid007256 noderank=1 localrank=0
+[srun] rank=5 host=nid007288 noderank=5 localrank=0
+[srun] rank=4 host=nid007266 noderank=4 localrank=0
+[srun] rank=6 host=nid007303 noderank=6 localrank=0
+[srun] rank=3 host=nid007265 noderank=3 localrank=0
+[srun] rank=2 host=nid007257 noderank=2 localrank=0
+W1217 02:35:56.496000 205734 torch/distributed/run.py:792] 
+W1217 02:35:56.496000 205734 torch/distributed/run.py:792] *****************************************
+W1217 02:35:56.496000 205734 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:56.496000 205734 torch/distributed/run.py:792] *****************************************
+W1217 02:35:56.849000 163912 torch/distributed/run.py:792] 
+W1217 02:35:56.849000 163912 torch/distributed/run.py:792] *****************************************
+W1217 02:35:56.849000 163912 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:56.849000 163912 torch/distributed/run.py:792] *****************************************
+W1217 02:35:57.905000 18650 torch/distributed/run.py:792] 
+W1217 02:35:57.905000 18650 torch/distributed/run.py:792] *****************************************
+W1217 02:35:57.905000 18650 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:57.905000 18650 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.029000 69911 torch/distributed/run.py:792] 
+W1217 02:35:58.029000 69911 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.029000 69911 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:58.029000 69911 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.182000 268650 torch/distributed/run.py:792] 
+W1217 02:35:58.182000 268650 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.182000 268650 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:58.182000 268650 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.231000 217719 torch/distributed/run.py:792] 
+W1217 02:35:58.231000 217719 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.231000 217719 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:58.231000 217719 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.425000 176533 torch/distributed/run.py:792] 
+W1217 02:35:58.425000 176533 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.425000 176533 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:58.425000 176533 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.542000 128265 torch/distributed/run.py:792] 
+W1217 02:35:58.542000 128265 torch/distributed/run.py:792] *****************************************
+W1217 02:35:58.542000 128265 torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1217 02:35:58.542000 128265 torch/distributed/run.py:792] *****************************************
+2025-12-17 02:36:03,808 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,808 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,808 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,808 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2Setting device to local rank: 1Setting device to local rank: 0Setting device to local rank: 3
+
+
+
+2025-12-17 02:36:03,812 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,812 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3Setting device to local rank: 2
+
+2025-12-17 02:36:03,812 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-17 02:36:03,813 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+2025-12-17 02:36:03,814 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,814 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,814 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3Setting device to local rank: 1Setting device to local rank: 0
+
+
+Setting device to local rank: 2
+2025-12-17 02:36:03,814 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,899 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,899 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,899 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2Setting device to local rank: 3
+
+Setting device to local rank: 0
+Setting device to local rank: 1
+2025-12-17 02:36:03,899 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,935 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-17 02:36:03,935 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-17 02:36:03,935 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,935 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+Setting device to local rank: 0
+2025-12-17 02:36:03,945 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:03,945 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0Setting device to local rank: 3
+
+2025-12-17 02:36:03,945 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-17 02:36:03,945 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-17 02:36:05,498 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 1
+2025-12-17 02:36:05,498 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+Setting device to local rank: 0
+2025-12-17 02:36:05,498 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:05,498 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+2025-12-17 02:36:05,533 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+2025-12-17 02:36:05,533 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 3
+Setting device to local rank: 1
+2025-12-17 02:36:05,533 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 2
+2025-12-17 02:36:05,534 - root - INFO - Experiment args: Namespace(dataset='/capstor/store/cscs/ethz/large-sc-2/datasets/train_data.parquet', tokenizer_name_or_path='unsloth/Mistral-Nemo-Base-2407-bnb-4bit', sequence_length=2048, batch_size=8, fused_optimizer=False, learning_rate=5e-05, lr_warmup_steps=100, training_steps=200, logging_frequency=5, checkpoint_frequency=100, checkpoint_save_path=None, checkpoint_load_path=None, profile=False, profile_step_start=10, profile_step_end=12, grad_max_norm=1, model_dtype='bf16', compile=False, tp_size=8)
+Setting device to local rank: 0
+[Rank 28] World Size: 32, DP: 3 / 4, TP: 4 / 8
+2025-12-17 02:36:09,018 - root - INFO - Setting up DataLoaders...
+[Rank 31] World Size: 32, DP: 3 / 4, TP: 7 / 8
+2025-12-17 02:36:09,743 - root - INFO - Setting up DataLoaders...
+[Rank 29] World Size: 32, DP: 3 / 4, TP: 5 / 8
+2025-12-17 02:36:09,752 - root - INFO - Setting up DataLoaders...
+[Rank 30] World Size: 32, DP: 3 / 4, TP: 6 / 8
+2025-12-17 02:36:09,762 - root - INFO - Setting up DataLoaders...
+[Rank 20] World Size: 32, DP: 2 / 4, TP: 4 / 8
+2025-12-17 02:36:10,481 - root - INFO - Setting up DataLoaders...
+[Rank 0] World Size: 32, DP: 0 / 4, TP: 0 / 8
+2025-12-17 02:36:10,616 - root - INFO - Setting up DataLoaders...
+[Rank 12] World Size: 32, DP: 1 / 4, TP: 4 / 8
+2025-12-17 02:36:10,667 - root - INFO - Setting up DataLoaders...
+[Rank 8] World Size: 32, DP: 1 / 4, TP: 0 / 8
+2025-12-17 02:36:10,848 - root - INFO - Setting up DataLoaders...
+[Rank 24] World Size: 32, DP: 3 / 4, TP: 0 / 8
+2025-12-17 02:36:10,894 - root - INFO - Setting up DataLoaders...
+[Rank 21] World Size: 32, DP: 2 / 4, TP: 5 / 8[Rank 23] World Size: 32, DP: 2 / 4, TP: 7 / 8
+
+2025-12-17 02:36:10,945 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:10,945 - root - INFO - Setting up DataLoaders...
+[Rank 22] World Size: 32, DP: 2 / 4, TP: 6 / 8
+2025-12-17 02:36:10,964 - root - INFO - Setting up DataLoaders...
+[Rank 1] World Size: 32, DP: 0 / 4, TP: 1 / 8
+2025-12-17 02:36:11,087 - root - INFO - Setting up DataLoaders...
+[Rank 2] World Size: 32, DP: 0 / 4, TP: 2 / 8
+2025-12-17 02:36:11,137 - root - INFO - Setting up DataLoaders...
+[Rank 3] World Size: 32, DP: 0 / 4, TP: 3 / 8
+2025-12-17 02:36:11,146 - root - INFO - Setting up DataLoaders...
+[Rank 15] World Size: 32, DP: 1 / 4, TP: 7 / 8
+2025-12-17 02:36:11,152 - root - INFO - Setting up DataLoaders...
+[Rank 13] World Size: 32, DP: 1 / 4, TP: 5 / 8
+[Rank 14] World Size: 32, DP: 1 / 4, TP: 6 / 8
+2025-12-17 02:36:11,212 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:11,212 - root - INFO - Setting up DataLoaders...
+[Rank 10] World Size: 32, DP: 1 / 4, TP: 2 / 8[Rank 11] World Size: 32, DP: 1 / 4, TP: 3 / 8[Rank 9] World Size: 32, DP: 1 / 4, TP: 1 / 8
+
+
+2025-12-17 02:36:11,365 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:11,365 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:11,365 - root - INFO - Setting up DataLoaders...
+[Rank 27] World Size: 32, DP: 3 / 4, TP: 3 / 8
+2025-12-17 02:36:11,381 - root - INFO - Setting up DataLoaders...
+[Rank 26] World Size: 32, DP: 3 / 4, TP: 2 / 8
+2025-12-17 02:36:11,390 - root - INFO - Setting up DataLoaders...
+[Rank 25] World Size: 32, DP: 3 / 4, TP: 1 / 8
+2025-12-17 02:36:11,441 - root - INFO - Setting up DataLoaders...
+[Rank 16] World Size: 32, DP: 2 / 4, TP: 0 / 8
+2025-12-17 02:36:12,259 - root - INFO - Setting up DataLoaders...
+[Rank 4] World Size: 32, DP: 0 / 4, TP: 4 / 8
+2025-12-17 02:36:12,300 - root - INFO - Setting up DataLoaders...
+[Rank 19] World Size: 32, DP: 2 / 4, TP: 3 / 8
+2025-12-17 02:36:12,686 - root - INFO - Setting up DataLoaders...
+[Rank 18] World Size: 32, DP: 2 / 4, TP: 2 / 8
+2025-12-17 02:36:12,745 - root - INFO - Setting up DataLoaders...
+[Rank 17] World Size: 32, DP: 2 / 4, TP: 1 / 8
+2025-12-17 02:36:12,755 - root - INFO - Setting up DataLoaders...
+[Rank 7] World Size: 32, DP: 0 / 4, TP: 7 / 8
+2025-12-17 02:36:12,836 - root - INFO - Setting up DataLoaders...
+[Rank 6] World Size: 32, DP: 0 / 4, TP: 6 / 8
+[Rank 5] World Size: 32, DP: 0 / 4, TP: 5 / 8
+2025-12-17 02:36:12,846 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:12,846 - root - INFO - Setting up DataLoaders...
+2025-12-17 02:36:14,027 - root - INFO - Setting up Model...
+2025-12-17 02:36:14,048 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:14,561 - root - INFO - Setting up Model...
+2025-12-17 02:36:14,580 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank28]:[W1217 02:36:14.554728692 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 28]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:14,865 - root - INFO - Setting up Model...
+2025-12-17 02:36:14,889 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank31]:[W1217 02:36:14.844479587 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 31]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:14,907 - root - INFO - Setting up Model...
+2025-12-17 02:36:14,925 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank29]:[W1217 02:36:15.156845002 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 29]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank30]:[W1217 02:36:15.180451518 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 30]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:15,538 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,563 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,614 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,624 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,635 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,644 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,736 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,754 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,764 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,782 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,884 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,900 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,909 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,922 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,954 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,961 - root - INFO - Setting up Model...
+2025-12-17 02:36:15,979 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,980 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:15,991 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,011 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,032 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,052 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,099 - root - INFO - Setting up Model...
+[rank22]:[W1217 02:36:16.650658755 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 22]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank21]:[W1217 02:36:16.650941142 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 21]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:16,123 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,125 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,143 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,149 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,149 - root - INFO - Setting up Model...
+[rank20]:[W1217 02:36:16.682098379 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 20]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:16,167 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,169 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,170 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,171 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,178 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,189 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,189 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:16,195 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank23]:[W1217 02:36:16.746770157 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 23]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank12]:[W1217 02:36:16.254158084 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 12]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank0]:[W1217 02:36:16.441570297 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:16,297 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,320 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank15]:[W1217 02:36:16.335987247 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 15]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank3]:[W1217 02:36:16.536581499 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank2]:[W1217 02:36:16.549992773 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:16,425 - root - INFO - Setting up Model...
+2025-12-17 02:36:16,448 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank1]:[W1217 02:36:16.634450521 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank10]:[W1217 02:36:16.309367152 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 10]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank11]:[W1217 02:36:16.310094644 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 11]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank26]:[W1217 02:36:16.083612325 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 26]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank27]:[W1217 02:36:16.083918042 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 27]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank8]:[W1217 02:36:16.416115809 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 8]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank25]:[W1217 02:36:16.202349988 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 25]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank24]:[W1217 02:36:16.202483231 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 24]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:17,245 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,265 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,454 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,475 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,491 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,502 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,509 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,521 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,634 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,653 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,726 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,728 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,746 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,754 - root - INFO - Applying Tensor Parallelism with size 8...
+2025-12-17 02:36:17,755 - root - INFO - Setting up Model...
+2025-12-17 02:36:17,781 - root - INFO - Applying Tensor Parallelism with size 8...
+[rank14]:[W1217 02:36:17.782838828 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 14]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank13]:[W1217 02:36:17.791202502 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 13]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank19]:[W1217 02:36:17.742317965 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 19]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank18]:[W1217 02:36:17.770602966 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 18]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank4]:[W1217 02:36:17.795500602 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 4]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank7]:[W1217 02:36:17.868617758 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 7]  using GPU 3 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank6]:[W1217 02:36:18.976964410 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 6]  using GPU 2 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank9]:[W1217 02:36:18.401052195 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 9]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank17]:[W1217 02:36:19.206133158 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 17]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank16]:[W1217 02:36:19.225566069 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 16]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank5]:[W1217 02:36:19.283603933 ProcessGroupNCCL.cpp:4454] [PG ID 0 PG GUID 0 Rank 5]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,636 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,637 - root - INFO - Starting training!
+2025-12-17 02:36:24,638 - root - INFO - Starting training!
+2025-12-17 02:36:31,330 - root - INFO - Step: 1 | Loss (Avg): 11.95 | Reserved Memory 28.98 GB  | Tokens per second: 9790.51 | Training tokens per second (%): 5.64 | MFU (%): 1.49 | TFLOP/s/GPU: 14.78
+2025-12-17 02:36:36,456 - root - INFO - Step: 5 | Loss (Avg): 11.95 | Reserved Memory 33.99 GB  | Tokens per second: 51153.41 | Training tokens per second (%): 9.70 | MFU (%): 7.81 | TFLOP/s/GPU: 77.24
+2025-12-17 02:36:42,927 - root - INFO - Step: 10 | Loss (Avg): 11.87 | Reserved Memory 33.99 GB  | Tokens per second: 50649.28 | Training tokens per second (%): 9.53 | MFU (%): 7.73 | TFLOP/s/GPU: 76.48
+2025-12-17 02:36:49,460 - root - INFO - Step: 15 | Loss (Avg): 11.66 | Reserved Memory 34.99 GB  | Tokens per second: 50162.21 | Training tokens per second (%): 10.43 | MFU (%): 7.66 | TFLOP/s/GPU: 75.74
+2025-12-17 02:36:55,972 - root - INFO - Step: 20 | Loss (Avg): 11.29 | Reserved Memory 34.99 GB  | Tokens per second: 50324.39 | Training tokens per second (%): 11.37 | MFU (%): 7.68 | TFLOP/s/GPU: 75.99
+2025-12-17 02:37:02,405 - root - INFO - Step: 25 | Loss (Avg): 10.87 | Reserved Memory 34.99 GB  | Tokens per second: 50948.55 | Training tokens per second (%): 10.14 | MFU (%): 7.78 | TFLOP/s/GPU: 76.93
+2025-12-17 02:37:09,108 - root - INFO - Step: 30 | Loss (Avg): 10.64 | Reserved Memory 34.99 GB  | Tokens per second: 48890.79 | Training tokens per second (%): 9.80 | MFU (%): 7.46 | TFLOP/s/GPU: 73.83
+2025-12-17 02:37:15,637 - root - INFO - Step: 35 | Loss (Avg): 10.36 | Reserved Memory 34.99 GB  | Tokens per second: 50197.90 | Training tokens per second (%): 9.18 | MFU (%): 7.66 | TFLOP/s/GPU: 75.80
+2025-12-17 02:37:22,159 - root - INFO - Step: 40 | Loss (Avg): 9.92 | Reserved Memory 34.99 GB  | Tokens per second: 50251.26 | Training tokens per second (%): 8.91 | MFU (%): 7.67 | TFLOP/s/GPU: 75.88
+2025-12-17 02:37:28,838 - root - INFO - Step: 45 | Loss (Avg): 9.66 | Reserved Memory 34.99 GB  | Tokens per second: 49067.86 | Training tokens per second (%): 9.00 | MFU (%): 7.49 | TFLOP/s/GPU: 74.09
+2025-12-17 02:37:35,486 - root - INFO - Step: 50 | Loss (Avg): 8.98 | Reserved Memory 34.99 GB  | Tokens per second: 49296.08 | Training tokens per second (%): 8.42 | MFU (%): 7.53 | TFLOP/s/GPU: 74.44
+2025-12-17 02:37:42,169 - root - INFO - Step: 55 | Loss (Avg): 8.61 | Reserved Memory 34.99 GB  | Tokens per second: 49037.30 | Training tokens per second (%): 9.63 | MFU (%): 7.49 | TFLOP/s/GPU: 74.05
+2025-12-17 02:37:48,857 - root - INFO - Step: 60 | Loss (Avg): 8.10 | Reserved Memory 34.99 GB  | Tokens per second: 49005.90 | Training tokens per second (%): 9.73 | MFU (%): 7.48 | TFLOP/s/GPU: 74.00
+2025-12-17 02:37:55,538 - root - INFO - Step: 65 | Loss (Avg): 7.72 | Reserved Memory 34.99 GB  | Tokens per second: 49054.99 | Training tokens per second (%): 10.86 | MFU (%): 7.49 | TFLOP/s/GPU: 74.07
+2025-12-17 02:38:02,426 - root - INFO - Step: 70 | Loss (Avg): 7.50 | Reserved Memory 34.99 GB  | Tokens per second: 47577.70 | Training tokens per second (%): 9.57 | MFU (%): 7.26 | TFLOP/s/GPU: 71.84
+2025-12-17 02:38:09,069 - root - INFO - Step: 75 | Loss (Avg): 7.43 | Reserved Memory 34.99 GB  | Tokens per second: 49339.00 | Training tokens per second (%): 11.15 | MFU (%): 7.53 | TFLOP/s/GPU: 74.50
+2025-12-17 02:38:15,692 - root - INFO - Step: 80 | Loss (Avg): 7.40 | Reserved Memory 34.99 GB  | Tokens per second: 49481.03 | Training tokens per second (%): 8.00 | MFU (%): 7.55 | TFLOP/s/GPU: 74.72
+2025-12-17 02:38:22,338 - root - INFO - Step: 85 | Loss (Avg): 7.32 | Reserved Memory 34.99 GB  | Tokens per second: 49316.67 | Training tokens per second (%): 8.42 | MFU (%): 7.53 | TFLOP/s/GPU: 74.47
+2025-12-17 02:38:28,949 - root - INFO - Step: 90 | Loss (Avg): 7.22 | Reserved Memory 34.99 GB  | Tokens per second: 49575.54 | Training tokens per second (%): 10.18 | MFU (%): 7.57 | TFLOP/s/GPU: 74.86
+2025-12-17 02:38:35,597 - root - INFO - Step: 95 | Loss (Avg): 7.29 | Reserved Memory 34.99 GB  | Tokens per second: 49294.67 | Training tokens per second (%): 9.57 | MFU (%): 7.53 | TFLOP/s/GPU: 74.43
+2025-12-17 02:38:42,221 - root - INFO - Step: 100 | Loss (Avg): 7.20 | Reserved Memory 34.99 GB  | Tokens per second: 49479.33 | Training tokens per second (%): 8.89 | MFU (%): 7.55 | TFLOP/s/GPU: 74.71
+2025-12-17 02:38:48,785 - root - INFO - Step: 105 | Loss (Avg): 7.10 | Reserved Memory 34.99 GB  | Tokens per second: 49930.87 | Training tokens per second (%): 8.18 | MFU (%): 7.62 | TFLOP/s/GPU: 75.40
+2025-12-17 02:38:55,397 - root - INFO - Step: 110 | Loss (Avg): 6.97 | Reserved Memory 34.99 GB  | Tokens per second: 49564.14 | Training tokens per second (%): 10.67 | MFU (%): 7.57 | TFLOP/s/GPU: 74.84
+2025-12-17 02:39:02,238 - root - INFO - Step: 115 | Loss (Avg): 7.02 | Reserved Memory 34.99 GB  | Tokens per second: 47909.43 | Training tokens per second (%): 11.63 | MFU (%): 7.31 | TFLOP/s/GPU: 72.34
+2025-12-17 02:39:08,872 - root - INFO - Step: 120 | Loss (Avg): 7.09 | Reserved Memory 34.99 GB  | Tokens per second: 49401.35 | Training tokens per second (%): 11.40 | MFU (%): 7.54 | TFLOP/s/GPU: 74.60
+2025-12-17 02:39:15,513 - root - INFO - Step: 125 | Loss (Avg): 7.04 | Reserved Memory 34.99 GB  | Tokens per second: 49351.40 | Training tokens per second (%): 9.27 | MFU (%): 7.53 | TFLOP/s/GPU: 74.52
+2025-12-17 02:39:22,145 - root - INFO - Step: 130 | Loss (Avg): 6.99 | Reserved Memory 34.99 GB  | Tokens per second: 49412.61 | Training tokens per second (%): 10.11 | MFU (%): 7.54 | TFLOP/s/GPU: 74.61
+2025-12-17 02:39:28,751 - root - INFO - Step: 135 | Loss (Avg): 6.97 | Reserved Memory 34.99 GB  | Tokens per second: 49614.76 | Training tokens per second (%): 8.98 | MFU (%): 7.58 | TFLOP/s/GPU: 74.92
+2025-12-17 02:39:35,381 - root - INFO - Step: 140 | Loss (Avg): 6.87 | Reserved Memory 34.99 GB  | Tokens per second: 49432.26 | Training tokens per second (%): 10.12 | MFU (%): 7.55 | TFLOP/s/GPU: 74.64
+2025-12-17 02:39:42,029 - root - INFO - Step: 145 | Loss (Avg): 6.92 | Reserved Memory 34.99 GB  | Tokens per second: 49298.08 | Training tokens per second (%): 8.98 | MFU (%): 7.53 | TFLOP/s/GPU: 74.44
+2025-12-17 02:39:48,871 - root - INFO - Step: 150 | Loss (Avg): 6.99 | Reserved Memory 34.99 GB  | Tokens per second: 47901.66 | Training tokens per second (%): 8.43 | MFU (%): 7.31 | TFLOP/s/GPU: 72.33
+2025-12-17 02:39:55,393 - root - INFO - Step: 155 | Loss (Avg): 6.74 | Reserved Memory 34.99 GB  | Tokens per second: 50244.55 | Training tokens per second (%): 7.31 | MFU (%): 7.67 | TFLOP/s/GPU: 75.87
+2025-12-17 02:40:01,816 - root - INFO - Step: 160 | Loss (Avg): 6.78 | Reserved Memory 34.99 GB  | Tokens per second: 51026.56 | Training tokens per second (%): 9.34 | MFU (%): 7.79 | TFLOP/s/GPU: 77.05
+2025-12-17 02:40:08,181 - root - INFO - Step: 165 | Loss (Avg): 6.72 | Reserved Memory 34.99 GB  | Tokens per second: 51497.25 | Training tokens per second (%): 10.40 | MFU (%): 7.86 | TFLOP/s/GPU: 77.76
+2025-12-17 02:40:14,599 - root - INFO - Step: 170 | Loss (Avg): 6.85 | Reserved Memory 34.99 GB  | Tokens per second: 51059.65 | Training tokens per second (%): 11.87 | MFU (%): 7.80 | TFLOP/s/GPU: 77.10
+2025-12-17 02:40:20,993 - root - INFO - Step: 175 | Loss (Avg): 6.77 | Reserved Memory 34.99 GB  | Tokens per second: 51262.93 | Training tokens per second (%): 9.23 | MFU (%): 7.83 | TFLOP/s/GPU: 77.41
+2025-12-17 02:40:27,387 - root - INFO - Step: 180 | Loss (Avg): 6.74 | Reserved Memory 34.99 GB  | Tokens per second: 51258.02 | Training tokens per second (%): 11.42 | MFU (%): 7.83 | TFLOP/s/GPU: 77.40
+2025-12-17 02:40:33,761 - root - INFO - Step: 185 | Loss (Avg): 6.77 | Reserved Memory 34.99 GB  | Tokens per second: 51414.23 | Training tokens per second (%): 11.44 | MFU (%): 7.85 | TFLOP/s/GPU: 77.64
+2025-12-17 02:40:40,091 - root - INFO - Step: 190 | Loss (Avg): 6.76 | Reserved Memory 34.99 GB  | Tokens per second: 51778.38 | Training tokens per second (%): 10.22 | MFU (%): 7.91 | TFLOP/s/GPU: 78.19
+2025-12-17 02:40:46,627 - root - INFO - Step: 195 | Loss (Avg): 6.69 | Reserved Memory 34.99 GB  | Tokens per second: 50139.66 | Training tokens per second (%): 8.71 | MFU (%): 7.66 | TFLOP/s/GPU: 75.71
+2025-12-17 02:40:53,076 - root - INFO - Step: 200 | Loss (Avg): 6.81 | Reserved Memory 34.99 GB  | Tokens per second: 50821.44 | Training tokens per second (%): 8.52 | MFU (%): 7.76 | TFLOP/s/GPU: 76.74
+2025-12-17 02:40:53,114 - root - INFO - Training completed
+2025-12-17 02:40:53,125 - root - INFO - Training completed
+2025-12-17 02:40:53,129 - root - INFO - Training completed
+2025-12-17 02:40:53,138 - root - INFO - Training completed
+2025-12-17 02:40:53,140 - root - INFO - Training completed
+2025-12-17 02:40:53,140 - root - INFO - Training completed
+2025-12-17 02:40:53,142 - root - INFO - Training completed
+2025-12-17 02:40:53,143 - root - INFO - Training completed
+2025-12-17 02:40:53,144 - root - INFO - Training completed
+2025-12-17 02:40:53,151 - root - INFO - Training completed
+2025-12-17 02:40:53,153 - root - INFO - Training completed
+2025-12-17 02:40:53,154 - root - INFO - Training completed
+2025-12-17 02:40:53,158 - root - INFO - Training completed
+2025-12-17 02:40:53,159 - root - INFO - Training completed
+2025-12-17 02:40:53,161 - root - INFO - Training completed
+2025-12-17 02:40:53,162 - root - INFO - Training completed
+2025-12-17 02:40:53,164 - root - INFO - Training completed
+2025-12-17 02:40:53,166 - root - INFO - Training completed
+2025-12-17 02:40:53,168 - root - INFO - Training completed
+2025-12-17 02:40:53,168 - root - INFO - Training completed
+2025-12-17 02:40:53,168 - root - INFO - Training completed
+2025-12-17 02:40:53,173 - root - INFO - Training completed
+2025-12-17 02:40:53,175 - root - INFO - Training completed
+2025-12-17 02:40:53,175 - root - INFO - Training completed
+2025-12-17 02:40:53,177 - root - INFO - Training completed
+2025-12-17 02:40:53,182 - root - INFO - Training completed
+2025-12-17 02:40:53,183 - root - INFO - Training completed
+2025-12-17 02:40:53,184 - root - INFO - Training completed
+2025-12-17 02:40:53,185 - root - INFO - Training completed
+2025-12-17 02:40:53,193 - root - INFO - Training completed
+2025-12-17 02:40:53,194 - root - INFO - Training completed
+2025-12-17 02:40:53,195 - root - INFO - Training completed
+END TIME: Wed Dec 17 02:40:57 CET 2025
+[sbatch-master] task finished
