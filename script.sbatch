@@ -4,7 +4,7 @@
 #SBATCH --job-name=lsai
 #SBATCH --output=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.out
 #SBATCH --error=/iopsstor/scratch/cscs/%u/large-sc/project/logs/%x-%j.err
-#SBATCH --nodes=8
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=4
 #SBATCH --environment=/iopsstor/scratch/cscs/jiahli/large-sc/project/environment/project_env.toml   # Vanilla 25.01 PyTorch NGC Image
